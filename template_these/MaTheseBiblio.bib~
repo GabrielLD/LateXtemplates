@@ -1,0 +1,1409 @@
+% Chap 1
+
+
+@book{Bouasse1924,
+  title="{Capillarite: phenomenes superficiels}",
+  author="{Bouasse, Henri}",
+  year="{1924}",
+  publisher="{Delagrave}"
+}
+
+@book{DeGennes2005,
+  title={Gouttes, bulles, perles et ondes},
+  author={Brochard-Wyart, Fran{\c{c}}oise and Qu{\'e}r{\'e}, David},
+  year={2005},
+  publisher={Belin}
+}
+
+
+@book{Guyon2011,
+  title={Ce que disent les fluides},
+  author={É. Guyon, J-P. Hulin, L. Petit},
+  year={2011},
+  publisher={Belin}
+}
+
+
+@book{Butt2006,
+  title={Physics and Chemistry of Interfaces},
+  author={H.J. Butt, Graf, Kappl},
+  year={2006},
+  publisher={WILEY-VCH}
+}
+
+
+@article{Daerr2016,
+author = "{A. Daerr, and A. Mogne}",
+title = "{Pendent Drop: An ImageJ Plugin to Measure the Surface Tension from an image of a Pendent Drop}",
+journal = "{Journal of Open research Software}",
+volume = "4:e3",
+year = "2016",
+DOI = "{DOI: 10.5334/jors.97}"
+}
+
+
+@article{Gassin2013,
+author = "{PM.Gassin}",
+title = "{Interfaces Liquides/Liquides Actives: Apport de l'Optique Non Linéaire et de la Tensiomètrie}",
+journal = "{Chimie-Physique, Université Claude Bernard, Lyon I}",
+year = "2013"
+}
+
+
+@article{Bergeron1997,
+	title = "{Disjoining {Pressures} and {Film} {Stability} of {Alkyltrimethylammonium} {Bromide} {Foam} {Films}}",
+	volume = {13},
+	issn = {0743-7463},
+	url = {https://doi.org/10.1021/la970004q},
+	doi = {10.1021/la970004q},
+	number = {13},
+	urldate = {2021-09-27},
+	journal = "{Langmuir}",
+	author = "{V. Bergeron}",
+	month = "jun",
+	year = {1997},
+	pages = {3474--3482}
+}
+
+@book{Holmberg2002,
+  title="{Surfactants and Polymers in Aqueous Solution}",
+  author="{K. Holmberg, B. Jönsson, B. Kronberg, and B. Lindman}",
+  year={2002},
+  publisher={John Wiley \& Sons, Ltd}
+  }
+
+
+@article{Thomson1855,
+author = "{J. Thomson}",
+title = "{On certain curious motions observable on the surfaces of wine and other alcoholic liquours}",
+journal = "{Philosophical Magazine}",
+volume = "10",
+pages = "330-333",
+year = "{1855}"
+}
+
+@article{Marangoni1865,
+author = "{C. Marangoni}",
+title = "{ Sull'espansione delle goccie d'un liquido galleggianti sulla superficie di altro liquido}",
+journal = "{Universita di Pavia}",
+year = "1865"
+}
+%################################## CHAP 2 #####################################
+
+@article{Roche2014,
+  title = "{Marangoni Flow of Soluble Amphiphiles}",
+  volume = {112},
+  copyright = {All rights reserved},
+  number = {20},
+  journal = "{Phys Rev Lett}",
+  author =" {Roch{\'e}, Matthieu and Li, Zhenzhen and Griffiths, Ian M. and Le Roux, S{\'e}bastien and Cantat, Isabelle and {Saint-Jalmes}, Arnaud and Stone, Howard A.}",
+  year = {2014},
+  pages = {208302}
+}
+
+
+@article{Leroux2016,
+  title = "{Soluble Surfactant Spreading : How the Amphiphilicity Sets the Marangoni Hydrodynamics}",
+  volume = {93},
+  copyright = {All rights reserved},
+  journal = {Phys Rev E},
+  doi = {10.1103/PhysRevE.93.013107},
+  author = "{Le Roux, S{\'e}bastien and Roch{\'e}, Matthieu and Cantat, Isabelle and {Saint-Jalmes}, Arnaud}",
+  year = {2016},
+  pages = {013107},
+  file = {/Users/matthieu/Zotero/storage/8WJIEAPH/Le Roux et al. - 2016 - Soluble surfactant spreading How the amphiphilicity sets the Marangoni hydrodynamics.pdf}
+}
+
+
+@book{Drazin2002,
+place="{Cambridge}",
+series="{Cambridge Texts in Applied Mathematics}",
+title="{Introduction to Hydrodynamic Stability}",
+DOI={10.1017/CBO9780511809064},
+publisher="{Cambridge University Press}",
+author="{Drazin, P. G.}",
+year={2002},
+collection="{Cambridge Texts in Applied Mathematics}"
+}
+
+@book{Landau1994,
+title="{Physique Théorique Mécanique des Fluides (Téorétitcheskaïa fisika v10 tomakh Tom VI Gidrodinamica)}",
+publisher={Mir-Ellipses},
+author="{L. Landau, E.M. Lifchitz}",
+year={1994},
+collection="{}"
+}
+
+@article{Synge1933,
+author = "{J.L. Synge}",
+title = "{The stability of heterogeneous liquids}",
+journal = "Trans R. Soc. Cn.",
+volume = "27",
+number = "",
+pages = "1-18",
+year = "1933",
+DOI = "{}"
+}
+
+%################################# PIV 3D ######################################
+@article{Brucker2012,
+author = "{C. Brücekr, D. Hess, and J. Kitzhofer}",
+title = "{Single-view volumetric PIV via high-resolution scanning, isotropic voxel restructuring and 3D least-squares matching (3D-LSM)}",
+journal = "Measurement Science and Technology",
+volume = "24",
+number = "",
+pages = "024001",
+year = "2012",
+DOI = "{}"
+}
+
+@article{Lawson2014,
+author = "{John M. Lawson, James R. Dawson}",
+title = "{A scanning PIV method for fine-scale turbulence measurements}",
+journal = "John M. Lawson, and James R. Dawson",
+volume = "55",
+number = "",
+pages = "1857",
+year = "2014",
+DOI = "{}"
+}
+%############################ THERMOCAPILLAIRE ################################
+
+@article{Pshenichnikov1974,
+author = "{A.F. Pshenichnikov, and S.S. Yastenko}",
+title = "{Konvektivnaya diffuziya ot sosredotochennogo is-
+tochnika poverkhnostno-aktivnogo veshchestva (Convective diffusion from a concentrated
+surfactant source)}",
+journal = "Uch. zap. Permsk. Un-ta",
+volume = "316",
+number = "5",
+pages = "175-181",
+year = "1974"
+}
+
+@article{Bratukhin1967,
+author = "{I.K. Bratukhin, and L.N. Maurin}",
+title = "{Thermocapillary convection in a fluid filling a half space.}",
+journal = "{PMM U.S.S.R.}",
+volume = "31",
+number = "3",
+pages = "577-580",
+year = "1967"
+}
+
+
+@article{Bratukhin1982,
+author = "{I.K. Bratukhin, and L.N. Maurin}",
+title = "{Stability of thermocapillary convection in a fluid filling a half-sapce}",
+journal = "PMM U.S.S.R.",
+volume = "46",
+number = "3",
+pages = "129-131",
+year = "1982"
+}
+
+@article{Shtern1993,
+author = "{V. Shtern, and F. Hussain}",
+title = "{Azimuthal instability of divergent flows}",
+journal = "Journal of Fluid Mechanics",
+volume = "256",
+pages = "535-560",
+year = "1993"
+}
+
+
+@book{Shtern1994,
+title="{Bifurcation Cascade in a Diverging Flow in Nonlinear Instability of Nonparallel Flows}",
+publisher="{International Union of Theoretical and Applied Mechanics, eds.LIN SP. Phillips WRC, Velentine DT. }",
+author="{V. Shtern, and F. Hussain}",
+year={1994},
+collection="{Springer, berlin, Heidelberg}",
+pages = {449-458}
+}
+
+@article{Karlov2005,
+author = "{S.P. Karlov, D.A. Kazenin, B.I. Myzznikova, and I.I. Wertgeim}",
+title = "{Experimental and numerical study of the Marangoni convection due to localized laser heating}",
+journal = "Journal of Non-Equilibrium Thermodynamics",
+volume = "30",
+number = "3",
+pages = "283-304",
+year = "2005"
+}
+
+@article{Mizev2013,
+author = "{A. Mizev, A. Trofimenko, D. Schwabe, and A Viviani}",
+title = "{Instability of Marangoni flow in the presence of an insoluble surfactant. Experiments}",
+journal = "The European Physical Journal Special Topics",
+volume = "219",
+number = "1",
+pages = "89-98",
+year = "1993"
+}
+
+
+@article{Shmyrov2019,
+author = "{A.V. Shmyrov, A.I. Mizev, V.A. Demin, M.I. Petukhov, and D.A. Brasun}",
+title = "{Phase transitions on partially contaminated surface under the influence of thermocapillary flow.}",
+journal = "Journal of Fluid Mechanic",
+volume = "877",
+number = "",
+pages = "495-533",
+year = "2019"
+}
+
+
+
+%########################################## DBD ######################################################
+
+@book{Audier2012,
+title="{Etude d’une décharge à barrière diélectrique surfacique. Application au contrôle d’écoulement autour d’un profil d’aile de type NACA 0012}",
+publisher="{Université d'Orléans}",
+author="{Pierre Audier}",
+year={2012}
+}
+
+@article{Corke2010,
+author = "{T.C. Corke, C.L. Enloe, and S.P. Wilkinson}",
+title = "{Dielectric Barrier Discharge Plasma Actuators for Flow Control}",
+journal = "Annual Review of Fluid Mechanics",
+volume = "42",
+number = "1",
+pages = "505-529",
+year = "2010"
+}
+
+
+@article{Sattari2012,
+author = "{P. Sattari, D.E. Rival, R.J. Martinuzzi, and C. Tropea}",
+title = "{Growth and separation of a start-up vortex from a two-dimensional shear layer}",
+journal = "Physics of Fluids",
+volume = "24",
+number = "10",
+pages = "107102",
+year = "2012"
+}
+
+@article{Wang2013,
+author = "{JJ. Wang, K.S. Choi, L.H. Feng, T.N. Jukes, and R.D. Whalley}",
+title = "{Recent developments in DBD plasma flow control}",
+journal = "Progress in Aerospace Sciences",
+volume = "62",
+pages = "52-78",
+year = "2013"
+}
+
+@article{Conlon1995,
+author = "{B.P Conlon, and Seth Lichter}",
+title = "{Dipole formation in the transient planar wall jet}",
+journal = "Physics of Fluids",
+volume = "7",
+pages = "999",
+year = "1995"
+}
+@article{AllenNaitoh2007,
+author = "{J.J. Allen, and T. Naitoh}",
+title = "{Scaling ad instability of a junction vortex}",
+journal = "Journal of Fluid Mechanics",
+volume = "574",
+pages = "1-23",
+year = "2007"
+}
+
+@article{AllenLopez2007,
+author = "{J.J. Allen, and J.M. Lopez}",
+title = "{Transition processes for junction vortex flow}",
+journal = "Journal of Fluid Mechanics",
+volume = "585",
+pages = "457-467",
+year = "2007",
+}
+
+@article{Whalley2012,
+author = "{R.D. Whalley, and K.S. Choi}",
+title = "{The starting vortex in quiescent air induced by dielectric-barrier-discharge plasma}",
+journal = "Journal of Fluid Mechanics",
+volume = "703",
+pages = "192-203",
+year = "2012"
+}
+%####################################### REYNOLDS RIDGE ##############################################
+
+@article{McCutchen1970,
+author = "{C.W. McCutchen}",
+title = "{Surface Films Compacted by Moving Water: Demarcation Lines Reveal Film Edges}",
+journal = "Science",
+volume = "170",
+number = "3953",
+pages = "61-64",
+year = "1970"
+}
+
+
+@article{Scott1982,
+author = "{J.C. Scott}",
+title = "{Flow beneath a stagnant film on water: The Reynolds ridge}",
+journal = "Journal of Fluid Mechanics",
+volume = "116",
+pages = "283-296",
+year = "1982"
+}
+
+
+@article{Warncke1996,
+author = "{A. Warncke, M. Gharib, and T. Rösgen}",
+title = "{Flow measurements near a Reynolds ridge}",
+journal = "Journal of Fluids engineering",
+volume = "118",
+number = "3",
+pages = "621-624",
+year = "1996"
+}
+
+
+@article{Warncke2000,
+author = "{A. Lang Warncke, and M. Gharib}",
+title = "{Experimental study of the wake behind a surface-piercing cylinder for a clean and contaminated free surface}",
+journal = "Journal of Fluid Mechanics",
+volume = "402",
+pages = "109-136",
+year = "2000"
+}
+%######################################### VORTICITY #################################################
+
+@article{Sarpkaya1996,
+author = "{T. Sarpkaya}",
+title = "{Vorticity, Free Surface, and Surfactants}",
+journal = "Annu. Rev. Fluid Mech.",
+volume = "28",
+number = "1",
+pages = "83-128",
+year = "1996"
+}
+
+
+@article{Willert1997,
+author = "{C.E. Willert, and M. Gharib}",
+title = "{The interaction of spatially modulated vortex pairs with free surfaces}",
+journal = "Journal of Fluid Mechanics",
+volume = "345",
+number = "",
+pages = "227-250",
+year = "1997"
+}
+
+
+@article{Harris2012,
+author = "{D.M. Harris, C.H.K. Williamson}",
+title = "{Instability of secondary vortices generated by a vortex pair in ground effect.}",
+journal = "Journal of Fluid Mechanics",
+volume = "700",
+pages = "48-186",
+year = "2012"
+}
+%######################################### SCHLIEREN #################################################
+@article{Moisy2009,
+author = "{{Fr{\'e}d{\'e}ric Moisy, Marc Rabaud, and K{\'e}vin Salsac}}",
+title = "{A synthetic Schlieren method for the measurement of the topography of a liquid interface}",
+journal = "Exp. Fuids",
+volume = "46",
+pages = "1021-1036",
+year = "2009",
+DOI = "{10.1007/s00348-008-0608-z}"
+}
+
+@article{Wildeman2018,
+author = "Sander Wildeman",
+title = "{Real-time quantitative Schlieren imaging by fast fourier demodulation of a checkered backdrop}",
+journal = "Experiments in Fluids",
+volume = "59",
+number = "97",
+year = "2018",
+DOI = "{10.1007/s00348-018-2553-9}"
+}
+%############################ vORTEX IN GROUND EFFET ##########################
+
+@article{Leweke2016,
+author = "{T. Leweke, S. Le Dizès, and C.H.K. Williamson}",
+title = "{Dynamics and Instabilities of Vortex pairs}",
+journal = "{Annual Review of Fluid Mechanics}",
+volume =  48 ,
+number =  1 ,
+year =  2016 ,
+DOI = "{10.1146/annurev-fluid-122414-034558}"
+}
+
+
+@article{Sarpkaya1991,
+title = "{Interaction of a vortex couple with a free surface}",
+volume = {11},
+issn = {1432-1114},
+url = {https://doi.org/10.1007/BF00192746},
+doi = {10.1007/BF00192746},
+language = {en},
+number = {4},
+urldate = {2021-09-13},
+journal = {Experiments in Fluids},
+author = {Sarpkaya, T. and Suthon, P.},
+month = jul,
+year = {1991},
+pages = {205--217}
+}
+
+
+@article{Bernal1989,
+title="{On the interaction of vortex rings and pairs with a free surface for varying amounts of surface active agents}",
+volume={1},
+DOI={https://doi.org/10.1063/1.857472},
+journal="{Physics of fluids}",
+author="{L.P. Bernal, A. Hirsa, J.T. Kwon, and W.W. Willmarth}",
+year={1989}
+}
+
+
+@article{Tryggvason1992,
+	title = {Collision of a vortex pair with a contaminated free surface},
+	volume = {4},
+	issn = {0899-8213},
+	url = {https://aip.scitation.org/doi/abs/10.1063/1.858240},
+	doi = {10.1063/1.858240},
+	number = {6},
+	urldate = {2021-09-13},
+	journal = {Physics of Fluids A: Fluid Dynamics},
+	author = {Tryggvason, Grétar and Abdollahi‐Alibeik, Javad and Willmarth, William W. and Hirsa, Amir},
+	month = jun,
+	year = {1992},
+	pages = {1215--1229}
+}
+
+
+@article{Hirsa1994,
+	title = "{Measurements of vortex pair interaction with a clean or contaminated free surface}",
+	volume = {259},
+	issn = {1469-7645, 0022-1120},
+	doi = {10.1017/S0022112094000029},
+	language = {en},
+	urldate = {2021-09-13},
+	journal = {Journal of Fluid Mechanics},
+	author = {Hirsa, A. and Willmarth, W. W.},
+	month = jan,
+	year = {1994},
+	pages = {25--45}
+}
+
+
+@article{Crow1970,
+title = {Stability theory for a pair of trailing vortices},
+volume = {8},
+issn = {0001-1452},
+doi = {10.2514/3.6083},
+number = {12},
+urldate = {2021-09-13},
+journal = {AIAA Journal},
+author = {CROW, S. C.},
+year = {1970},
+pages = {2172--2179}
+}
+
+
+@article{Dee1968,
+title = "{Flight measurements of wing-tip vortex motion near the ground}",
+author = "{F.W. Dee, and O.P. Nicholas}",
+year = {1968},
+journal = "{Aerade}"
+}
+
+@article{Kerswell2002,
+title = {Elliptical instability},
+volume = {34},
+issn = {0066-4189, 1545-4479},
+doi = {10.1146/annurev.fluid.34.081701.171829},
+language = {en},
+number = {1},
+urldate = {2021-09-13},
+journal = {Annual Review of Fluid Mechanics},
+author = {Kerswell, Richard R.},
+month = jan,
+year = {2002},
+pages = {83--113}
+}
+
+
+
+@article{Leweke1998,
+title = {Cooperative elliptic instability of a vortex pair},
+volume = {360},
+issn = {1469-7645, 0022-1120},
+doi = {10.1017/S0022112097008331},
+language = {en},
+urldate = {2021-09-14},
+journal = {Journal of Fluid Mechanics},
+author = {Leweke, T. and Williamson, C. H. K.},
+month = apr,
+year = {1998},
+pages = {85--119}
+}
+
+
+@article{Meunier2005,
+title = {Physics of vortex merging},
+volume = {6, n° 4-5},
+doi = {10.1016/j.crhy.2005.06.003},
+urldate = {2021-09-14},
+journal = {Comptes Rendus Physique},
+author = {Meunier, Patrice and Le Dizès, Stéphane and Leweke, Thomas},
+year = {2005},
+keywords = {fusion, instabilité elliptique, vortex},
+pages = {431--450}
+}
+
+
+
+@article{Tsai1976,
+title = {The stability of short waves on a straight vortex filament in a weak externally imposed strain field},
+volume = {73},
+issn = {1469-7645, 0022-1120},
+doi = {10.1017/S0022112076001584},
+number = {4},
+urldate = {2021-09-14},
+journal = {Journal of Fluid Mechanics},
+author = {Tsai, Chon-Yin and Widnall, Sheila E.},
+month = feb,
+year = {1976},
+pages = {721--733}
+}
+
+
+@article{Widnall1974,
+title = {The instability of short waves on a vortex ring},
+volume = {66},
+issn = {1469-7645, 0022-1120},
+language = {en},
+number = {1},
+urldate = {2021-09-14},
+journal = {Journal of Fluid Mechanics},
+author = {Widnall, Sheila E. and Bliss, Donald B. and Tsai, Chon-Yin},
+month = oct,
+year = {1974},
+pages = {35--47}
+}
+
+
+@article{Moore1975,
+title = {The instability of a straight vortex filament in a strain field},
+volume = {346},
+doi = {10.1098/rspa.1975.0183},
+number = {1646},
+urldate = {2021-09-14},
+journal = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
+author = {Moore, Derek William and Saffman, Philip Geoffrey and Stuart, John Trevor},
+month = nov,
+year = {1975},
+pages = {413--425}
+}
+%################################## CHAP 3 #####################################
+@article{Pucci2019,
+author = "{Giuseppe Pucci, Ian Ho, and Daniel M. Harris}",
+title = "{Friction on water sliders}",
+journal = "Scientific reports",
+volume = "9",
+number = "5095",
+pages = "",
+year = "2019",
+DOI = "{https://doi.org/10.1038/s41598-019-40797-y}"
+}
+
+@article{Rosen,
+  author = "Milton J. Rosen",
+  title = "{Surfactants and Interfacial Phenomena}",
+  volume = {},
+  journal = {Wiley-Interscience},
+  year = {2004},
+  pages = {}
+}
+
+
+@article{Kosaka2008,
+  author = "{O. Kosaka, P. Sehgal, and H. Doe}",
+  title = "{Behavior of cationic surfactants micellar solution solubilizing an endocrine disruptor bisphenol A}",
+  volume = {22},
+  journal = {Food Hydrocolloids},
+  year = {2008},
+  pages = {144-149}
+}
+
+
+@article{Nguyen2017,
+  title = "{Adsorption of alkyltrimethylammonium bromide surfactants at the air/water interface.}",
+  volume = {106},
+  journal = {International Journal of Heat and Mass Transfer},
+  author = "{C.V. Nguyen, T.V. Nguyen, and C.M. Phan}",
+  year = {2017},
+  pages = {1035-1040}
+}
+
+
+@article{LeMerrer2011,
+author = "{Marie Le Merrer, Christophe Clanet, David Quéré, Élie Rapha{\"e}l, and Frédéric Chevy}",
+title = "{Wave draf on floating bodies}",
+journal = "PNAS",
+volume = "108",
+number = "37",
+pages = "",
+year = "2011",
+DOI = "{10.1073/pnas.1106662108}"
+}
+
+
+@article{Thomson1871,
+  title = {Ripples and waves},
+  volume = {5},
+  journal = {Nature},
+  author = {W. Thomson},
+  year = {1871},
+  pages = {1-3}
+}
+
+
+@article{Chevy2003,
+author = "{Frédéric Chevy, Élie Raphaël}",
+title = "{Capilary gravity waves: A "fixed-depth" analysis}",
+journal = "Europhys Lett.",
+volume = "108",
+number = "37",
+pages = "",
+year = "2011",
+DOI = "{10.1073/pnas.1106662108}"
+}
+
+@article{Ender2021,
+  title = "{Surfactant-loaded capsules as Marangoni microswimmers at the air-water interface: Symmetry breaking and spontaneous propulsion by surfactant diffusion and advection}",
+  volume = {},
+  journal = {The European Physical Journal E.},
+  author = "{Hendrik Ender, and Jan Kierfeld}",
+  year = {2021},
+  pages = {},
+  DOI = "{https://doi.org/10.1140/epje/s10189-021-00034-9}"
+}
+
+
+@article{Burton2014,
+  title = "{The Cocktail Boat}",
+  volume = {54},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {6},
+  journal = "Integrative and comparative Biology",
+  author = "{L.J Burton, N. Cheng, and J.W.M. Bush}",
+  year = {2014},
+  pages = {969-973},
+  DOI = "{https://doi.org/10.1093/icb/icu052}"
+}
+
+@article{Benzaquen2018,
+  title = "{Unsteady wave pattern generation by water striders}",
+  volume = {848},
+  copyright = "{All rights reserved}",
+  abstract = {},
+  number = {},
+  journal = "{Journal of Fluid Mechanics}",
+  author = "{T. Steinmann, M. Arutkin, P. Cochard, E. Rapha{\"e}l, J. Casas, and M. Benzaquen}",
+  year = {2018},
+  pages = {370-387},
+  DOI = "{10.1017/jfm.2018.365}"
+}
+
+@article{Yang2019,
+  title = "{Floating robotic insects to obatain electric energy from water surface for realizing some self-powered functions}",
+  volume = {63},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {103810},
+  journal = "Nano energy",
+  author = "{Yang Wang, Yuting Jiangm Heting Wu, and Ya Yang}",
+  year = {2019},
+  pages = {},
+  DOI = "{https://doi.org/10.1016/j.nanoen.2019.06.006}"
+}
+
+@article{Milne1978,
+  title = "{Insects of the Water Surface}",
+  volume = {238},
+  copyright = {All rights reserved},
+  number = {4},
+  journal = "Scientific American",
+  author = "{Lorus J. Milne, and Margery Milne}",
+  year = {1978}
+}
+
+
+@article{Hu2006,
+  title = "{Walking on Water: Biolocomotion at the Interface}",
+  volume = {38},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {},
+  journal = "Annual Review of Fluid Mechanics",
+  author = "{John W.M. Bush, and David L. Hu}",
+  year = {2006},
+  DOI = "{10.1146/annurev.fluid.38.050304.092157}"
+}
+
+
+
+%##################### CAMPHOR BOATS ##########################################
+@book{Tomlinson1862,
+  title = "{II. On the motions of camphor on the surface of water}",
+  volume = {11},
+  copyright = {All rights reserved},
+  publisher = "{Proceedings of the Royal Society of London}",
+  author = "{Charles Tomlinson, and William Alen Miller}",
+  year = {1862},
+  pages = {575-577}
+}
+
+@book{Rayleigh1890,
+  title = "{Measurements of the amount of oil necessary in order to check the motions of camphor upon water}",
+  volume = {47},
+  copyright = {All rights reserved},
+  publisher = "{Proceedings of the Royal Society of London}",
+  author = "{L. Rayleigh}",
+  year = {1890},
+  pages = {364-367}
+}
+
+@article{Detcheverry2019,
+  title = "{Self-propulsoin of symmetric chemically active particles: Point-source model and experiments on camphor disks}",
+  volume = {99},
+  copyright = {All rights reserved},
+  journal = "{Physical Review E}",
+  author = "{D. Boniface, C. Cottin-Bizonne, R. Kervil, C. Ybert, and F. Detcheverry}",
+  year = {2019},
+  pages = {062605}
+}
+
+
+
+@article{Nakata2001,
+  title = "{Synchronized Self-Motion of Two Camphor Boats}",
+  volume = {17},
+  copyright = {All rights reserved},
+  number = {22},
+  journal = "Langmuir",
+  author = "{Masahiro I. Kohira, Yuko Hayashima, Masaharu Nagayama, and Satoshi Nakata}",
+  year = {2001},
+  pages = {7124-7129},
+  DOI = "{https://doi.org/10.1021/la010388r}"
+}
+
+@article{Grzybowski2008,
+  title = "{Dynamic Self-Assembly in Ensembles pf Camphor Boats}",
+  volume = {112},
+  copyright = {All rights reserved},
+  number = {35},
+  journal = "The Journal of Physical Chemistry",
+  author = "{Siowling Soh, Kyle J.M. Bishop, and Bartosz A. Grzybowski}",
+  year = {2008},
+  pages = {10848-10853},
+  DOI = "{https://doi.org/10.1021/jp7111457}"
+}
+
+@article{Nishimori2012,
+  title = "{Swarming of self-propelled camphor}",
+  volume = {85},
+  copyright = {All rights reserved},
+  number = {5},
+  journal = "{Physical Review E}",
+  author = "{E. Heisler, N. J. Suematsu, A. Awazu, and H. Nishimori}",
+  year = {2012},
+  pages = {055201}
+}
+
+@article{Hayashima2000,
+  title = "{Mode selection of a camphor boat in a dual-circle canal}",
+  author = "{Satoshi Nakata, Masahiro I. Kohira, and Yuko Hayashima}",
+  journal = "Chemical Physics Letters",
+  volume = {322},
+  copyright = {All rights reserved},
+  number = {5},
+  year = {2000},
+  pages = {419-423}
+}
+
+@article{Nishimori2010,
+  title = "{Collective behavior of inanimate boats}",
+  author = "{Nobuhiko J. Suematsu, Satoshi Nakata, and Hiraku Noshimori}",
+  journal = "Physical review E",
+  volume = {81},
+  copyright = {All rights reserved},
+  number = {5},
+  year = {2010},
+  pages = {056210}
+}
+
+@article{Hiroyuki2005,
+  title = "{Synchronized sailing of two camphor boats in polygonal chambers}",
+  author = "{Satoshio Nakata, Yukie Doi, and Hiroyuki Kitahata}",
+  journal = "The journal of Physical chemistry B",
+  volume = {109},
+  copyright = {All rights reserved},
+  number = {5},
+  year = {2005},
+  pages = {1789-1802}
+}
+
+@article{Tomoeda2019,
+  title = "{Reduced model of a reaction-diffusion system for the collective motion of camphor boats}",
+  author = "{K. Ikeda, SI. Ei, M. Nagayama, M. Okamoto, and A. Tomoeda}",
+  journal = "{Physical Review E}",
+  volume = {99},
+  copyright = {All rights reserved},
+  number = {6},
+  year = {2019},
+  pages = {062208}
+}
+
+@article{Toyota2014,
+  title = "{Simultaneous Measurement of Surface Tension and Its Gradient aroung Moving Camphor Boat on Water Surface}",
+  author = "{Yuichiro Karasawa, Shogo Oshima, Tomonori Nomoto, and Taro Toyota}",
+  journal = "Chemistry Letter",
+  copyright = {All rights reserved},
+  year = {2014}
+}
+
+@article{Heisler2012,
+  title = "{Collective motion and phase transition of symmetric camphor boats}",
+  author = "{E. Heisler, N. J. Suematsu, A. Awazu, and H. Nishimori}",
+  journal = "{Journal of the Physical Society of Japan}",
+  volume = {81},
+  copyright = {All rights reserved},
+  number = {7},
+  year = {2012},
+  pages = {074605}
+}
+
+@article{Fujinami2018,
+  title = "{Motion modes of two self-propelled camphor boats on the surface of surfactant containing solution}",
+  author = "{Yuichiro Karasawa, Tomonori Nomoto, Luca Chiari, Taro Toyota, and Masanori Fujinami}",
+  journal = "Journal of Colloid and Interface Science",
+  volume = {511},
+  copyright = {All rights reserved},
+  year = {2018},
+  pages = {184-192}
+}
+
+@article{Kitahata2018,
+  title = "{Power law observed in the motion of an asymetric camphor boat under viscous conditions}",
+  author = "{Michiko Shimokawa, Masashi Oho, Kengo Tokuda, and Hiroyuki Kitahata}",
+  journal = "Physical Review E",
+  volume = {98},
+  copyright = {All rights reserved},
+  number = {2},
+  year = {2018},
+  pages = {022606}
+}
+
+@article{Bormashenko2017,
+  title = "{Camphor-Engine-Driven Micro-Boat guides evolution of chemical gardens}",
+  author = "{Mark Frenkel, Victor Multanen, Roman Grynyov, Albina Musin, Yelena Bormashenko, and Edward Bormashenko}",
+  journal = "Scientific Reports",
+  volume = {7},
+  copyright = {All rights reserved},
+  number = {1},
+  year = {2017},
+  pages = {3930}
+}
+
+@article{Matsushita2009,
+  title = "{Electric current generation by camphor boats}",
+  author = "{Yohei Shibuya, and Sachiko Matsushita}",
+  journal = "Molecular Crystals and Liquid Crystals",
+  volume = {504},
+  copyright = {All rights reserved},
+  number = {1},
+  year = {2009},
+  pages = {27-34}
+}
+
+
+@article{islam2004,
+  title = "{Self-motion of a camphor disk coupled with convection}",
+  author = "{Hiroyuki Kitahata, Shin-ichi Hiromatsu, Yukie Doi, Satoshi Nakata, and Mohammed Rafiqul Islam}",
+  journal = "Physical Chemistry Chemical Physics",
+  volume = {6},
+  copyright = {All rights reserved},
+  number = {9},
+  year = {2004},
+  pages = {14092413}
+}
+
+@article{Nakata2016,
+  title = "{Acceleration or deceleration of self-motion by the Marangoni effect}",
+  author = "{Yui Matsuda, Nobuhiko J. Suematsu, Hiroyuki Kitahata, Yumihiko S. Ikura, and  Satoshi Nakata}",
+  journal = "Chemical Physics Letters",
+  volume = {654},
+  copyright = {All rights reserved},
+  year = {2016},
+  pages = {92-96}
+}
+
+@book{Nakata2018,
+  title = "{Self-organized Motion: physicochemical design based on nonlinear dynamics}",
+  author = "{Satoshi Nakata, Véronique Pimienta, Istvan Lagzi, Hiroyuki Kitahata, and Nobuhiko J. Suematsu}",
+  publisher = "Royal Society of Chemistry",
+  copyright = {All rights reserved},
+  year = {2018}
+}
+
+@article{Hasegawa2015,
+  title = "{Physicochemical design and analysis of self-propelled objects tat are characteristically sensitive to environments}",
+  author = "{Satoshi Nakata, Masaharu Nagayama, Hiroyuki Kitahata, Nobuhiko J. Suematsu, and Takeshi Hasegawa}",
+  journal = "Physical Chemistry Chemical Physics",
+  volume = {17},
+  copyright = {All rights reserved},
+  number = {16},
+  year = {2015},
+  pages = {10326-10338},
+}
+
+
+@article{Crowdy2021,
+  title = "{Collective viscous propulsion of a two-dimensional flotilla of Marangoni boats}",
+  author = "{Darren Crowdy}",
+  journal = "Physical Review Fluids",
+  volume = {5},
+  copyright = {All rights reserved},
+  number = {12},
+  year = {2021},
+  pages = {124004}
+}
+
+
+
+@article{Hayashima2004,
+  title = "{A theoretical and experimental study on the unidirectional motion of a camphor disk}",
+  author = "{Masaharu Nagayama, Satoshi Nakata, Yukie Doi, and Yuko Hayashima}",
+  journal = "Physica D: Nonlinear Phenomena",
+  volume = {194},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {3-4},
+  year = {2004},
+  pages = {151-165},
+  DOI = "{}"
+}
+
+
+
+@article{Grzybowski2011,
+  title = "{Swarming in shallow waters}",
+  author = "{Siowling Soh, Michal Branickim, and Bartosz A. Grzybowski}",
+  journal = "The Journal Of Physical Chemistry Letters",
+  volume = {2},
+  copyright = {All rights reserved},
+  number = {7},
+  year = {2011},
+  pages = {770-774}
+}
+
+
+@article{Nishimori2013,
+  title = "{Motion with memory of a self-propelled object}",
+  author = "{S. Nakata, M. Hata, Y. S. Ikura, E. Heisler, A. Awazu, H. Kitahata, and Hiraku Nishimori}",
+  journal = "The Journal of Physical Chemistry C",
+  volume = {117},
+  copyright = {All rights reserved},
+  number = {46},
+  year = {2013},
+  pages = {24490-24495}
+}
+
+@article{Gouiller2021,
+  title = "{Mixing and unmixing induced by active camphor particles}",
+  author = "{C. Gouiller, F.  Raynal, L. Maquet, M. Bourgoin, C.  Cottin-Bizonne, R. Volk, and C. Ybert}",
+  journal = "Physical review Fluids",
+  volume = {6},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {1},
+  year = {2021},
+  pages = {014501},
+  DOI = "{}"
+}
+
+@article{Lida2002,
+  title = "{Self-motion of a camphoric acid boat sensitive to the chemical environment}",
+  volume = {4},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {8},
+  journal = "Physical Chemistry Chemical Physics",
+  author = "{Y. Hayashima, M. Nagayama, Y. Doi, S. Nakata, M. Kimura, M. Lida}",
+  year = {2002},
+  pages = {1386-1392},
+  DOI = "{}"
+}
+
+@article{Nishimori2017,
+  title = "{Collective Behavior of Camphor Floats Migrating on the Water Surface}",
+  volume = {86},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {10},
+  journal = "Journal of the Physical Society of Japan",
+  author = "{H. Nishimori, N. J. Suematsu, and S. Nakata}",
+  year = {2017},
+  pages = {101012},
+  DOI = "{}"
+}
+
+
+@article{Song2007,
+  title = "{Surface-Tension-Driven Biologically inspired Water Strider Robots: Theory and Experiments}",
+  volume = {23},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {3},
+  journal = "IEEE Transactions on Robotics",
+  author = "{Yun Seong SOng, and Meltin Sitti}",
+  year = {2007},
+  pages = {578-589},
+  DOI = "{}"}
+
+
+%################################## PROPULSION DE BULLES ######################]
+
+@book{Brown2020,
+  title = "{Self-propulsion of contaminated microbubbles}",
+  author = "{Nathaniel H. Brown}",
+  publisher = "{Purdue University Graduate School}",
+  copyright = {All rights reserved},
+  year = {2020}
+}
+
+@book{Nazareth2019,
+  title = "{Multiphase dynamics in liquid mixtures:thermocapillary propulsion of bubbles and instabilities in evaporating layers}",
+  author = "{Robson Kalata Nazareth}",
+  publisher = "{University of Edinburgh}",
+  volume = {},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {},
+  year = {2019},
+  pages = {},
+  DOI = "{}"
+}
+
+@article{Takahashi1999,
+  title = "{Marangoni effect in microbubble systems}",
+  author = "{Chang-Weng Koji Takahashi}",
+  journal = "Microscale THermophysical Engineering",
+  volume = {3},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {3},
+  year = {1999},
+  pages = {169-182},
+  DOI = "{}"
+}
+
+
+@article{Zhao2015,
+  title = "{Marangoni flow induced collective motion of catalytic Micromotors}",
+  author = "{Manoj Manjare, Fenchang Yang, Rui Qiao, and Yiping Zhao}",
+  journal = "The journal of Physical Chemistry C",
+  volume = {119},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {51},
+  year = {2015},
+  pages = {28361-28367},
+  DOI = "{}"
+}
+
+%################################### PROPULSION DE GOUTTES ###########################################
+
+@article{Binks2015,
+  title = "{Self-propulsion of liquid marbles: leidenfrost-like levitation driven by Marangoni flow}",
+  author = "{Edward Bormashenko, Yelena Bormashenko, Roman Grynyov,  Hadas Aharoni, gene Whyman, and Bernard P. Binks}",
+  journal = "The Journal of Physical Chemistry C",
+  volume = {119},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {18},
+  year = {2015},
+  pages = {9910-9915},
+  DOI = "{}"
+}
+
+
+@article{Binks2017,
+  title = "{Superposition of translational and rotational motions under self-propulsion of Liquid Marbles Filled with Aqueous solution of camphor}",
+  author = "{Edward Bormashenko, Mark, Frenkel, Yelena Bormashenko, Gilad Chaniel, Viktor Valtsifer, and Bernard P. Binks}",
+  journal = "Langmuir",
+  volume = {33},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {46},
+  year = {2017},
+  pages = {13234-13241},
+  DOI = "{}"
+}
+
+@article{Nguyen2015,
+  title = "{A floating self-propelling liquid marble containing aqueous ethanol solutions}",
+  author = "{Chin Hong Ooi, Anh Van Nguyen, Geoffrey M. Evans, Oleg Gendelman, Edward Bormashenko, and Nam-Trung Nguyen}",
+  journal = "RSC Advances",
+  volume = {5},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {122},
+  year = {2015},
+  pages = {101006-101012},
+  DOI = "{}"
+}
+
+@article{Nguyen2018,
+  title = "{Manipulation schemes and application of liquid marbles for micro total analysis systems}",
+  author = "{Jing Jin, and Nam-Trung Nguyen}",
+  journal = "Microelectronic Engineering",
+  volume = {197},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {},
+  year = {2018},
+  pages = {87-95},
+  DOI = "{}"
+}
+
+@article{Bormashenko2018,
+  title = "{Self-propulsion of Water-supported Liquid Marbles filled with sulfuric acid}",
+  author = "{Mark Frenkel, Viktor Multanen, Viktor Danchuk, Irina Legchenkova, Shraga Shoval, Yelena Bormashenko, Bernard P. Binks, and Edward Bormashenko}",
+  journal = "The Journal of Physical Chemistry B",
+  volume = {122},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {32},
+  year = {2018},
+  pages = {7936-7942},
+  DOI = "{}"
+}
+
+@article{Fujii2016,
+  title = "{Light-Driven Delivery and release of materials using liquid marbles}",
+  author = "{Maxime Paven, Hiroyuki Mayama, Takafumi Sekido, Hans-Jürgen, Yoshinobu Nakamura, and Syuji Fujii}",
+  journal = "Advanced Functional Materials",
+  volume = {26},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {19},
+  year = {2016},
+  pages = {3199-3206},
+  DOI = "{}"
+}
+
+
+@article{Bandyopadhyay2021,
+  title = "{Multifunctional liquid marbles to stabilize and transport reactive fluids}",
+  author = "{Lankipalli Harsha, Tamanna Bhuyan, Surjendu Maity, Pranab K. Mondal, Siddhartha Sankar Ghosh, and Dipankar Bandyopadhyay}",
+  journal = "Soft Matter",
+  volume = {17},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {19},
+  year = {2021},
+  pages = {5084-5095},
+  DOI = "{}"
+}
+
+@article{Pumera2014,
+  title = "{Marangoni self-propelled capsules in a maze: polluants 'sense and act' in complex channel environnments}",
+  author = "{Guanjia Zhao, and Martin Pumera}",
+  journal = "Lab on a chip",
+  volume = {14},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {15},
+  year = {2014},
+  pages = {2818-2823},
+  DOI = "{}"
+}
+
+
+%######################################## MARANGONI BOAT #############################################
+
+@article{Lauga2012,
+  title = "{Viscous Marangoni propulsion}",
+  author = "{Eric Lauga, and Anthony M.J. Davis}",
+  journal = "Journal of Fluid Mechanics",
+  volume = {705},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {},
+  year = {2012},
+  pages = {120-133},
+  DOI = "{}"
+}
+
+@article{Sur2019,
+  title = "{Translational and rotational motion of disk-shaped Marangoni surfers}",
+  author = "{Samrat Sur, Hassan Masoud, and Jonathan P. Rothstein}",
+  journal = "Physics of Fluids",
+  volume = {31},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {10},
+  year = {2019},
+  pages = {102101},
+  DOI = "{}"
+}
+
+@article{Jin2012,
+  title = "{Vapour-driven Marangoni propulsion: continuous, prolonged and tunable motion}",
+  author = "{Hua Jin, Abraham Marmur, Olli Ikkala, and Robin H.A. Ras}",
+  journal = "Chemical Science",
+  volume = {},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {8},
+  year = {2012},
+  pages = {102101},
+  DOI = "{}"
+}
+
+@article{Su2007,
+  title = "{Liquid mixing driven motions of floating macroscopic objects}",
+  author = "{Ming Su}",
+  journal = "Applied Physics Letters",
+  volume = {90},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {14},
+  year = {2007},
+  pages = {144102},
+  DOI = "{}"
+}
+
+@article{Luo2008,
+  title = "{Propulsion of microboats using isopropyl alcohol as a propellant}",
+  author = "{Chang Luo, Hao Li, and Xinchuan Liu}",
+  journal = "{Journal of Micromechanics and Microengineering}",
+  volume = "{18}",
+  copyright = "{All rights reserved}",
+  abstract = {},
+  number = {6},
+  year = {2008},
+  pages = {067002},
+  DOI = {}
+}
+
+@article{Nakata2000,
+  title = "{Mercury Drop "Attacks" an Oxidant Crystal}",
+  author = "{Satoshi Nakata, Haruhisa Komoto, Kurmiko Hayashi, Micahel Menzinger}",
+  journal = "The Journal of Physica Chemistry B",
+  volume = {104},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {15},
+  year = {2000},
+  pages = {3589-3593},
+  DOI = "{}"
+}
+
+
+@article{Chang1994,
+  title = "{Adsorption dynamics of surfactants at the air/ater interface: a critica review of mathematica modes, data, and mechanisms}",
+  author = "{Chien-Hsiang CHang, and Elias I. Franses}",
+  journal = "Colloids and surfaces A: Physicochemical and Engineering Aspects",
+  volume = {100},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {},
+  year = {1994},
+  pages = {1-45},
+  DOI = "{}"
+}
+
+
+
+@article{Langevin2017,
+  title = "{Aqueous foams and foam films stabilised by surfactants. gravity-free studies}",
+  author = "{Dominique Langevin}",
+  journal = "{Comptes rendus Mécanique}",
+  volume = {345},
+  copyright = {All rights reserved},
+  abstract = {},
+  number = {1},
+  year = {2016},
+  pages = {47-55},
+  DOI = "{}"
+}
+
+
+%############################## LIBTRAIRIES PYTHON #############################
+@article{van2014scikit,
+ title="{scikit-image: image processing in Python}",
+ author="{Van der Walt, Stefan and Sch{\"o}nberger, Johannes L and Nunez-Iglesias, Juan and Boulogne, Fran{\c{c}}ois and Warner, Joshua D and Yager, Neil and Gouillart, Emmanuelle and Yu, Tony}",
+ journal="{PeerJ}",
+ volume={2},
+ pages={e453},
+ year={2014},
+ publisher={PeerJ Inc.}
+}
+
+@article{Allantrackpy2021,
+ title="{soft-matter/trackpy: Trackpy v0.50(v0.5.0)}",
+ author="{Daniel B., Allan, Thomas Caswel, Nathan C. Keim, Casper M. van der Wel, and Ruben W. Verweij}",
+ journal="{soft-matter}",
+ volume={},
+ pages={},
+ year={2021},
+ publisher={Zenodo}
+}
+
+
+@article{ThielickePivlab2021,
+ title="{Towards user-friendly, affordabe and accurate Digital Particle Image Velocimetry in MATLAB.}",
+ author="{W. Thielicke, and E.J. Stamhuis}",
+ journal="{Journal of Open research Software}",
+ volume={2},
+ pages={e30},
+ year={2021},
+ publisher={}
+}
+
+@article{2020SciPy-NMeth,
+  author  = "{Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and
+            Haberland, Matt and Reddy, Tyler and Cournapeau, David and
+            Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and
+            Bright, Jonathan and {van der Walt}, St{\'e}fan J. and
+            Brett, Matthew and Wilson, Joshua and Millman, K. Jarrod and
+            Mayorov, Nikolay and Nelson, Andrew R. J. and Jones, Eric and
+            Kern, Robert and Larson, Eric and Carey, C J and
+            Polat, {\.I}lhan and Feng, Yu and Moore, Eric W. and
+            {VanderPlas}, Jake and Laxalde, Denis and Perktold, Josef and
+            Cimrman, Robert and Henriksen, Ian and Quintero, E. A. and
+            Harris, Charles R. and Archibald, Anne M. and
+            Ribeiro, Ant{\^o}nio H. and Pedregosa, Fabian and
+            {van Mulbregt}, Paul and {SciPy 1.0 Contributors}}",
+  title   = "{{{SciPy} 1.0: Fundamental Algorithms for Scientific
+            Computing in Python}}",
+  journal = "{Nature Methods}",
+  year    = {2020},
+  volume  = {17},
+  pages   = {261--272},
+  adsurl  = {https://rdcu.be/b08Wh},
+  doi     = {10.1038/s41592-019-0686-2},
+}
+
+
+@article{Pivmat2021,
+  author  = "{Frédéric Moisy}",
+  title   = "{PIVMat 4.20)}",
+  journal = "{MATLAB Central File Exchange}",
+  year    = {2021},
+  volume  = {},
+  pages   = {},
+  adsurl  = {https://www.mathworks.com/matlabcentral/fileexchange/10902-pivmat-4-20},
+  doi     = {},
+}

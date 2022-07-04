@@ -1,0 +1,735 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+% !TeX root = mythesis.tex
+\chapter{Génération de vorticité interfaciale}
+
+\vspace*{\fill} \epigraph{\itshape \og La vie n'est rien qu'un fichu tourbillon \fg{}}{Rudyard Kipling\\ (Souvenirs, IV, L'interrègne)}
+\vfill
+\clearpage
+\section{Introduction}
+
+Nous nous proposons d'étudier dans ce chapitre la génération de tourbillons autour de l'écoulement de Marangoni. Cet écoulement crée à la surface de l'eau, entraîne la formation d'une couche limite de vorticité sous la surface par diffusion de la quantité de mouvement. La couche limite est transportée jusqu'à la zone où l'écoulement s'arrête. Alors la couche limite se détache de la surface et s'enroule sur elle-même donnant naissance à un vortex. Ce  vortex est maintenu sous la surface tant que l'écoulement de Marangoni approvisionne le vortex en quantité de liquide via la couche limite. Nous associons la génération des tourbillons à la destabilisation de ce vortex lorsqu'il interagit avec la paroi du fond de la cuve: c'est l'instabilité d'un vortex en effet de sol. Ce phénomène brise le vortex en pairs de tourbillons dont la vorticité reconnecte avec la surface libre. Nous présentons l'étude de cet écoulement en trois parties: tout d'abord nous détaillons les trois techniques expérimentales que nous avons mis en place pour caractériser et étudier le mécanisme de génération des tourbillons. Ensuite nous présenterons les résultats expérimentaux obtenus à l'aide de ces méthodes. Enfin, nous analysons les résultats obtenus à la lumière de la littérature.\\
+
+La première technique expérimentale consiste à injecter à la surface de l'eau une émulsion composée de la solution de tensioactif et d'huile d'olive commerciale. Les gouttelettes d'huile d'olive dans l'émulsion servent de traceurs de l'écoulement et nous permettent de visualiser à l'oeil nu, en temps réel, la génération des tourbillons. En utilisant un traitement d'image adéquat nous sommes capables de caractériser l'écoulement et d'identifier les bons paramètres de controle du système. Nous utilisons également une technique optique pour étudier l'écoulement surfacique sans traceurs. Avec la méthode de \og{} Free Surface Synthetic Schlieren \fg{} nous pouvons mesurer les déformations de la surface de l'eau induite par l'écoulement de Marangoni. Grâce à cette méthode, d'une part nous pouvons observer comment le vortex intéragit avec la surface et d'autre part nous pouvons obtenir des informations sur la nature de la surface de l'eau. En effet l'état de contamination de l'interface eau/air a des conséquences importantes sur l'écoulement que nous étudions. Enfin, pour sonder l'écoulement sous la surface, nous avons mis en place un dispositif expérimental de vélocimétrie par image de particules qui permet de visualiser l'écoulement sous la surface en trois dimensions, de le caractériser et surtout de repérer les évènements de destabilisation du tourbillon.\\
+
+Ensuite nous présentons les résultats obtenus grâce à ces techniques expérimentales. Nous montrons que la structure de l'écoulement change drastiquement lorsque nous changeons l'épaisseur de la couche d'eau dans le bassin. Le nombre de tourbillons diminue alors que leurs taille augmente avec la hauteur de l'eau. Ces résultats sont confirmés par la méthode de Schlieren. Aussi nous montrons grâce à la méthode de vélocimétrie, comment la couche limite s'enroule sous la surface. Nous pouvons ainsi étudier la dynaique de croissance de l'enroulement jusqu`à sa destabilisation lorsqu'il entre en contact avec le fond du bassin.  L'analyse de ces résultats montre que la loi de croissance du tourbillon permet d'obtenir des informations concernant la contamination de l'interface. Outre cela, cs résultats expérimentaux nous permettent de montrer que l'instabilité que nous observons diffère de l'instabilité divergente, caracté
+ristique des écoulements de Marangoni thermo-capillaires et soluto-capillaires. Enfin nous comparons le mécanisme d'instabilité de l'enroulement de la couche limite aux mécanismes décrits pour des pairs de vortex en effet de sol dans la littérature. Ainsi nous associons l'instabilité observée à une instabilité de déplacement de type Crow à courte longueur d'onde. 
+
+\clearpage
+\section{Technique expérimentale}
+
+\subsection{Visualisation de l'écoulement de surface par émulsion}
+
+\subsubsection{Génération de l'écoulement de Marangoni et visualisation}\label{section:Visualisation}
+
+L'écoulement que nous étudions est un écoulement axisymétrique de taille finie. Il est produit en déposant une solution aqueuse de  tensioactif à la surface d'une couche d'eau ultra-pure. Le tensioactif utilisé est le tetradecyltrimethylammonium bromide (TTAB), acheté chez Sigma Aldrich ($\geq 99\%$). La solution de tensioactif est obtenue en dissolvant  une masse $m_{\rm tensioactif} = 3.363~\rm g$ de TTAB dansun volume d'eau ultra-pure  $V_0=50~\rm mL$ de façon à obtenir une solution concentrée ($c_0=200$ mM). Cette solution est déposée à la surface de l'eau avec un débit molaire constant noté $Q_{\rm a}$ (voir figure \ref{fig:Injection1}\textcolor{blue}{(a)}) imposé par un pousse seringue Harvard. La solution obtenue de tensioacitf est transparente, par conséquent une fois déposée sur l'eau, on ne peut pas distinguer l'écoulement de la surface de l'eau. Donc, pour visualiser l'écoulement à l'oeil nu,  nous injectons à la place une émulsion composée d'huile d'olive et de solution de tensioactif. L'émulsion est préparée avec deux seringues: l'une contennant un volume d'huile d'olive de $V_{\rm olive} = 30~\rm mL$ et l'autre un volume de la solution de tensioactif de $V_{\rm tensioactif} = 20~\rm mL$. Les deux seringues sont connectées à travers un tube de longueur $L=1~\rm cm$ en plastique et de diamètre intérieur $d = 3~\rm mm$ (voir figure \ref{fig:emulsion}). En faisant passer les liquides d'une seringue à l'autre alternativement, nous parvenons à créer une émulsion homogène, présentant des gouttelettes d'huile de diamètre de l'ordre de $10~\rm \upmu m$ \cite{Roche2014, Leroux2016}. Avec cette taille de gouttes et la fraction d'huile ($60\%$), l'émulsion peut rester stable plusieurs heures grâce aux tensioactifs qui empêchent l'émulsion de vieillir par coalescence ou mûrissement \cite{Langevin2017}. Les gouttelettes d'huile permettent de visualiser l'écoulement qui était invisible auparavant. Et nous enregistrons les images de cet l'écoulement avec une caméra Imagine Source ($\rm DMKU445$) avec une fréquence de dix images par secondes.
+\begin{figure}[h!]
+  \centering
+  % \includegraphics[scale=1]{./figures/chap2/Emuslion.png}
+  \caption{Fabrication de l'émulsion}
+  \label{fig:emulsion}
+\end{figure}
+Sur La figure \ref{fig:Injection1}\textcolor{blue}{(b)} montre une photo de l'écoulement au bout de $t=30~\rm s$ après l'injection, pour une épaisseur d'eau dans le bassin $h=15~\rm mm$ et un débit molaire de $Q_{\rm a} = 0.16~\rm\upmu mol\cdot s^{-1}$. La zone de couleur blanche correspond a une zone de faible densité de gouttes d'huile puisqu'elles sont transportées par l'écoulement de Marangoni à une vitesse de l'ordre de $v\approx 1.0~\rm m\cdot s^{-1}$. En revanche, lorsque les particules atteignent une distance caractéristique depuis la source, notée $r=R_{\rm}$. Position où la vitesse de l'écoulement diminue (environ d'un ordre de grandeur $v\approx 0.1~\rm m\cdot s^{-1}$), les particules s'accumulent et diffractent la lumière. On obtient alors une image contrastée. En blanc les zones de faibles concentration d'huile et en variation de gris les zones où l'écoulement est faible. 
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{1\textwidth}{!}{\input{./figures/chap2/schema_injection_visualisation.pdf_tex}}
+  \caption{(a) Schéma du dispositif expérimental. Composé d'une cuve en plexiglas ($L\times L\times H=400\times 400 \times 40 ~\rm mm$) contenant de l'eau ultra-pure posée sur un panneau de Led pour l'éclairage. On utilise un pousse-seringue (Harvard Apparatus|PHD Ultra) pour déposer la solution de tensioactif sur la surface de l'eau avec un débit $Q_{\rm a}$ constant. On enregistre le film avec une caméra Imagine Source avec une fréquence d'acquisition de $10~\rm Hz$ placée au-dessus de la cuve. (b) Photo de l'écoulement de Marangoni pour une épaisseur d'eau $h=15~\rm mm$ et un débit molaire de $Q_{\rm a} = 0.16~\rm \upmu mol\cdot s^{-1}$. La zone de l'écoulement de Marangoni apparaît en blanc, on peut également observer sur cette photo les émissions de tourbillons tout autour du bord de l'écoulement.}
+  \label{fig:Injection1}
+\end{figure}
+
+\subsubsection{Traitement d'image et caractérisation de l'écoulement de Marangoni}
+
+Pour étudier plus facilement la structure de l'écoulement à l'extérieur de l'écoulement de Marangoni on va \og{} déplier \fg{} les images que l'on capture avec la caméra placée au-dessus de la cuve. POur cela on va faire une transformation polaire de la configuration axisymétrique du type de la figure \ref{fig:Injection1}. La transformée polaire de ce type de configuration donne des images du type de la figure \ref{fig:TraitementEmulsion}\textcolor{blue}{(a)}. La configuration initiale axyssimétrique est projeté dans le plan polaire de coordonnées ($r,\theta$) avec comme origine la source d'injection de tensioactif. En bas de la \ref{fig:TraitementEmulsion}\textcolor{blue}{(a)} la région de couleur noire correspon à la source avec en $2\pi$ on peut reconnaître la tige qui permet d'amener l'injection jusqu'au centre du bassin. La zone blanche qui s'étend depuis la source jusqu'à l'emission des tourbillons ($R_{\rm M}$), elle correspond à la zone où se développe l'écoulement de Marangoni. Grâce à cette visualisation on peut identifier clairement les pairs de tourbillons qui sont émises au même instant $t$. On peut alors mesurer une longueur angulaire notée $\alpha$ qui représente l'extension le long de laquelle on peut observer $N$ émissions de pairs de tourbillons.
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{.8\textwidth}{!}{\input{./figures/chap2/TraitementEmulsion.pdf_tex}}
+  \caption{Observation des motifs des tourbillons (a) C'est la transformée polaire d'une photo, vue de dessus. La configuration axisymétrique est projetée dans les coordonnées polaires $(r, \theta)$. Une longueur caractéristique apparaît notée $\alpha$ qui est une longueur angulaire indiquant l'extension spatiale que recouvrent les $N=5$ pairs de tourbillons qui sont générés le plus récemment. (b) Sur cette image est représentée l'autocorrélation ligne par ligne de l'image (a). (c) Les deux flèches oranges sur la (b) indiquent la ligne le long de laquelle on trace la fonction d'autocorrélation représentée ici. une Longueur angulaire moyenne apparaît, étant la distance entre deux maxima de la fonction d'autocorrélation. Ils correspondent à des émissions de pairs de vortex.}
+  \label{fig:TraitementEmulsion}
+\end{figure}
+
+Une fois que l'on obtient cette représentation, on peut calculer l'autocorrélation ligne par ligne de l'image obtenue par la transformée polaire. On obtient alors la figure \ref{fig:TraitementEmulsion}\textcolor{blue}{(b)}. On remarque que le long de la ligne qui correspond à la frontière de l'écoulement de Marangoni, indiquée par les \textcolor{orange}{$\rightarrow$}\textcolor{orange}{$\leftarrow$}, les pairs de vortex s'étalent de façon régulière le long de la distance angulaire $\alpha$. Donc le calcul de la fonction d'autocorrelation permet de révéler la nature periodique de l'arrangement de l'émission des pairs de tourbillons. On trace la variation d'intensité de la fonction d'auto-corrélation le long de cette ligne, ce qui permet d'obtenir la figure \ref{fig:TraitementEmulsion}\textcolor{blue}{(c)} qui montre effectivement une fonction périodique décroissante en fonction de $\theta$. Sur ce signal on peut mesurer une distance angulaire moyenne que l'on note $\Theta$. la comparaison entre les mesures de  \ref{fig:TraitementEmulsion}\textcolor{blue}{(a)} et de \ref{fig:TraitementEmulsion}\textcolor{blue}{(c)} montrent que $\Theta = \frac{\alpha}{N}$ à partir duquel on peut définir $\lambda$ comme la distance entre deux émissions de pairs de vortex le long du bord de l'écoulement de Maranoni.
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Définition de $\Theta$ et $\lambda$: }}\\
+    \begin{itemize}
+    \item[$\bullet$]{\textbf{Distance angulaire moyenne:}}
+      \begin{equation}
+        \Theta = \frac{\alpha}{N}.
+        \label{eq:Theta}
+      \end{equation}
+    \item[$\bullet$] {\textbf{Distance entre deux émissions de vortex:}}
+      \begin{equation}
+        \lambda = R_{\rm M}\Theta.
+        \label{eq:lambda}
+      \end{equation}
+    \end{itemize}
+    
+  \end{definition}
+\end{ombredef}
+
+On utilisera cette méthode pour mesurer la période angulaire moyenne $\Theta$ puis la distance entre pairs de tourbillons $\lambda$ en fonction de l'épaisseur de la couche d'eau dans le bassin et du débit molaire d'injection de tensioactif à la surface du bassin. Les résultats sont présentés dans la section \ref{section:MesuresSurface}.
+
+\subsection{Schlieren}\label{section:ProtocolSchlieren}
+
+Un écoulement hydrodynamique ayant lieu près d'une interface peut déformer l'interface que ce soit par la pression qu'exerce l'écoulement sur l'interface ou par le cisaillement de l'interface à cause de l'écoulement. L'effet Marangoni génère un écoulement assez grand pour déformer la surface de l'eau pourtant on observe difficilement la déformation de l'interface. On peut y arriver en regardant la déformation d'un motif plus ou moins régulier (un échiquier par exemple) à travers la surface de l'eau.  On visualise l'écoulement de Marangoni en mesurant la déformation de l'interface eau / air induite par l'écoulement. Pour mesurer la déformation d'une interface fluide/fluide on peut utiliser la technique développée par Frédéric Moisy, Marc Rabaud et Kévin Salsac \cite{Moisy2009}: \og{} Free-Surface Synthetic Schlieren \fg{} (FS-SS) ou bien la méthode de \og{} Synthetic Schilieren Imaging \fg{} (SSI) de Sanders Wildeman \cite{Wildeman2018}. Toutes deux consistent à capturer des images d'un motif à travers une interface transparente. Dans le cas de la méthode FS-SS, le motif est un ensemble de points noirs disposés aléaoirement (voir figure \ref{fig:schlieren}\textcolor{blue}{(a)}), tandis ce que dans le cas de la SSI il s'agit d'un motif en forme d'échiquier (voir figure \ref{fig:schlieren}\textcolor{blue}{(b)}).\\
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/schlieren_motif.pdf_tex}
+  \caption{Motifs de Schlieren. (a) FS-SS motif de points noirs disposés aléatoirements. (b) Échiquier pour la méthode de SSI. }
+  \label{fig:schlieren}
+\end{figure}
+ Lorsque la surface du liquide est au repos, l'image du motif à travers l'interface eau/air est inchangée. En revanche, si un écoulement déforme l'interface alors l'image du motif à travers la surface est modifée. En effet la surface n'étant pus plate, les rayons lumineux sont deviés par la courbure de l'interface (voir figure \ref{fig:sketchSchlieren}). En comparant une image déformée par l'ecoulement et une image de référence (\textit{i.e.} lorsque l'interface est plate, au repos) on peut mesurer un déplacement du motif $\delta\vv{r}(x,y)$. Une fois le déplacement du motif calculé on peut obtenir la pente de la déformation $\vv{\nabla}\zeta$ comme suit:
+
+\begin{equation}
+  \vv{\nabla}\zeta = -\dfrac{\delta\vv{r}}{h^{*}},~\mathrm{avec}~ \dfrac{1}{h^{*}}=\dfrac{1}{\alpha h_{\rm p}}-\dfrac{1}{H}.
+  \label{eqn:deformation}
+\end{equation}
+
+$\alpha$ est un coefficient basé sur les indices de réfraction $n_{\rm air}$ et $n_{\rm liquid}$ de l'air et du liquide respectivement. $H$ est la distance entre le motif et la caméra et $h_{\rm p}$ est l'équivalent de la hauteur du liquide, calculé à partir de l'épaisseur $h_{\rm i}$ et des indices $n_{\rm i}$ des différentes couches de matière entre le motif et l'interface (voir figure \ref{fig:sketchSchlieren}). Dans notre cas, l'interface est séparée du motif par l'épaisseur d'eau $h_{\rm liquide}\in[5; 35]~\rm mm$ dans la cuve et d'une plaque de plexiglas de $h_{\rm plexiglas} = 2~\rm cm$. Donc la hauteur équivalente $h_{\rm p}$  se calcule comme suit:
+
+\begin{equation}
+  h_{\rm p} = h_{\rm liquide}+\dfrac{n_{\rm liquide}}{n_{\rm plexiglas}}h_{\rm plexiglas}.
+  \label{eqn:epaisseurequivalente}
+\end{equation}
+En intégrant l'équation \eqref{eqn:deformation} on obtient la mesure de la déformation de l'interface par rapport à son état au repos. Ce qui permet de reconstruire e champ de déformation de l'ensembe de la surface.
+\begin{figure}[h!]
+  \centering
+    \input{./figures/chap3/sketchSchlieren.pdf_tex}
+    \caption{Illustration de la méthode de Free Surface-Synthetic Schlieren de Moisy \textit{et. al} \cite{Moisy2009}. La caméra est placée loin au-dessus de la surface de l'eau ($H\gg \alpha h_{\rm p}$). Les rayons lumineux traversent deux milieux intermédiaires: le plexiglas et la couche d'eau dans la cuve ($n_{\rm a}<n_{\rm plexiglas}<n_{\rm eau}$) et sont déviés à chaque fois qu'ils traversent une interface résultant en un déplacement apparent du motif $\delta x$.}
+    \label{fig:sketchSchlieren}
+\end{figure}
+
+
+Pour calculer la déformation du motif ($\delta \vv{r}$) dans le cas de la méthode FS-SS il faut utiliser des algorithmes de corréllation d'image qui permettent de comparer les images entre elles et de mesure le déplacement des pixels. On peut en faire plusieurs utilisation, on peut soit comparer des images successivent entre elles ($1+2, 2+3, 3+4$, et ainsi de suite) ou de comparer chaque image à une image de référence ($1+2, 1+3, 1+4$, etc). Cela peut être fait soit avec un logiciel de type Davis soit avec la toolbox PIVlab \cite{ThielickePivlab2021} qui est une application développée pour Matlab bien plus simple d'utilisation et plus rapide. On obtient ainsi une cartographie du déplacement des pixels noirs ($\delta\vv{r}(x,y)$). Pour obtenir la déformation de l'interface il faut intégrer le champ de de déplacement $\delta\vv{r}$. Pour cela, il existe un outil très simple d'utilisation, c'est la librairie \og{} Pivmat\fg{} qui est développée par F. Moisy sur Matlab \cite{Pivmat2021} qui contient un grand nombre de fonctions pour exploiter les champs de déplacements, parmis ces fonctions on utilise la fonction \og{} surfheight\fg{} pour calculer $\zeta$ la déformation de l'interface. Grâce à cette méthode on peut mesurerdes déformations de l'ordre du micromètre \cite{Moisy2009}.\\
+
+ Les limitations de cette méthode sont assez peu contraignante, au contraire c'est une méthode qui est très sensible aux petites et grandes déformations. la sensibilité de cette méthode dépend essentiellement de la distance entre le motif et l'interface déformable. Plus le motif est placé à une grande distance de l'interface plus petites seront les déformations qui pourront être mesurées. Cependant, une interface courbée agit comme une lentille divergente avec une distance focale qui va augmenter avec la courbure. Si la courbure devient trop forte, les rayons lumineux issus de deux points consécutifs peuvent se croiser créant ainsi des zones floues, avec des points noirs qui vont apparaître comme étirés ce qui posera des problèmes de mesure de la déformation de l'interface.\\
+
+ Contrairement à la FS-SS, la méthode de Wildeman utilise un motif régulier du type échiquier composé de carré blanc et noirs. L'algorithme proposé par Wildeman sur son github (\url{https://github.com/swildeman/fcd}) \cite{Wildeman2018} est basé sur une méthode spectrale afin de mesurer le déplacement des pixels noirs $\delta \vv{r}$ qui prend donc beaucoup moins de temps. Pour calculer la déformation de l'interface on a utilisé en partie les codes proposés par Widleman qui permettent de calculer $\delta\vv{r}$. Donc on a complété à l'aide des calculs de  Moisy \textit{et al} \cite{Moisy2009} pour obtenir $\vv{\nabla}\zeta$ suivant l'équation \eqref{eq:deformation}. On indiquera le script du code de Wildeman adapté en annexe \textcolor{blue}{\large Ajouter la ref a l'annexe}.\\
+
+ La limitation de cette méthode se porte essentiellement sur le fait que les déformations de l'interface ne doivent pas excédé une certaine taille, si le déplacement observé du motif est de l'ordre de la période du motif de l'échiquier imprimé alors les carrés noirs iront se superposer sur e carré voisin ce qui posera des problèmes de mesure de a déformation.
+
+\subsection{Characterisation de l'écoulement en volume par Particle Image Velocimetry (PIV)}\label{section:PIVProtocol}
+
+\subsubsection{Méthode générale}
+
+Il existe de nombreuses méthodes aujourd'hui qui permettent de sonder l'écoulement en volume d'un fluide. On détaille dans cette section la méthode qu'on a utilisé pour caratactériser l'écoulement qui a lieu sous la surface au voisinage de l'écoulement de Marangoni. La méthode utilisé est la \og{} Particle Image Velocimetry \fg{} (PIV). La PIV consiste à mesurer le champ de vitesse d'un écoulement grâce à des particules que l'on mélange au fluide. Ces particules sont éclairée avec une lumière très forte: un LASER. On enregistre le déplacement des particules avec une caméra rapide. Le déplacement des particules est ensuite analysé par des algorithmes de corrélation d'image: les images sont comparés succesivement deux par deux de façon à mesurer le déplacement des particules d'une image à l'autre. On peut alors mesurer un champ de vitesse de l'écoulement à chaque instant.\\
+
+Le choix des particules est essentiel pour obtenir la mesure la plus précise possible du champ de vitesse. Il faut notamment prendre en compte deux paramètres qui sont essentiels: la densité des particules et la taille des particules. La densité doit être choisie en fonction du fluide que l'on souhaite sonder. En effet on ne veut pas que les particules sédimentent ou flottent sur le liquide. Par conséquent la densité des particules doit être la plus proche de celle du fluide. Ensuite les particules doivent être suffisamment petites pour échantilloner correctement l'écoulement et se faire transporter par ce-dernier sans le perturber. Autrement dit on veut des traceurs passifs. Afin de caractériser cela, on peut utiliser le nombre de Stokes (équation \ref{eq:NombreStokes}).
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Définition du Nombre de Stokes}:}\\
+
+    
+    Le nombre de Stokes est un nombre sans dimension utilisé pour étudier le comporement d'une particule dans un fluide. C'est le rapport entre l'énergie cinétique de la particule et l'énergie dissipée par le frottement avec le fluide.
+    \begin{equation}
+      \mathrm{St} = \frac{1}{18}\frac{\rho_{\rm p}d_{\rm p}^2v_0}{\mu_{\rm l}l_0},\label{eq:NombreStokes}
+    \end{equation}
+    $\mu_{\rm l} = 1\cdot 10^{-3}~\rm Pa\cdot s$ est la viscosité dynamique de l'eau, $v_0$ est la vitesse typique de l'écoulement et $l_0$ est l'echelle spatiale de varation de $v_0$.
+
+    \end{definition}
+\end{ombredef}
+
+Cette méthode présente cependant quelques limitations dues au système optique et à l'ensemencement. Le premier concerne les limites de la difraction. En effet tout instrument optique est soumis à la diffraction quand la lumière est passe au travers une fine ouverture (un diaphragme par exemple). La diffraction limite le pouvoir de résolution: il peut arriver que l'objet diffracte la lumière donnant l'impression d'être un peu flou c'est la diffraction d'Airy. De plus la nappe LASER a une certaine épaisseur (\textcolor{blue}{\large Indiquer l'épaisseur de la nappe laser même approximative}) et les particules peuvent se mouvoir dans cette épaisseur, déplacement qui ne peut pasêtre capturé par la caméra, c'est donc un problème de perspective.
+
+\subsubsection{Dispositif de PIV ($3$D)}
+Usuellement, la méthode consiste à faire la mesure du champ de vitesse sur un seul plan (le plan de la nappe laser). Pour conduire nos expériences on a souhaité visualisé l'écoulement sur de multiples plans presque instantanément afin d'avoir une mesure de l'écoulement en 3 Dimensions mais avec deux composantes ($v_{r}, v_{z}$). Pour déplacer la nappe LASER on utilise un miroir monté sur un oscillateur piézoélectrique controllé par un GBF à la manière de Brücker \textit{ et. al} et de Lawson \textit{et. al} \cite{Brucker2012, Lawson2014}. Ce dernier produisant un signal triangulaire asymétrique à une fréquence de $200~\rm Hz$ ($75\%$) permettant de faire $25$ plans LASER au total: $20$ dans le sens montant depuis la position initiale jusqu'à la position finale et $5$ plans LASER pour le retour. Les plans LASER parcourent alors une distance de $20~\rm mm$ et sont centrés sur le plan médian de la cuve (voir la figure \ref{fig:DispositfPIV3D}). Ce qui fournit une fenêtre de mesure de taille $L\times l\times H  = 50~\rm mm \times 20~\rm mm \times 15~\rm mm$. Les films sont ensuite enregistrés par une caméra ultra-rapide PHANTOM V$1840$. On utilise cette caméra dans deux configurations. La première pour filmer les 25 plans LASER, on film avec une fréquence d'acquisition de $f_{\rm CR} = 5~\rm kHz$ et une résolution de $1024\times 256$ pixels, ce qui donne des films de $127430$ images pour une durée de $25~\rm secondes$. La seconde pour visualiser un seul plan zoomé, on enregistre le film à une fréquence de $f_{\rm CR} = 1~\rm kHz$ avec une résolution de $2048\times 1024$  pixels ce qui donne des films de $24181$ images pour une durée d'acquisition de $24~\rm secondes$.\\
+
+Le fluide que l'on veut sonder est de l'eau de masse volumique $\rho_{\rm eau} = 1000 ~\rm kg\cdot m^{-3}$. On a choisit des particules de nylon de diamètre $d_{\rm p} = 50~\rm \upmu m$ et de densité $\rho_{\rm p}=1.14\cdot 10^{3}~\rm kg\cdot m^{-3}$. La densité de ces particules est plus grande que celle de l'eau, donc elles sédimentent mais assez lentement pour pouvoir faire une mesure correcte du champ de vitesse. En revanche elles sont suffisamment petites pour se laisser entraîner par l'écoulement sans le perturber. Pour calculer le nombre de Stokes (éq. \eqref{eq:NombreStokes}) On peut évaluer la vitesse caractéristique $v_0$ à partir de l'écoulement de surface $v_0\in [0.1, 0.5]~\rm m\cdot s^{-1}$ et $l_0=1~\rm mm$. On mesure alors un nombre de Stokes qui varie entre: $\mathrm{St} = [0.28, 1.43]$. Ce qui signifie que les particules vont se laisser porter facilement par l'écoulement et sont d'assez bon traceurs passifs.\\
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/DispositifPIV.pdf_tex}
+  \caption{Dispositif expérimental pour la \og{} Particle Image Velocimetry \fg{}. (a) Dispositif du LASER. (b) Schéma du montage expérimental.}
+  \label{fig:DispositfPIV3D}
+\end{figure}
+
+
+Dans les sections suivantes, on présentera les résultats obtenus grâces à ces techniques expérimentales. En particulier, on montrera l'effet de plusieurs paramètres expérimentaux sur la structure de l'écoulement de Marangoni solutal. Ensuite sont présentés les résultats des mesures de déformation d'interface par la méthode de Schlieren. Et enfin on présente les résultats obtenus grâce aux mesures de PIV sur la structure de l'écoulement ayant lieu sous la surface de l'eau. 
+
+\section{Étude expérimentale de la génération de vorticité}
+
+Dans cette section on présentera les observations réalisées grâce aux méthodes expérimentales décrites précédemment. Dans un premier temps on présente les observations issues de la visualisation de l'écoulement de surface. Ensuite on présentera des résultats de mesure de la déformation de l'interface par la méthode de optique de Schlieren. Enfin, les résultats obtenus par la PIV sont présentés.
+
+
+\subsection{Visualisation de l'écoulement de surface par émulsion} \label{section:MesuresSurface}
+
+Ici, on présente les observations effectuées grâce à la méthode décrite dans la section \ref{section:Visualisation}.
+
+\subsubsection{Structure de l'écoulement}
+ Ce dispositif expérimental nous permet d'observer et de mesurer l'influence de plusieurs paramètres du système  sur la structure de l'écoulement. En particulier sur la génération des tourbillons autour de l'écoulement de Marangoni (voir figure \ref{fig:Injection1}\textcolor{blue}{(b)}). Parmis les paramètres physico-chimiques de ce système on trouve la concentration en tensioactif ($c$), la concentration micellaire critique (CMC),  la concentration surfacique de tension de surface ($\Gamma$), la variation de la tension de surface induite par le profil de concentration le long de l'interface ($\Delta\gamma$), la viscosité du liquide donc de l'eau ($\eta$), le coefficient de diffusion des tensioactifs dans l'eau ($D$), la masse volumique de l'eau ($\rho$) ainsi que le débit molaire d'injection de tensioactif ($Q_{\rm a}$) à la surface de l'eau et l'épaisseur de la couche d'eau ($h$) placé dans le bassin. On ne peut pas étudier l'influence de tous les paramètres en même temps, donc on a choisi deux paramètres de contrôle sur lesquels il est facile d'agir c'est à dire le débit molaire d'injection et l'épaisseur d'eau dans le bassin. Pour le débit molaire il suffit de changer le paramètre sur le pousse-seringue alors que pour l'épaisseur d'eau il suffit de changer le volume d'eau dans la cuve. On s'apperçoit qu'en modifiant l'épaisseur d'eau, que la structure de l'écoulement change drastiquement.\\
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.5\textwidth]{./figures/chap2/Marangoni_flow_Qa_1p2molps_h7mm_h25mm_2.png}
+  %\input{./figures/chap2/Marangoni_flow_emulsion_Qa1p2mumolL_h7mm_h25mm.pdf}
+  \caption{(Retrouver l'originale sans aucune indication pour mettre la bonne font) Deux photos superposés de l'écoulement de Marangoni. (a) La première avec $h=7~\rm mm$ et $Q_{\rm a} = 1.2~\rm\upmu mol\cdot s^{-1}$ et la seconde (b) avec $h=25~\rm mm$ et $Q_{\rm a} =1.2~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:EcoulementEpaisseurEau}
+\end{figure}
+
+En effet on voit sur la figure ci-dessus (figure \ref{fig:EcoulementEpaisseurEau}) que si on conserve le débit molaire constant et que l'on change l'épaisseur d'eau. En locurrence dans ce cas on passe de $h=~\rm 7~\rm mm$ à $h=25~\rm mm$. Bien que l'écoulement de Marangoni conserve un rayon $R_{\rm M} = 50~\rm mm$ constant, la structure des tourbillons, elle, a changé. Pour $h=7~\rm mm$ on peut compter sur un demi-cercle 6 pairs de tourbillons émis simultanément, chacun ayant une extension d'environ $20~\rm mm$ et séparés par une distance de $15~\rm mm$. En revanche pour le cas $h=25~\rm mm$ on peut remarquer que les tourbillons émis sont d'une part beaucoup moins nombreux, on en compte $2$ sur le demi-cercle de Marangoni. D'autre part ils sont de plus grande taille, leur extension spatiale est environ de $40~\rm mm$ de même l'espacement entre les émissions est plus grand de l'ordre de $50~\rm mm$. La mesure directe de la longueur (que l'on a définit comme $\lambda$) qui sépare les émissions simultanées des tourbillons n'est pas précise sur les photos de l'écoulement axysimétrique. C'est pourquoi on a mis en place le protocol expérimental détaillé dans la section (\textcolor{blue}{II.2.1.a)}). Ce protocol permet de calculer la longueur $\lambda$ définie dans l'équation \eqref{eq:lambda} de façon précise à partir de la distance angulaire moyenne $\Theta$ (equation \eqref{eq:Theta}). On trace l'évolution de $\Theta$ et de $\lambda$ en fonction de l'épaisseur d'eau $h$ et du débit molaire $Q_{\rm a}$ (voir figure \ref{fig:ThetaLambda}):
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{./figures/chap2/lambda_Theta_expParams.png}
+  \caption{(Figure à retracer avec la bonne Fonte) Dépendance de la distance angulaire moyenne et la distance $\lambda=\Theta R_{\rm M}$ avec l'épaisseur de la couche d'eau $h$ et du débit molaire $Q_{\rm a}$. (a) Dépendance de la distance angulaire moyenne $\Theta$ séparant deux pairs de tourbillons sur la couche d'eau d'épaisseur $h$. (b) Dépendance de la distance moyenne $\lambda$ séparant deux pairs de tourbillons sur la couche d'eau d'épaisseur $h$ Les lignes en pointillés représentent une régression linéaire de la forme: $\lambda = Ah+\lambda_0$. (c) Dépendance de la distance moyenne $\lambda$ en fonction du débit molaire $Q_{\rm a}$ (la ligne en pointillé est un guide pour le regard).}
+  \label{fig:ThetaLambda}
+\end{figure}
+
+La figure \ref{fig:EcoulementEpaisseurEau} montre que la distance angulaire moyenne $\Theta$ augmente avec l'épaisseur de la couche d'eau $h$ dans le bassin. On a mesuré la dépendance de $\Theta$ en fonction de l'épaisseur $h$, il en résulte que $\Theta$ est proportionnelle à $h$. Ces résultats sont présentés sur la figure ci-dessus (figure \ref{fig:ThetaLambda}\textcolor{blue}{(a)}). $\Theta$diminue également avec le débit molaire $Q_{\rm a}$. On obtuent un résultat similiaire lorsqu'on représente $\lambda$ en fonction de $h$. Cependant on remarque sur la figure \ref{fig:ThetaLambda}\textcolor{blue}{(c)} que $\lambda$ reste constant alors que le débit augmente. Cependant on peut observer sur le graphique un deuxième plateau après un certain débit molaire autour de $Q_{\rm ac} = 1.2~\rm upmu mol\cdot s^{-1}$. Ce débit critique correspond à un élargissement de la région correspondant à la source et donc à l'élargissement du rayon $R_{\rm M }$ de l'écoulement de Marangoni. Hors ce rayon dépend du débit $Q_{\rm a}$ \cite{Roche2014,Leroux2016}. Les deux familles de courbes se distinguent sur la figure \ref{fig:ThetaLambda}\textcolor{blue}{(v)} à travers les valeurs des paramètres des régressions linéaires : $\lambda=Ah+\lambda_0$. On trouve que les pentes sont les mêmes, $A_{\rm inf} = 1.27$ pour $Q_{\rm a}<1.2~\rm \upmu mol\cdot s^{-1}$, et $A_{\rm sup}>1.34$ pour $Q_{\rm a}\geq 1.2~\rm \upmu mol\cdot s^{-1}$. En revanche les ordonnées à l'originie diffère légèrement, on trouve: $\lambda_{0, \rm inf} = 13.6~\rm mm$ et $\lambda_{0,~\rm sup}=19.3~\rm mm$.
+
+\subsubsection{Contrôle de l'émission des tourbillons}
+
+On observe qu'en se plaçant à une certaine épaisseur d'eau $h$ on peut controller le nombre de tourbillons émis en utilisant le débit d'injection de tensioactif comme seul paramètre de controle. On observe sur la figure \ref{fig:ModesTourbillons} que pour une épaisseur d'eau $h=15! \rm mm$ en changeant le débit d'injection $Q_{\rm a}$ on peut sélectionner des modes de générations de tourbillons autour de l'écoulement. Ainsi on peut passer de 3 émisisons de tourbillons simultanées à 4,5,6,...
+
+\begin{figure}[h!] 
+  \centering
+  \input{./figures/chap2/instabilite_tourbillons.pdf_tex}
+  \caption{Contrôle de l'instabilité, (a) $Q_{\rm a} = 0.16~\rm \upmu mol\cdot s^{-1}$, $h=15~\rm mm$ (b) $Q_{\rm a} = 0.29~\rm \upmu mol\cdot s^{-1}$, $h=15~\rm mm$ (c) $Q_{\rm a} = 0.46~\rm \upmu mol\cdot s^{-1}$, $h=15~\rm mm$ (d) $Q_{\rm a} = 0.65~\rm \upmu mol\cdot s^{-1}$, $h=15~\rm mm$}
+  \label{fig:ModesTourbillons}
+\end{figure}
+
+
+Donc, en faisant varier $Q_{\rm a}$, la longueur $\lambda$ entre tourbillons ne semble pas changer mis à part lorsqu'on passe la transition entre source petite et source élargie (voir figure \ref{fig:ThetaLambda}\textcolor{blue}{(c)}). Poutant, lorsque le débit $Q_{\rm a}$ augmente, il change la taille de l'écoulement de Marangoni en accord avec les observations de Le Roux \textit{et al} et Roche \textit{et al} \cite{Roche2014, Leroux2016} en suivant la modèlisation qu'ils proposent à savoir:
+
+\begin{align}
+  R_{\rm M} \sim & \left(\frac{Q}{c}\right)^{\frac{3}{4}}\left(\frac{\eta\rho}{\Delta\gamma^2 D^3}\right)^{\frac{1}{8}}\label{eq:RayonMarangoni}\\
+  U_{\rm M} \sim & \left(\frac{c\Delta\gamma^3}{Q}\right)^{\frac{1}{4}}\left(\frac{D}{(\eta\rho)^3}\right)^{\frac{1}{8}}\label{eq:VitesseMarangoni}
+\end{align}
+
+Donc en suivant les équations \eqref{eq:RayonMarangoni} et \eqref{eq:VitesseMarangoni}, si on augmente le débit d'injection de tensioactif, on augmente la taille de l'écoulement $R_{\rm}$ et on diminue la vitesse de l'écoulement $U_{\rm M}$ à la surface. Si $\lambda$ reste constant  pour une épaisseur d'eau $h$ et que le périmètre de l'écoulement de Marangoni augmente, on doit être en mesure de controller le nombre d'émissions de tourbillons $N$ autour de l'écoulement de Marangoni en écrivant que le périmètre de l'écoulement $2\pi R_{\rm M}$ est égale à $N\lambda$ (éq. \eqref{eq:PerimetreLambda}):
+
+\begin{equation}
+  2\pi R_{\rm M} = N\lambda.\label{eq:PerimetreLambda}
+\end{equation}
+
+On peut essayer de vérifier cette hypothès en mesurant $\lambda$ depuis les images et en calculant le Rayon $R_{\rm M}$ à partir du débit imposé $Q_{\rm a}$ afin d'obtenir une prédiction de $N$ le nombre de tourbillons. Le modèle serait complet si on savait prédire $\lambda$ en fonction de l'épaisser de la couche d'eau car il semble être piloté par $h$.
+
+\begin{equation}
+  N = \frac{2\pi R_{\rm M}}{\lambda}.\label{eq:NombreTourbillons}
+\end{equation}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{cccc}
+  \hline \hline
+  Débit $Q_{\rm a}~\rm (\upmu mol\cdot s^{-1})$ & Rayon $R_{\rm M}~\rm (mm)$ & Distance $\lambda~\rm (mm)$ &  $N$ Tourbillons \\ \hline \hline 
+\end{tabular}
+\end{table}
+
+
+Donc le temps d'émission de l'instabilité ainsi que son intensité semble pilotés par l'épaisseur de la couche d'eau sur laquelle on produit l'effet Marangoni et l'écoulement qui en découle. En revanche le nombre de tourbillons émis simultanément à la surface semble pouvoir être ajusté via le débit d'injection $Q_{\rm a}$ qui, par ailleurs, permet de controller la taille de l'écoulement de Marangoni. Hors une longueur caractéristique de l'instabilité semble ressortir de nos résultats expérimentaux: $\lambda$ dépendant de l'épaisseur d'eau. Donc, le nombre de sites d'émissions de pairs de tourbillon, séparés par la distance caractéristique $\lambda$, vont se partager l'espace disponible le long du périmètre de l'écoulement de Marangoni créant $N$ tourbillons séparés par $N-1$ $\lambda$ le long du périmètre $2\pi R_{\rm M}$.
+
+\subsection{Observation de l'écoulement en volume}
+
+\subsubsection{Description de l'écoulement}
+Dans cette section on identifie l'écoulement qui a lieu sous la surface et on caractérise le mécanisme qui génère de la vorticité dans la couche d'eau. Pour cela utilise la méthode de la PIV dont le protocol a été présenté dans la section \ref{section:PIVProtocol}. Le résultat cette technique est un film en noir et blanc: Le fludie est de couleur sombre tandis que les particules éclairées par le LASER apparaîssent comme des points blancs ponctuels. Sur une seule et même image on ne peut pas voir le déplacement des particules. En revanche en projetant plusieurs images sur une seule à l'aide de l'outil \og{}Z-project\fg{} de ImageJ, de cette façon on fait, littéralement, apparaître l'écoulement qui a lieu sous la surface (voir figure \ref{fig:ZprojectImageJ}).
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{.8\textwidth}{!}{\input{./figures/chap2/Enropulement_stack.pdf_tex}}
+  \caption{Observation de l'enroulement sous la surface par la PIV. Projection de $100$ images d'un film de PIV dans les conditions expérimentales suivantes: $h=15~\rm mm$ et $Q_a=0.53~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:ZprojectImageJ}
+\end{figure}
+
+Tout d'abord on remarque un écoulement horizontal qui a lieu près de la surface de l'eau qui part de la droite où se trouve la source d'injection de tensioactifs et se propage vers la gauche sur plusieurs centimètres. Cet écoulement correspond au cisaillement des couches de particules fluides par l'écoulement de Marangoi généré à l'interface. Le cisaillement diffuse sous la surface créant une couche limite d'épaisseur $\delta$. Celle-ci se développe sur tout la longeur $r=R_{\rm M}$ depuis la source d'injection. À partir de $r>R_{\rm M}$ on observe que l'écoulement horizontal disparaît pour donner naissance à un enroulement. On peut remarquer que les particules dans l'enroulement suivent une trajectoire circulaire et qu'à aucun moment on peut observer de mélange entre l'enroulement et les alentours du tourbillon. Le fluide qui rentre dans le tourbillon y reste et semble provenir de la couche limite du cisaillement. Outre cela, on peut observer que le tourbillon entraîne des particules qui elles sont à l'extérieur de celui-ci du liquide piégée entre lui et le plexiglas du fond de la cuve. Les particules sont accélérées et propulsées vers la droite du tourbillon C'est la recirculation qui permet de ne pas vider de liquide la zone de l'écoulement de Marangoni. On peut aussi avoir une idée qualitative de l'intensité de l'écoulement, Lorsque l'écoulement est intense les particules apparaissent étirées tandis que lorsque l'écoulement ralentit elles sont plus ponctuelles. On s'apperçoit que que l'écoulement de la surface est plus intense jusqu'à ce qu'il atteigne la distance où l'enroulement naît. Cette observation rejoint les observations de Roché \textit{et al} \cite{Roche2014}, en effet la vitesse de l'écoulement de Marangoni qu'ils mesurent est très intense dans la zone de Marangoni ($r<R_{\rm M}$) alors qu'elles diminuent drastiquement une fois la frontière de l'écoulement passée ($r>R_{\rm}$). Dans la suite on mesure le champ de vitesse extact du tourbillon.
+
+\subsubsection{Dynamique de l'écoulement}
+On utilise ces films pour mesurer le champ de vitesse de l'écoulement en suivant le protocol décrit dans la section \ref{section:PIVProtocol}. On utilise la toolbox PIVlab de Matlab \cite{ThielickePivlab2021} qui nous permet de calculer le champ de vitesse. En locurence on mesure la composante verticale et horizontale du champ de vitesse:
+
+\begin{equation}
+  \vv{v} = v_{x}\vv{e_{x}}+v_{z}\vv{e_z}. \label{eq:ChampVitesse}
+\end{equation}
+
+Comme on observe un toubillon d'après la figure \ref{fig:ZprojectImageJ}, on peut définir une autre quantité qui nous permet de quantifier la rotation de l'enroulement. En général on associe à un tourbillon le vecteur tourbillon $\vv{\omega}$ (eq. \eqref{eq:VecteurTourbillon}) qui se calcule comme le rotationnel de la vitesse. Dans notre cas on a accès facilement à la composante perpendiculaire au champ de vitesse mesuré $\omega_{y}$ (éq. \eqref{eq:VecteurTourbillonY}) (autrement dit perpendiculaire à la feuille que vous lisez).
+
+\begin{ombredef}
+  \begin{definition}
+    \textbf{Définition du vecteur tourbillon: }
+    \begin{equation}
+      \vv{\omega}= \vv{\text{rot}}\vv{v}=\vv{\nabla}\wedge\vv{v} = \begin{pmatrix} \partial_y v_z-\partial_z v_y \\
+          \partial_z v_z-\partial_z v_x \\
+          \partial_x v_y - \partial_y v_x \\ \end{pmatrix} \label{eq:VecteurTourbillon}.
+    \end{equation}
+    \begin{equation}
+      \omega_{y} = \partial_z v_z-\partial_z v_x \label{eq:VecteurTourbillonY}.
+    \end{equation}
+  \end{definition}
+\end{ombredef}
+
+Le  résultat de ces calculs est présenté sur la figure \ref{fig:ChampVitesse} pour un débit d'injection de tensioactifs $Q_{\rm a} = 1.2~\rm \upmu mol\cdot s^{-1}$ et une épaisseur d'eau $h=15~\rm mm$. On mesure effectivement une vitesse proche de la surface $v=20~\rm mm/cdot s^{-1}$ tandis que dans l'enroulement on peut mesurer une vitesse déjà deux fois plus petite $v_{tourb} = 10~\rm mm\cdot s^{-1}$. L'écoulement de recirculation entre l'enroulement et le fond de la cuve est lui très faible. le champ de vorticité est intéressant, on observe que le vecteur tourbillon est le plus intense dans la couche limite responsable de l'enroulement. Lorsque la couche limite s'enroule elle forme un enroulement qui au premier instant présente un profil de vorticité gaussien (voir figure \ref{fig:Champvitesse}\textcolor{blue}{c}) dont on peut tracer le profil en fonction du rayon du vortex en prenant comme référence le centre de l'enroulement où la vorticité est la plus grande.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/rolling_vortex_velocity_vorticity.pdf}
+  \caption{Mesure du champ de vitesse et du champ de vorticité pour $h=15~\rm mm$ et $Q_{\rm a}=1.2~\rm \upmu mol\cdot s^{-1}$. (a) Mesure du champ de vitesse. (b) Mesure du champ de vorticité.}
+  \label{fig:ChampVitesse}
+\end{figure}
+
+Un tourbillon présentant une vorticité de type gaussienne est similaire aux vortex dit de Lamb-Oseen (pour Horace Lamb et Carl Whilhelm Oseen) dont l'intensité du vecteur tourbillon décroît à cause de la dissipation visqueuse.
+
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Tourbillons de Lamb-Oseen}:}
+
+    \noindent Le profil radial de vorticité définit par Lamb-Oseen est le suivant:
+    \begin{equation}
+      \omega(r) = \frac{\Gamma}{\pi a^2}{\rm e}^{-\left(\dfrac{r}{a}\right)^2}\label{eq:VorticityLambOseen}
+    \end{equation}
+    La vitesse azimuthal du tourbillon est définit comme suit:
+    \begin{equation}
+      v_{\theta}(r) = \frac{\Gamma}{2\pi r}\left[1-{\rm e}^{-\left(\dfrac{r}{a}\right)^2}\right]\label{eq:VazimuthaleLambOseen}
+    \end{equation}    
+  \end{definition}
+\end{ombredef}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/rolling_vortex_Azivelocity_vorticity.pdf}
+  \caption{Vortex de Lamb-Oseen. (a) Profil de vorticité, les lignes solides représentent un ajustemen sur les données expérimentales de l'équation \eqref{eq:VorticityLambOseen} les paramètres d'ajustement sont la circulation $\Gamma = 267~\rm mm^2\cdot s^{-1}$ et la demi-largeur de la gaussienne $a=3.94~\rm mm$.  (b) Profil de la vitesse azimutale du vortex avec l'ajustement de l'équation \eqref{eq:VazimuthaleLambOseen} sur les données expérimentales. On utilise les mêmes paramètres d'ajustement que pour le profil de vorticité. Ces profils ont été mesuré pour une épaisseur d'eau de $h=15~\rm mm$ et un débit molaire d'injetion $Q_{\rm a} = 1.2~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:VorticityAzimuthalVelocity}
+\end{figure}
+
+D'ailleurs en suviant le profil de la mesure du vecteur tourbillon on peut voir que proche du tourbillon au niveau de la surface on peut voir une légère vorticité négative, qui serait le signal d'un vortex contre-rotatif dont on discutera de son importance dans la section. Les tracés des champs de $\omega_y(x,y)$ nous permettent d'étudier la dynamique du tourbillon au cours du temps on trace sur la figure \ref{fig:Diaporama} un diaporama de l'enroulement pendant $t=8~\rm s$. Lorsqu'on trace le champ de vorticité en fonction 
+\clearpage
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/Diaporama_rolling_vortex_velocity_vorticity.pdf_tex}
+  %\includegraphics[scale=.7]{./figures/chap2/Diaporama_rolling_vortex_velocity_vorticity.png}
+  \caption{ $h=15~\rm mm$ et $Q_{\rm a}=1.2~\rm \upmu mol\cdot s^{-1}$}
+  \label{fig:Diaporama}
+\end{figure}
+\noindent du temps pour une même nappe LASER on observe que la dynamique du tourbillon change au cours du temps. Le tourbillon naît près de la surface où l'écoulement de la surface n'est plus capable d'advecté la couche limite de vorticité qui s'est développée sous la surface. À partir du moment où la couche limite n'est plus transporté le vecteur tourbillon dans la couche limite met en rotation les particules fluides créant le vortex.  Par conséquent à $t=0~\rm s$ on suppose que le rayon du tourbillon est de l'ordre de l'épaisseur de la couche limite: $r(t=0~\rm s) = \delta$. Le moteur de l'enroulement est donc l'écoulement de Marangoni qui permet de créer une couche limite qui s'enroule lorsqu'elles rencontre une zone tampon où il n'y a pas d'écoulement. Cet écoulement moteur est stationnaire car à aucun moment on n'arrête l'injection de tensioactif. Cela signifie que on est constamment entrain d'approvisionné le rouleau en quantité de liquide. Hors il semble que tout le liquide emporté dans la couche limite rentre dans le tourbillon, puisqu'on n'observe pas de pertes autour du tourbillon. Par conséquent le tourbillon grandit au cours du temps. La croissance de l'enroulement est caractérisé sur la figure \ref{fig:RayonTourbillon} où l'on compare la mesure du rayon du tourbillon au cours du temps avec un modèle qui permet de prédire sa croissance. Le tourbillon est piégé, au-dessus par la surface de l'eau, en-dessous par le fond dont il se rapproche au fur et à mesure que le temps s'écoule. Et lorsque le tourbillon atteint une taille de l'ordre de l'épaisseur de la couche d'eau dans la cuve, sa structure change. Le tourbillon ne pouvant plus s'étaler verticalement, s'étale horizontalement, il ne présente alors plus de structure Gaussienne. En mesurant la taille du vortex juste avant que sa structure change on se rend compte qu'il commence à se destabiliser lorsqu'il atteint $70\%$ de $h$ l'épaisseur de la couche d'eau. La destabilisation de l'enroulement donc résulte de son intéraction avec le fond du bassin où les conditons aux limites changent. Proche du fond immobile la vitesse de l'écoulement doit diminuer jusqu'à devenir nulle (conditions de non glissement) alors qu'aux premier de vie du tourbillon il intéragit avec le liquide environnant où la quantité de mouvement peut diffuser librement et n'est dissipé que par frottement visqueux donnant lieu à un tourbillon de Lamb-Oseen. L'intéraction du tourbillon avec le fond du bassin est un mécanisme de destabilisation connu dans la littérature sous le nom de vortex en effet de sol. On discutera de ce mécanisme dans la section \ref{section:VortexGroundEffect}.
+
+Grâce au déplacement de la nappe LASER on peut reconstituer un champ de vitesse à 3 Dimension pour les composantes verticale et horizontale du champ de vitesse $\vv{v}=v_x\vv{e_x}+v_z\vv{e_z}$. En représentant côte à côte les différentes nappes LASER, on peut tracer pour une hauteur donnée $z$ le champ de vitesse. Il en résulte une vue du dessus du champ de vitesse (voir figure \ref{fig:ReconstructionChampVitesseVueDeHaut}) en (a) on a reconstitué la vitesse verticale $v_z$ (perpendiculaire à la feuille) les vitesses positives (jaune) signifient que les particules fludies plongent en direction du fond du bassin alors que les vitesses négatives remontent. On peut ansi observer l'enroulement de la  couche limite. avec vers la gauche un écoulement lié à la recirculation du liquide provenant du fond du bassin qui remonte. Outre cela, on peut observer un phénomène intéressant le long de l'enroulement de la couche limite qui ne s'enroulee pas de façon homogène. À certains moment on peut observer des mouvements suivant l'axe $x$ de l'enroulement très localisés comme sur cette figure. On observe des émissions de vortex très marqués. Qui se traduisent par un signal intense dans le champ de vitesse horizontal (voir figure \ref{fig:ReconstructionChampVitesseVueDeHaut}\textcolor{blue}{(b)}) qui part ailleurs est très petit.
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/Reconstruction_vue_du_dessus_h10mm.pdf}
+  \caption{Reconstruction vue de dessus du tourbillon. Expérience pour $h=15~\rm mm$ et débit molaire $Q_{\rm a} = 1.2~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:ReconstructionChampVitesseVueDeHaut}
+\end{figure}
+
+Cette figure \ref{fig:ReconstructionChampVitesseVueDeHaut} montre aussi l'importance de la technique expérimentale. Si on avait pas la possibilité de mesurer le champ de vitesse de l'écoulement à plusieurs endroits quasi simultanénment, on serait dans l'incapacité d'étudier la dynamique complexe de cet écoulement. En effet les phénomènes d'instabilité de l'enroulement semblent localisés et il aurait fallut compter sur la chance pour les observer avec une seule nappe LASER. Avec cette technique on est donc en mesure de capturer ces évènements d'émissions des tourbillons.
+
+\subsubsection{Vorticité secondaire}
+
+En choisissant une nappe laser où l'on peut voir un déplacement ou une instabilité de l'enroulement de la couche limite, nous pouvons étudier l'instabilité de l'enroulement. Sans le balayage de la nappe LASER, il aurait fallut compter sur la chance pour capturer ce type d'évènements. C'est important car lorsqu'on observe le champ de vorticité du tourbillon, nous pouvons remarquer que lorsqu'il se rapproche de la paroie en plexiglas du fond de la cuve. Il génère une couche limite de vorticité près du mur. Cette couche limite est caractérisée par une vorticité de signe opposé au vortex primaire. Nous pouvons visualiser  cette vorticité de part et d'autre du tourbillon près du mur du fond en $z=0~\rm mm$ mais aussi près de la surface en $z=15~\rm mm$ qui est lié à la déformation de l'interface par l'écoulement de Marangoni et l'enroulement qui a lieu. La couche limite généré près du mur en $z=0$ finit par se détacher du mur lorsqu'elle rencontre un gradient de pression suffisamment fort. Alors la couche limite s'enroule autour du premier vortex et crée un vortex secondaire de vorticité de signe opposé (figure \ref{fig:Vorticitesecondaire}). 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/Secondary_vortex.pdf}
+  \caption{Visualisation de la génértaion d'un vortex secondaire lorsque le tourbillon se rapproche de la paroie du fond de la cuve. La mesure est réalisée pour un débit molaire d'injection de $Q_{\rm a} = 1.2~\rm upmu mol\cdot s^{-1}$ et une épaisseur d'eau de $h=15~\rm mm$.}
+  \label{fig:Vorticitesecondaire}
+\end{figure}
+
+La génération de vorticité secondaire près d'une paroie rigide n'est pas un phénomène anodin. Nous associons l'instabilité de vortex primaire à l'apparitition de ce vortex secondaire. En effet lorsque le vrotex primaire s'approche suffisament du mur, on observe le détachement de la couche limite de vorticité générée proche du mur. C'est alors que le vortex primaire perd son profil de vorticité Gaussien et commence à s'étaler horizontalementalement jusqu'à se briser. Par ailleurs la génération de vorticité secondaire est un phénomène important dans l'étude des collisions de pairs de vortex avec une paroie rigide. La génération de vorticité secondaire est responsable des phénomènes de rebonds du vortex primaire \cite{Dee1968}. Si le vortex primaire est suffisamment intense en comparaison avec le deuxième vortex, ce-dernier peut s'enrouler autour du premier. La second vorticité est connu pour être très instable. En effet l'enroulement du second vortex peut entrainer sa destabilisation. Le coeur du second vortex subit alors une perturbation sinusoïdale qui s'amplifie exponentiellement avec le temps. Sénsuit la brisure du second vortex en générant des pairs de vortex de voriticé perpendiculaire à la vorticité du premier vortex. Cette instabilité est identifiée comme une instabilité de déplacement de type Crow. Nous discutons de cette instabilité dans la section \ref{section:InstabiliteEnroulement} à la lumière de la littérature qui étude ce mécanisme de destabilisation. En particulier, nous nous interesserons à la collision d'une paire de vortex avec une paroie immobile qui a été étudiée expérimentalement et numériquement par Harris et Williamson  en 2012 \cite{Harris2012}.
+\subsubsection{Écoulement instable}
+
+Outre ces mesures de champs de vitesse et de vorticité qui nous permettent d'observer et de quantifier la nature de l'écoulement sous la surface. Nous pouvons essayer de caractériser la stabilité (ou l'instabilité de l'écoulement) grâce à un argument énoncé par Lord Rayleigh que l'on appellera le critère de Rayleigh. Il est brièvement décrit par P.G. Drazin \cite{Drazin2002} pour l'étude de la stabilité d'un écoulement généré par la rotation de deux cylindres concentriques au milieu desquels se trouve un liquide (écoulement de Couette). Le critère de Rayleigh est plus détaillé dans l'oeuvre de L. Landau et E.M.  Lifchitz \cite{Landau1994} pour l'étude de l'écoulement de Couette.\\
+
+\begin{wrapfigure}{l}{.45\textwidth}
+  \input{./figures/chap2/SchemaRotation.pdf_tex}
+  \caption{Schéma de l'écoulement en rotation}
+  \label{fig:SchémaRotation}
+\end{wrapfigure}
+Si on considère un écoulement en rotation, la trajectoire des particules fluides dans cet écoulement giratoire est le résultat de la compétition entre deux forces opposées. La première est la force centrifuge qui tire les particules fluides loin du centre de rotation, pour contrebalancer cette force, intervient un gradient de pression le long de l'axe radial qui est dirigé suivant l'axe radial vers le centre de l'écoulement. En effet Dans un écoulement en rotation axisymétrique, la vitesse de l'écoulement diminue lorsqu'on s'éloigne du centre de la rotation par conservation de la masse. Et donc inversement pour le champ de Pression, la pression exercée sur une particule fluide augmente lorsqu'on s'éloigne du centre de l'écoulement. Pour étudier la stabilité de l'écoulement il suffit de lui appliquer une perturbation infinitésimale, typiquement, on va observer ce que devient une particule fluide lorsqu'elle subit un déplacement infinitésimal le long de l'axe radial. Si les forces appliquées à la particules fluides lui permettent de rejoindre sa trajectoire initiale alors l'écoulement est stable, en revanche si la particule continue de s'écarter de sa position initiale cela signifie que l'écoulement est instable. De la même manière que pour une bille placée en bas d'une vallée, si on la pousse légèrement sur la montée elle va redescendre vers position initiale (stable) alors qu'en haut d'une montage, une légère perturbation suffit à la faire dévaler le flan de la montagne (instable).\\
+
+Donc, si on considère une particule en rotation (par exemple la particule 1 sur le schéma) avec une vitesse $\vv{v}_{\theta, 1} = r\Omega (r)$ à une distance $r = R_1$  constante du centre de rotation. On peut définir un moment angulaire de la particule tel que :
+
+\begin{equation}
+  J = v_{\theta,1}r = \Omega(r)r^2. \label{eq:MomentAngulaire}
+\end{equation}
+
+La particule est soumise à la force centrifuge:
+
+\begin{equation}
+  F_{c} = \rho v_{\theta,1}=\rho\left(r\Omega(r)\right)^2,
+\end{equation}
+
+qui est contrebalancée par le gradient de pression $\vv{\partial_r P}$. Si on déplace la particule fluide de $r=R1$ à $r+dr>R_1$. Le moment cinétique étant conservé, sa valeur ne change pas: $J_1 = J(r=R_1)$. Dans sa nouvelle position, la particule fluide est donc soumise à une force centrifuge $F_C = \rho\left(\Omega(r=R_1)R_1\right)^2$. Pour que la particule fluide tende à revenir vers sa position initiale il faut que cette force centrifuge soit inférieur à sa valeur d'équilibre  $F_C(r+dr)$  qui est compensée par le gradient de pression existant existant à la distance $r$. Avec d'autres mots, il faut que $F(r+dr)>F(R_{1})$ pour que l'écoulement soit stable. En développant $F(r+dr)$ on peut écrire cette condition sous la forme:
+
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Définition du critère de Rayleigh : }}\\
+Pour que l'écoulement soit considéré stable pour toute perturbation axysimétrique il faut qu'il assure la condition suivante :
+    \begin{equation}
+      \frac{\mathrm{d}(rv_{\theta})^2}{\mathrm{d}r}>0.
+    \end{equation}
+    Et inversement l'écoulement est dit instable si :
+    \begin{equation}
+      \frac{\mathrm{d}(rv_{\theta})^2}{\mathrm{d}r}<0.
+    \end{equation}
+C'est à dire que si le moment angulaire $J(r) = \Omega(r)r^2$ décroit le long de la direction radiale alors l'écoulement est instable.
+  \end{definition}
+\end{ombredef}
+
+Synge \cite{Synge1933} a montré mathématiquement qu'il s'agit d'une condition nécessaire et suffisante pour la stabilité des flux tourbillonants incompressibles et non visqueux pour des perturbations axisymétrique. D'ailleurs il faut remarquer que pour établir ce critère, on ne prend pas en compte la viscosité qui aurait un effet stabilisant pour l'écoulement. Un écoulement pour lequel la viscosité est très petite, si le critère annonce un écoulement stable, il sera stable pour n'importe quelle perturbation infintésimale axisymétrique. Tandis qu'un écoulement instable pour $\nu = 0 ~\rm m^2\cdot s^{-1}$ peut être stable si la viscosité augmente. Pour cela il faut considérer le nombre de Reynolds, dans notre cas on peut essayer de définir un nombre de Reynolds $Re=D**2\omega/\nu$ en considérant $D$ le diamètre du vortex, $\omega$ sa fréquence de rotation et $\nu=1E-6~\rm m^2\cdot s^{-1}$ sa viscosité cinématique. Dans notre cas on peut définir deux cas pour le calcul du nombre de Reynols, le premier cas pour le tourbillon loin du mur et le scond cas lorsque le tourbillon est proche du mur. Dans le premier cas $Re_1=38$, dans le deuxième cas $Re_2=675$. On considère donc la viscosité négligeable et on essaye de calculer le critère de Rayleigh grâce aux mesures de champ de vitesse du tourbillon. On a tracé sur la figure \ref{fig:CritereRayleigh}\textcolor{blue}{(a)} le calcul du critère de Rayleigh à l'instant $t=0$ où l'on repère la naissance d'un enroulement de la couche limite et donc le tourbillon est loin du fond du bassin et proche de la surface de l'eau. Dans ce cas on voit que $\mathrm{d}(rv_\theta)^2/\mathrm{d}r>0$ sur tout la fenêtre de mesure. En revanche lorsque le tourbillon est assez grand pour intéragir ave cle fond c'est différent. On observer sur la figure \ref{fig:CritereRayleigh}\textcolor{blue}{(b)} que $\mathrm{d}(rv_\theta)^2/\mathrm{d}r$ devient négatif proche du mur où l'enroulement cisaile le liquide pris au piège entre le tourbillon et le mur. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/Calcul_critere_Rayleigh_dj2dr_20190704_2.pdf}
+  \caption{Calcule du critère de Rayleigh (a) lorsque le tourbillon naît et s'enroule prèse de la surface de l'eau. le crit1ere de Rayleigh est positif donc l'écoulement est stable (correspond à la première image du diaporama (figure \ref{fig:Diaporama}). (b) Lorsque le tourbillon s'est développé et a atteint une taille comparable à celle de l'épaisseur d'eau $h=15~\rm mm$ (correspond à la dernière image du diaporama (figure \ref{fig:Diaporama}). Ici on observe des régions où le critère devient négatif notamment proche du fond du bassin où l'écoulement devient donc instable a priori. Expérience réalisée pour une épaisseur d'eau de $h=15~\rm mm$ et un débit molaire $Q_{\rm a} = 1.2~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:CritereRayleigh}
+\end{figure}
+Cela pourrait être le signal de la génération de seconde vorticité qui est connue pour être très instable. Cela rejoint la discussion qui a lieu par la suite sur les tourbillons en intéractions avec un mur : les vortex en effet de sol qui en intéragissant avec le deuxième vortex instable présentent des dynamiques différentes des vortex primaires isolés.
+
+\clearpage
+\subsection{Schlieren}\label{section:ExpSchlieren}
+
+Dans cette section on présente les résultats obtenus avec la méthode de Schliern optique qui permet de mesurer les déformations de l'interface par l'écoulement. En locurrence on présente les résultats obtenus via la technique expérimentale de Sanders Wildeman dont le protocol de cette expérience est décrit dans la section \ref{section:ProtocolSchlieren} car c'est une méthode rapide et moins sensible au bruit ce qui nous permet d'avoir un signal de la déformation par l'écoulement plus net qu'avec la technique de FS-SS.
+
+\subsubsection{Déformation de la surface}\label{section:SchlienH10mm}
+
+On présente dans la figure suivante (\ref{fig:DeformationTourbillon}) le résultat de la mesure de la déformation de la surface de l'eau par l'écoulement de Marangoni. On se place dans les conditions expérimentales suivantes: la solution de tensioactifs est injectée seule sur une couche d'eau d'épaisseur $h=10~\rm mm$ et un débit molaire d'injection $Q_{\rm a}= 0.4~\rm \upmu mol\cdot s^{-1}$. C'est un cas où de nombreux tourbillons sont émis autour de l'écoulement de Marangoni et de tailles assez petites.\\
+
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/Gradient_emission_tourbillons.pdf_tex}
+  \caption{Présentation d'un résultat de mesure de la déformation de la surface par l'écoulement de Marangoni pour une épaisseur d'eau $h=15~\rm mm$ et un débit d'injection molaire $Q_{\rm a} = 0.4\upmu mol\cdot s^{-1}$, on présente les mesures obtenues au bout de $t=100~\rm secondes$. (a) Photo obtenue grâce à la caméra Imagine Source du motif (échiquier) déformé par l'écoulement de Marangoni. (b) Calcul de la pente de la surface de l'eau $\delta r(x,y)/ h^*$(c) Calcul de la déformation de la surface de l'eau $\zeta(x,y)$. (d) Zoom sur la frontière de l'ecoulement où l'on peut distinguer des structures s'éloignant par paires du bord de l'écoulement de Marangoni.}
+  \label{fig:DeformationTourbillon}
+\end{figure}
+
+Sur la figure \ref{fig:DeformationTourbillon}\textcolor{blue}{(a)} on montre une image brute capturée par la caméra imagine source au bout de $t=100~\rm s$ de temps d'injectino donc l'écoulement a atteint son état stationnaire depuis environ $40~\rm secondes$. On voit dans le fond de l'image l'échiquier dont on va mesurer le déplacement des pixels noirs à travers la couche d'eau. En noir on voit la tige thorlabs qui permet d'amener la labuse d'injection au centre de la cuve près de la surface de l'eau. On peut voir à l'oeil nu là où la déformation des de l'interface est la plus importante. À une dizaine de centimètres de la source on peut voir que le motif est déformé par l'écoulement de Marangoni. La déformation correpond à la région où l'écoulement de Marangoni meurt. Sur la figure \ref{fig:DeformationTourbillon}\textcolor{blue}{(b)} on a représenté le calcul de la pente  de la déformation de la surface de l'eau comme écrit dans l'article de F. Moisy \textit{et al} \cite{Moisy2009} $\delta r/ h^*$. L'avantage de représenter la pente c'est que les toutes petites déformations dont la pente est donc nulle, permettent de mieux voir où est-ce que la surface est le plus déformée. On remarque alors que dans l'écoulement de Marangoni $r<R_{\rm M}$ la surface ne présente pas de déformation où une toute petite, de la même façon à l'éxtérieur de l'écoulement $r>R_{\rm M}$ où il n'y a, a priori, pas d'écoulement. En revanche, à $r=R_{\rm M}$ on observe un signal très fort en comparaison avec le reste. La surface est le plus déformée là où on a un changement abrupte de conditions à la surface. En effet on passe d'une région où la surface subit un écoulement intense généré par l'effet Marangoni à une zone "tampon" où l'écoulement à la surface devient très petit \cite{Roche2014, Leroux2016}. Ce qui est intŕessant c'est que si on regarde attentivement la dynamique de de $\delta r(t)/h^*$ au cours du temps, on peut voir des structures émises par pairs autour de la frontière. On en voit deux sur la figure \ref{fig:DeformationTourbillon}\textcolor{blue}{(d)} marquée par un une flèche noire que l'on peut identifier à la déformation de la surface qui accompagne les tourbillons émis à la surface de l'eau, et cela, d'après nos observations précédentes de l'écoulement de la surface avec l'émulsion. Sur la figure \ref{fig:DeformationTourbillon}\textcolor{blue}{(c)} on a calculé le champ de déformation $\zeta$ qui correspond à l'intégrale de $\delta r/h^*$. Ce que l'on remaque par rapport aux figures précédentes c'est que l'on observe que la surface à l'intérieur de l'écoulement ($r<R_{\rm M}$), en effet $\zeta \approx \shortminus 0.1$ en moyenne dans toute la surface où l'écoulement a lieu. Cela s'explique par la conservation de la masse. Comme la vitesse augmente dans la zone de l'écoulement de Marangoni la section dans la couche de liquide doit diminuer pour conserver la masse de liquide transportée. Lorsque l'écoulement atteint $r=R_{\rm M }$, $\zeta$ redevient nul, comme lorsque la surface de l'eau est au repos. De plus, on peut voir des petits "patchs"de dépressions le long de la zone de Marangoni qui doivent correspondre à la déformation de la surface induite par les pairs de tourbillons.  
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/PairsTourbillons_surface.pdf_tex}
+  \caption{Visualisation de la déformation des pairs de tourbillons. Nous pouvons visualiser des déformations s'éloigner par paire de la frontière de l'écoulement de Marangoni au fur et à mesure que le temps passe (a) Deux pairs sont émises (b) les deux pairs disparaissent et une nouvelle paire est émise entre les deux précédentes. (c) La paire s'eloigne de l'écoulement de la région de Marangoni. La mesure de la déformation est réalisée dans les conditions expérimentales suivantes: $h=10~\rm mm$, $Q_{\rm a} = 0.4~\rm \upmu mol\cdot s^{-1}$.}
+  \label{fig:EmissionTourbillonSchlieren}
+\end{figure}
+\subsubsection{Influence de l'épaisseur de la couche d'eau}
+
+On vient de présenter une mesure de la déformation de la surface de l'eau par l'écoulement de Marangoni. Hors on a montrer par l'observation de l'écoulement à la surface grâce à l'émulsion que la génération des tourbillons à la surface est fortement conditionnée par l'épaisseur de la couche d'eau. Les figures \ref{fig:Schlieren}\textcolor{blue}{(a), (c)} correspondent aux résultats présentés dans la section précédente (\ref{section:SchlienH10mm}). \\
+
+Sur la figure \ref{fig:Schlieren}\textcolor{blue}{(a) et (b)} sont présentées des photos du motif d'échiquier dont va mesurer la déformation par la méthode de Wildeman pour deux épaisseurs de liquides différentes une à faible épaisseur $h=10~\rm mm$ et la deuxième à $h=30~\rm mm$ au même instant $t=100~\rm s$ après le début de l'écoulement et même débit d'injection molaire $Q_{\rm a} = 0.4~\rm \upmu mol\cdot s^{-1}$. On compare les deux résultats obtenus. Si on compare les deux expérience, ce que l'on remarque directement c'est que la déformation de la surface est très petite pour l'épaisseur d'eau $h=30~\rm mm$. On obtient une déformation qui atteint une profondeur maximum de $\zeta=-0.02~\rm mm$ en comparaison pour $h=10~\rm mm$ on obtient une dépression qui diminue jusqu'à $\zeta = -0.2~\rm mm$ c'est à dire une déformation dix fois plus grande. Cela peut être corrélé à l'intensité de l'écoulement. Tout d'abord, d'après S. Le Roux et M. Roché \cite{Roche2014, Leroux2016} la vitesse de l'écoulement de Marangoni et son extension spatiale ne dépendent pas de l'épaisseur de la couche d'eau seulement du débit d'injection molaire que nous n'avons pas modifié cela signifie que l'écoulement de Marangoni est d'égale intensité. Ce qui change c'est la masse de liquide que l'écoulement peut déplacer. Dans le cas $h=30~\rm mm $ la masse de liquide est plus importante et amorti la déformation de la surface beaucoup plus qu'à faible épaisseur d'eau. il en résulte une déformation presque invisible même aux yeux de la méthode optique de Schlieren. La zone de Marangoni n'est pas aussi marqué que sur la figure \ref{fig:Schlieren}\textcolor{blue}{(c)}, d'ailleurs on ditingue à peine des structures qui pourraient correspondre à des tourbillons s'éloignant du bord de l'écoulement alors même que l'on a pu observer qu'aux grandes épaisseurs les tourbillons émis étaient de grande taille.
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{.9\textwidth}{!}{\input{./figures/chap2/Schlieren_deformation_Marangoni_flow.pdf_tex}}
+  \caption{Comparaison de la mesure de la déformation de la surface de l'eau pour différentes épaisseurs d'eau à débit molaire d'injection de tensioactif constant. (a) (c) $h=10~\rm mm$, $Q_{a}=0.4~\rm \upmu mol\cdot s^{-1}$ et (b), (d) $h=30~\rm mm$, $Q_{a}=0.4~\rm \upmu mol\cdot s^{-1}$}
+  \label{fig:Schlieren}
+\end{figure}
+
+Enfin, ces mesures de déformations, montrent que l'écoulement de Marangoni n'est pas influencé par les gouttelettes d'huile lorsqu'on injecte une émulsion à la place de la solution de tensioactif seule. Cela rejoint la discussion sur la présence d'impureté ou pas à la surface de l'eau. Cette discussion a lieu dans la section \ref{section:NatureInterface}.
+
+\clearpage
+\section{Discussion}
+\subsection{Modèlisation de la croissance du tourbillon}
+
+On propose un modèle pour la croissance de l'enroulement en se basant sur nos observations expérimentales. On s'interesse particulièrement au régime, où le vortex n'intéragit pas avec le fond du bassin. On étudie l'écoulement d'un liquide de masse volumique $\rho=10^{3}~\rm kg\cdot m^{-3}$ et de viscosité dynamique $\eta=1\cdot10^{-3}~\rm Pa\cdot s$. On considère un écoulement de Marangoni de vitesse $v$ qui cisaille l'interface eau/air sur une couche limite d'épaisseur $\delta$, dans un une couche d'eau d'épaisseur $h$. La fin de l'écoulement de Marangoni et la modification du profile de l'écoulement entraîne l'enroulement de la couche limite sous la surface. Cet enroulement est toujours en contact avec la couche limite générée par l'écoulement stationnaire de Marangoni qui l'approvisionne en masse de liquide et vitesse angulaire. On caractérise ce vortex par son rayon $r$ et sa fréquence angulaire $\omega$. Afin de prédire la croissance de l'enroulement on écrit la conservation de la masse, de l'impulsion, et de la angular momentum. À l'état actuel on néglige pour ce modèle la dissipation visqueuse.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/SchemaEnroulement.pdf_tex}
+  \caption{Schéma du vortex}
+  \label{fig:SchemaVortex}
+\end{figure}
+
+On fait donc l'hypothèse que la couche limite $\delta$ arrivant sur le vortex est complètement absorbée par ce-dernier et qu'il n'y a pas de liquide sortant de l'enroulement. Il en résulte, une accumulation de liquide qui n'est possible que si il y a une différence de hauteur entre les régions avant et après le vortex. Cette différence de hauteur entraîne une recirculation de liquide ayant lieu entre le fond du bassin et le liquide ce que l'on peut observer sur les mesures de champ de vitesse présentées figure \ref{fig:ChampVitesse}\textcolor{blue}{(a)}. On peut écrire la masse surfacique du vortex comme :
+\begin{equation}
+  m = \pi\rho r^2.\label{eq:masse}
+\end{equation}
+$r$ est le rayon du vortex qui croît avec le temps $t$. la variation de la masse avec le temps provient du flux de liquide amené à travers la couche limite $\delta$. On écrit le flux de masse comme suit:
+\begin{equation}
+  j_{\rm m}=\rho_{l} v \delta.\label{eq:FluxMass}
+\end{equation}
+En écrivant la conservation de la masse qui équilibre la masse du vortex avec le flux de masse liquide entrant dans l'enroulement et en considérant qu'il n'y a pas de perte de liquide on obtient l'équation suivante:
+
+\begin{align}
+  \dot{m} &= j_{\rm m}; \\
+  \Leftrightarrow 2\rho\frac{\mathrm{d}r^2}{\mathrm{d}t} &= \rho v \delta;\\
+  \Leftrightarrow 2r\dot{r} &= v\rho\delta.\label{eq:diffeqr}
+\end{align}
+On obtient donc une équation différentielle que l'on peut résoudre facilement. En intégrant l'équation \eqref{eq:diffeqr} on obtient le résultat suivant:
+\begin{equation}
+  r^2(t)=\frac{1}{2\pi}\delta v t + C.
+\end{equation}
+La constant d'intégration $C$ est la valeur initiale du rayon du tourbillon. Le rayon initial doit être de l'ordre de l'épaisseur de la couche limite. On suppose donc que :  $r(t=0~\rm s) = \delta$. Ce qui nous amène à l'équation décrivant la croissance du rayon du vortex:
+\begin{equation}
+  r(t)=\delta\sqrt{1+\frac{vt}{\delta}}\sim\sqrt{v\delta t}.\label{eq:Rayon}
+\end{equation}
+On peut simplifier cette équation dans le cas où $\left(2\pi\delta\right)^{-1}\gg 1$. Étant l'ordre degrandeurs des vitesses que l'écoulement atteint \textit{i.e.} $v=\mathcal{O}\left(10^{-2}\right)~\rm m\cdot s^{-1}$ et la couche limite $\delta=\mathcal{O}\left(10^{-3}\right)~\rm m$, on trouve que la simpification est possible lorsque $t\gg 6\cdot 10^{-1}~\rm s$. Cette condition est vrai à chaque instant pour nos mesures. Dans ce cas l'équation \eqref{eq:Rayon} devient:
+\begin{equation}
+  r(t)\sim \sqrt{\frac{v\delta t}{2\pi}}.\label{eq:RayonSimplifiee}
+\end{equation}
+
+On peut calculer $\delta$ à partir de la vitesse de l'écoulement de surface moyenne $\langle v_{\rm surface}\rangle$ et de la distance sur laquelle s´étend l'écoulement de Marangoni. Pour les lier on utilise l'équation de $\delta$ pour un plaque plane dans un écoulement.
+\begin{equation}
+  \delta(R_{\rm M}) = \sqrt{\frac{\nu R_{\rm M}}{\langle v_{\rm surface} \rangle}}
+\end{equation}
+
+Outre cela on peut définir un temps caractéristique $\tau_{\rm b}$ comme le temps que prends le tourbillons à atteindre le fond du bassin, \textit{i.e.}: $r(\tau_{\rm b})=h/2$ on obtient alors:
+\begin{equation}
+  \tau_{\rm b} = \frac{\delta}{v}\left(\frac{h^2}{4\delta^2}-1\right)\sim \frac{h^2}{4\delta v}.\label{eq:TimeB}
+\end{equation}
+
+En reprenant l'équation \eqref{eq:Rayon}, on peut voir que le rayon $r$ est proportionnel à l'épaisseur de la couche limite. On utilise cette observation pour adimensionner l'équation que l'on vient d'obtenir pour $\tau_{\rm b}$ (équation \eqref{eq:TimeB}) en divisant les deux termes par $\delta^2$ ce qui nous donne:
+
+\begin{equation}
+  \frac{h^2}{2\delta^2}\propto \frac{v\tau_{\rm b}}{\pi \delta}. \label{eq:adim1}
+\end{equation}
+
+On réecrit cette équation adimensionnée en notant $H^2=h^2(2\delta^2)^{-1}$ et $T=(\pi \delta)^{-1}v\tau$. Ce qui nous permet d'écrire l'égalité suivante :
+
+\begin{equation}
+  T=H^2. \label{eq:adimensionne}
+\end{equation}
+La comparaison des équations \eqref{eq:Rayon} et \eqref{eq:adimensionne} sont en bon accord avec les résultats expérimentaux présentés sur la figure \ref{fig:RayonTourbillon}. Hors, les pairs de tourbillons sont émis génération après génération avec une période bien définie que l'on note $\tau_{\rm surface}$. Dans la limite des paramètres expérimentaux que l'on a exploré, $\tau_{\rm surface}$ dépend essentiellement de l'épaisseur de la couche d'eau dans le bassin, avec très peu d'effet du débit molaire. Ce que suggère la supperposition des temps d'émissions des générations des pairs de vortex avec les le temps que mets le vortex à se destabiliser c'est que les deux phénomènes semblent fortement corrélés. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/Croissance_Rayon.pdf}
+  \caption{(a) Mesure de la croissance du tourbillon pour $h=15~\rm mm$ et différents débit molaire d'injection $Qa \in [0.5, 0.8, 1.2]~\rm \upmu mol\cdot s^{-1}$. (b) Corrélation des temps d'émission des tourbillons de la surface avec le temps de de destabilisation de l'enroulement sous la surface.}
+  \label{fig:RayonTourbillon}
+\end{figure}
+
+\textcolor{blue}{Todo : peux-t-on combiner Le roux et mandre}
+\clearpage
+
+\subsection{Stabilité des l'écoulement soluto-capillaire comparé aux écoulements thermo-capillaires}
+
+\subsubsection{Instabilité divergente}
+
+
+L'émission des tourbillons dans le contexte de l'écoulement de Marangoni a été étudié expérimentalement et théoriquement dans les $70-80$, expérimentalement par Pschenichnikov et de façon théorique par Bratukhin \cite{Pshenichnikov1974, Bratukhin1982}. PLus tard des publications montrent que l'instabilité azimuthale sous-jacente est commune à de nombreux écoulement divergent \cite{Shtern1993}. Le système consiste en une cuve cylindrique et ils approchent une point chaude au centre de la cuve près de la surface. Le gradient de température crée au voisinage de l'objet chaud génère un effet Marangoni thermocapillaire dans la direction des régions les plus froides de la cuve.\\
+
+En effet les effets de la variation de la température remplacent les effets de la diffusion des molécules tensioactives responsables de l'écoulement de Marangoni solutal qui est le sujet de cette thèse. On peut remplacer la concentration en molécules par la température $T$ et le coefficient de diffusion massique des molécules par un coefficient de diffusion thermique $\kappa$. Ainsi Levich en 1962 décrit la variation de la tension de surface en fonction de la température comme :
+
+\begin{equation}
+  \sigma = \sigma_{\infty}-\gamma\left(T-T_{\infty}\right), \label{eq:TensionSurfaceThermique}
+\end{equation}
+
+où $\sigma_{infty}$ et $T_{\infty}$ sont des valeurs prises pour la tension de surface et la température loin de la source de chaleur. On peut alors écrire le tenseur de contrainte qui s'applique sur la surface du liquide en fonctioin de la variation de la température le long de la surface:
+
+\begin{equation}
+  \tau_{thermo}=-\gamma\left(\nabla T\right). \label{eq:TenseurThermo}
+\end{equation}
+
+Cette équation couplée à l'équation de la chaleur et à celle de navier Stokes donne lieu à la naissance d'un écoulement radial à l'interface entre l'air et l'eau \cite{Shtern1993}. Bien que L'expérience de PY est difficilement accessible en ligne, on propose une traduction de leurs article en annexe \ref{annexe:PY} réalisée avec le logiciel en ligne Deepl.  d'où on tire les informations suivantes ainsi que la figure \ref{fig:PYfig}\textcolor{blue}{(a,b)}. Ils injectent une solution contenant $10\%$ d'alcool et $90\%$ d'eau, à travers le tube capillaire que l'on peut voir sur le schéma avec un débit très faible (de $3.0\times 10^{-4}~\rm à~ 1.0\times 10^{-1}~\rm g\cdot s^{-1}$, d'après \cite{Pshenichnikov1974}) en supposant que l'alcool utilisé est de l'éthanol de masse molaire $\rm M_{\rm éthanol}=46.07~\rm g\cdot mol^{-1}$, on en déduit un débit molaire d'injection d'éthanol entre $0.65~\rm \upmu mol\cdot s^{-1}$ et $2.0\times 10^{-4}~\rm mol \cdot ^{-1}$.\\
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/PY.pdf_tex}
+  \caption{Expérience de Pshenichnikov 1974 \cite{Pshenichnikov1974} (a) Schéma du dispositif expérimental de la convection de Marangoni, inspiré de \cite{Pshenichnikov1974}. (b) Instabilité de l'écoulement à huit cellules de recirculation, }
+  \label{fig:PYfig}
+\end{figure}
+
+
+Lorsque l'injection commence, l'effet Marangoni est déclenché et un écoulement radial apparaît. POour certains débits d'injection, ils voient apparaître des cellules de recirculation. De plus la variationde du débit d'injection change le nombre de cellules de recirculation dans à la surface de la cuve. On peut observer ainsi des cas à $N=2$ recirculations pour les plus petits débits, et en augmentant ce-dernier, $N$ augmente également. Dans leurs articles en annexes on peut voir le cas à 2, 4, 5, 8 (voir figure \ref{fig:PYfig}\textcolor{blue}{(b)}) cellules. Ils reportent également que la valeur des débits critiques correspondants à chaque mode correspondant à un nombre $N$ de recirculations changent avec l'épaisseur d'eau dans la cuvette. Cet écoulement ressemble aux solutions analytiques exactes proposées par Bratukhin et Maruin en 1967 \cite{Bratukhin1967} pour les écoulements thermo-capillaires. Ce sont les seules solutions analytiques connues considérant les équations de navier-Stokes et l'équation de la chaleur qui permettent de modéliser l'écoulement de Marangoni.Ce qui, pour Shtern \textit{et al},  simplifie l'analyse de stabilité de cet écoulement \cite{Shtern1993}. Le paramètre clef du modèle de Bratukhin semble être un débit molaire adimenssionné comme suit: $ \mathcal{Q} = \frac{Q_{\rm a}}{2\pi\nu\eta D}\partial_c\gamma.\label{eq:BratukhinDebit}$, $Q_{\rm a}$ est le débit d'injection molaire que l'on connaît, $\nu$ la viscosité cinématique, $\eta$ la viscosité dynamique, $D$ le coefficient de diffusion et $\partial_{c}\gamma$ est la variation de la tension de surface en fonction de la concentration en tensioactif. C'est ce dernier terme qui va nous permettre de comparer quantitativement les expérineces de PY et les notres. L'analyse de Sthern met en lumière trois nombres adimenssionés qui nous permettent de caracteriser la stabilité des écoulements solutaux et thermocapillaires.
+
+\begin{ombredef}
+  \begin{definition}
+    \textbf{Défintion:}\\
+    Le nombre de Reynolds (Re, equation \eqref{eq:NombreReynoldShtern}) est le rapport des entre les forces d'inertie et de viscosité.
+
+    \begin{equation}
+      \mathrm{Re} = \dfrac{r\langle v_r \rangle}{\nu}.\label{eq:NombreReynoldShtern}
+    \end{equation}
+
+    \noindent Le nombre de Schmidt (Sc, equation \eqref{eq:NombreSchmidt}) caractérise la compétition entre la diffusion de la quandtité de mouvement et la diffusivité massique.
+
+    \begin{equation}
+      \mathrm{Sc} = \dfrac{\nu}{D}.\label{eq:NombreSchmidt}
+    \end{equation}
+
+    \noindent Le nombre de Marangoni (Ma, equation \eqref{eq:NombreMarangoni}) compare le transportpar l'écoulement de Marangoni et le transport lié à la diffusion des molécules.
+
+    \begin{equation}
+      \mathrm{Sc} = \dfrac{Q_{\rm a}}{2\pi\nu\eta D}\dfrac{\mathrm{d}\gamma}{\mathrm{d}c}.\label{eq:NombreMarangoni}
+    \end{equation}
+    $\nu$ est la viscosité cinématique ($\rm m^2\cdot s^{-1}$), $D$ est la diffusion du tensioactif ($\rm m^2\cdot s^{-1}$), $Q_{\rm a}$ est le débit molaire de tensioactif ($\rm mol\cdot s^{-1}$), $\eta$ est la viscosité dynamique ($\rm Pa\cdot s$), $\gamma$ la tension de surface de l'interface eau/air ($\rm N\cdot m^{-1}$), $c$ est la concentration de tensioactif dans la solution ($\rm mol\cdot L^{-1}$) et $r$ est la position radiale ($\rm m$) où la vitesse moyenne $\langle v_r \rangle$ ($\rm m\cdot s^{-1}$) est évaluée. Ces trois nombres sont reliés par la relation suivante:
+
+\begin{equation}
+    \mathrm{Ma}^2=2\pi\mathrm{Sc}\mathrm{Re}^3. \label{eq:Triade}
+\end{equation}
+  \end{definition}
+\end{ombredef}
+
+On utilisera ces nombres adimenssionés pour comparer l'instabilité divergente à l'instabilité que nous observons avec l'écoulement solutal de Marangoni.
+
+
+\subsubsection{Comparaison à l'instabilité de l'écoulement de Marangoni}
+
+L'émission des tourbillons que l'on observe trouve son originie dans un mécanisme différent. Bien que l'instabilité azimuthale des écoulements divergents est observée sur des couches d'eau d'épaisseur similaire aux plus grandes épaisseurs d'eau que l'on a exploré ($h=30~\rm mm$), cette instabilité présente une structure radicalement différente à notre écoulement. En effet l'écoulement divergent donne lieu à des cellules de recirculations depuis la source d'injection de chaleur ou de tensioactifs \cite{Bratukhin1967}. Le nombre $N$ varie avec l'ámplitude du flux de chaleur ou débit de tensioactifs injecté à la surface du liquide \cite{Pshenichnikov1974, Shtern1993}.\\
+
+Les résultats que l'on a décrit dans cette thèse nous amènes à la conclusion que l'origine de la génération del a vorticité dans le plan de la surface libre, comme les pairs de tourbillons, diffère de l'originie des signatures interfaciales dans les cas des écooulements thermocapillaires \cite{Shtern1993, Shtern1994, Bratukhin1967, Bratukhin1982, Karlov2005, Mizev2013, Shmyrov2019}. Dans notre cas, l'écoulement est orienté radialement, sans composante azimuthale dans la région de l'écoulement de Marangoni \cite{Roche2014, Leroux2016}. De plus, l'écoulement est stable sur toute la distance sur laquelle il s'étale ($r=R_{\rm M}$) le rayon de Marangoni. Et c'est uniquement hors de l'écoulement de Marangoni que l'on observe l'émissions de tourbillons qui sont d'ailleurs émis par pairs. Outre cela, on remarque l'absence de l'émission des tourbillons à grande valeur de $h$. PY n'est pas très précis sur certaines définitions des quantités qu'il annonce. On suppose dans la suite que le débit massique indiqué dans leur publication est le débit massique de leur solution d'éthanol. La concentration de leur solution d'éthanol étant de  $10\%$, le débit molaire d'éthanol est grosso-modo dix fois moins fort que les débits de nos expériences. On ignore si la concentration mesurée est relative au poids ou au volume de la solution. De plus, Ils ne fournissent pas la valeur de leur coefficient solutal de la tension de surface $\mathrm{d_c}\gamma$. Malgré tout, on peut le retrouver depuis les données existantes de tension de surface pour les solutions d'éthanol en fonction de la molarité (voir figure \ref{fig:molarite}). On utilise les relations de \eqref{eq:NombreSchmidt} à \eqref{eq:Triade} pour comparer nos données expérimentale à celles de PY.\\\
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap2/deltagammac_molarity_gld.pdf}
+  \caption{Calul et comparaison de la variation de la tension de surface en fonction de la molarité. On observe que $|\partial_c\gamma|_{\rm TTAB} = 10^{3}|\partial_c\gamma|_{\rm EtOH}$ cette différence est importante et va se répercuter sur le nombre de Maranoni.}
+  \label{fig:molarite}
+\end{figure}
+
+Le calcul de la variation de la tension de surface en fonction de la molarité pour le TTAB et l'éthanol afin de comparer les deux tensioactifs. On observe sur la figure \ref{fig:molarite}\textcolor{blue}{(b)} que $|\partial_c\gamma|_{\rm TTAB} = 10^{3}|\partial_c\gamma|_{\rm EtOH}$. Cette diffénce, qui est importante, va se répercuter sur le calcul du nombre de Marangoni Ma. 
+
+\begin{center}
+  \begin{tabular}{c|c|c|c}
+    & Schmidt number                & Reynolds number                                  & Marangoni number  \\ \hline \hline
+    expression & $\mathrm{Sc} = \dfrac{\nu}{D}$ & $\mathrm{Re} = \dfrac{r\langle vr \rangle }{\nu}$ & $\mathrm{Ma} = \dfrac{Q_{\rm a}}{2\pi v\eta D}\dfrac{\mathrm{d}\gamma}{\mathrm{d}c}$ \\ \hline
+    PY & $10^3$ & $10^2$ & $10^5$ \\ \hline
+    LD & $10^4$ &  $10^5$ & $10^{10}$ \\ \hline \hline 
+  \end{tabular}
+\end{center}
+
+On peut déduire de ces calculs que la différence de 5 ordres de grandeurs pour le nombre de Marangoni, nous place dans des conditions expérimentale bien différentes de PY, Bratukhin et Shtern. On obtient un nombre de Marangoni Ma $10^5$ fois supérieur au leur. Aussi Shtern montre que pour les nombres de Reynolds de ses exériences il observe un faible nombre de tourbillons émis depuis la source d'injection. Dans notre cas le grand nombre de Reynolds suggère que nous devrions être en mesure d'observer un très grand nombre de tourbillons. Si l'on suit le modèle de Shtern on peut estimer le nombre de tourbilons émis à travers la relation suivante:
+
+\begin{equation}
+  Re^* = 3.44 m^2;\label{eq:ReNumberVortices}
+\end{equation}
+
+où Re* est le nombre critique de Reynolds où le taux d'accroissement des modes instables avec $2m$ tourbillons générés est positif. Si on fait le calcul du nombre de pairs de tourbillons $m$ que l'on devrait observer on trouve $m\sim 184$ et et donc un nombre de cellules de recirulation de $2m=368$ ce qui est bien au-delà de toutes nos observations. On devrait donc voir un tourbillon à chaque degré autour de la source, ce qui n'est pas le cas. Il faut cependant remarquer que PY indique que leur écoulement devient axisymétrique au dela de $2m=10$ modes. La vitesse de l'écoulement de surface est alors purement radiale. On pense que notre écoulement est similaire à celui-ci. Pour l'instant la transition entre l'écoulement instable et stable axisymétriaue n'est décrite dans aucun modèle.
+
+\subsection{Nature de l'interface eau/air}\label{section:NatureInterface}
+
+\subsubsection{Enroulement de couche limites}
+
+Il faut remarquer que l'équation décrivant la croissance de l'enroulement au cours du temps (équation \eqref{eq:Rayon}) ressemble à la modélisation proposée par d'autres auteurs pour modéliser des croissances d'enroulements d'écoulement  crées par la décharge a barrière diélectrique à l'actionneur plasma \cite{Sattari2012}. La méthode de ce dispositif est très bien expliquée par Pierre Audier \cite{Audier2012}. Cette méthode consiste à transformer un gaz en plasma sous l'effet d'un champ électrique très intense. L'actionneur à plasma est composé de deux électrodes disposées de part et d'autre d'un diélectrique (asymétriquement), une des électrodes est alimenté par une haute tension alternativement, tandis que l'autre est relié à la masse, la différence de potentiel de quelques kV permet ainsi la création du plasma. Des particules sont alors crées et mises en mouvement grâce à la force de Coulomb. Ces particules se déplacent aléatoirement dans l'espace entre les électrodes et entrer en collision avec les espèces neutres du gaz. Ces collisions élastiques vont induire un transfert de quantité de mouvement  entre le plasma et le gaz ce qui va permettre la mise en mouvement des particules du gaz initialement au repos. Il en résulte un écoulement parallèle à la surface du diélectrique. Ces mécanismes d'enroulement ont été également étudiés numériquement par B.P. Conlon et S. Lichter en 1995 \cite{Conlon1995}\\
+
+
+L'écoulement parallèle à la surface du diélectrique vient progressivement s'enrouler formant un vortex qui croît avec le temps. Sattari génère l'écoulement parallèle proche de l'arrête d'une plaque supportant le diélectrique, de façon à ce que l'enroulement ait lieu loin du mur. On a schématisé son dispositif expérimental sur la figure \ref{fig:DBD}\textcolor{blue}{(a)}, la figure \ref{fig:DBD}\textcolor{blue}{(b)} présente leurs mesures de croissance de l'enroulement. Ils mesurent un rayon $r(r)$ proportionnel à $\sqrt{t}$. En revanche Whalley \textit{et al} réalise la même expérience mais cette fois le long d'une paroie (voir figure \ref{fig:DBD}\textcolor{blue}{(c)}) et reporte une croissance de l'enroulement proportionnelle à $r(t)\propto t^{2/3}$ \cite{Whalley2012}. On peut trouver des expériences similaires que l'on appelle dans la littérature les écoulement de jonction. Ils consitent en une bande se déplaçant à une certaines vitesse qui crée un écoulement parallèle comme sur la figure \ref{fig:DBD}\textcolor{blue}{(d)} qui vient rencontrer une surface immobile Allen \textit{et al} \cite{AllenNaitoh2007} mesurent un rayon du tourbillon qui croît comme $r(t)\propto t^{5/6}$. \begin{figure}[h!]
+  \centering
+  \resizebox{.9\textwidth}{!}{\input{./figures/chap2/DBD.pdf_tex}}
+  \caption{Enroulement de couche limite. (a) Enroulement d'une couche limite par DBD actuateur à plasma, schéma inspiré de Sattari \textit{et al} \cite{Sattari2012} (b) Croissance de l'enroulement, résultats obtenus par Sattari dans le cas d'un enroulement qui croît sans mur au voisinage: $r\propto\sqrt{t}$. (c) Enroulement d'une couche limite générée par DBD actuateur à plasma. Schéma est inspiré de Whalley \textit{et al} \cite{Whalley2012}. (d) Enroulement de couche limite à une jonction entre une plaque mouvante et immobile, inspiré de Allen \textit{et al} \cite{AllenNaitoh2007}}
+  \label{fig:DBD}
+\end{figure}
+Ce qui explique les différents taux de croissance du tourbillon est lié à l'environnement dans lequel le tourbillon croît. La présence d'une paroi rigide immobile au voisinage du tourbillon le soumet à des conditions aux limites de non glissement. La vitesse de l'écoulement doit diminuer jusqu'à 0 proche de la paroie. Au contraire en l'absence de paroie immobile les conditions sont plus souple et la dissipation de la quantité de mouvement sera simplement une dissipation liée à la viscosité du fluide environnant. La présence de la paroie s'associe avec la génération de vorticité secondaire qui modifie la dynamique de croissance du vortex primaire \cite{Wang2013}. Dans notre cas, la croissance en $\sqrt{t}$ suggère que l'interface séparant l'air et l'eau près de laquelle a lieu l'enroulement de la couche limite agit comme une interface libre et non pas comme une paroie rigide. Cette information est importante car la contamination de la surface de l'eau par des impuretés dans les solutions de tension de surface est inévitable. ET Les impuretés qui contaminent l'eau peuvent s'agréger et former ce que Warncke \textit{et al} \cite{Warncke1996} appelle une monocouche d'insoluble. Une monocouche d'insoluble peut se comporter comme un radeau solide ou une paroie rigide à la surface de l'eau. Si c'était le cas on observerait la présence de la génération de vorticité secondaire près de la surface libre et une croissance du tourbillon avec un taux de croissance différent de $1/2$. Ces observations que nous faisons rejoignent les résultats de Le Roux \textit{et al}. En effet la contamination de l'interface a été étudiée par Le Roux \textit{et al} \cite{Leroux2016}, ils montrent que la contamination n'influence pas ou très peu la taille l'écoulement de Marangoni quasi stationnaire. Ils montrent également que l'accumulation d'impuretés dans un contenant similiare pour des débits d'injections comparables est un procédé long et le changement de la tension de surface est faible lorsque nous réalisons la mesure ($30$ s).
+
+\subsubsection{Le ridge de Reynolds et contamination de la surface}
+
+Lorsque la contamination est importante à la surface de l'eau on peut voir l'apparition du ridge de Reynolds. Le ridge de Reynolds a été étudié premièrement en 1854 par THoreau, mais c'est McCutchen en dans les années 70 \cite{McCutchen1970} en déposant un film très fin sur de l'eau. Lorsque l'eau s'écoule en direction du film il observe l'élévation de la surface de l'eau le long du bord du film, c'est le premier à associer l'élévation à l'apparition d'une couche limite sous le film lié à un ralentissement de l'écoulement par le film. C'est le même mécanisme qui explique ce que l'on peut observer dans les rivière lorsque une eau peu contaminée rencontre une eau très contaminée sur laquelle les contaminants insoluble forment un film presque rigide. On voit apparaître une démarcation entre l'eau propre et l'eau contaminée. Ce phénomène a ensuite été étudié par Scott en 1982 \cite{Scott1982} qui a mesuré la taille du ridge de Reynolds en fonction de l'intensité de l'écoulement. PLus tard Warncke et Gharib \cite{Warncke1996, Warncke2000} se sont intéressés au Reynolds ridge en étudiant la génération de vorticité à la surface de l'eau en présence ou non de tensioactifs à la surface de l'eau.\\
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/RidgeReynolds_litt.pdf_tex}
+  \caption{Le ridge de Reynolds}
+  \label{fig:Ridgereynolds}
+\end{figure}
+Nous avons testé la présence de cette déformation à la surface de l'eau en mesurenat le profile de la hauteur de la surface de l'eau. Les résultats des mesures de la déformation de la surface sont présentés dans la section \ref{section:ExpSchlieren}. Aucune signature d'élévation de la surface n'a pu être mesuré (voir figure \ref{fig:Schlieren}). Au contraire on observe plutôt une dépression de la surface là où l'écoulement a lieu qui revient à son état de repos lorsque l'écoulement disparaît. Si le ridge existe malgré tout, étant donné la résolution de notre dispositif expérimental, la hauteur du ridge est bien plus petite que le micromètre. On peut remarquer aussi que dans la littérature du Reynolds ridge, il n'est jamais reproté qu'il soit associer à de la génération de vorticité.
+
+\subsubsection{Reconnexion de la vorticité}
+
+Nous avons donc décrit comment l'écoulement de Marangoni cisaillant la surface de l'eau génère de la vorticité sous la surface de l'eau. Lorsque l'écoulement de Marangoni atteint son état  quasi stationnaire, le cisaillement de la surface diffuse sous la surface créant une couche limite de vorticité qui est transportée par l'écoulement de Marangoni. Il y a un décrochage de la couche limite lorsque l'écoulement de Marangoni atteint sa taille maximale. la couche limite n'étant plus transportée commence alors à s'enrouler sur elle même près de la surface. Comment alors la vorticité qui est générée sous la surface peut-elle apparaître en surface. Le transfert de la vorticité du volume vers la surface n'a rien d'évident et la contamination de l'interface entre l'eau et l'air est connue pour empêcher la connexion de la vorticité avec l'interface.\\
+
+Nous pouvons trouver dans la littérature, des exemples de paires de tourbillons qui rebondissent sur des surface liquides contaminées après la collision. La dynamique de ces évènements sont dites similairesà ce qu'il se passe lorsqu'une paire de tourbillon rencontre un mur solide immobile. Christian E. Willert et Morteza Gharib étudient la question dans les années 90 \cite{Willert1997}. Ils génèrent deux pairs de vortex contre-rotatifs en direction de la surface de l'eau grâce à deux volets mobiles. Ils observent la déformation de la surface avec une méthode: le shadowgraph. Cette méthode permet de visualiser les inhomogénéités des milieux transparents. Dans le cas d'une surface d'eau propre, il observe alors des structures \og{} striations \fg{} perpendiculaires au vortexs principaux apparaitre à la surface. La description de ces structures peuvent 6etre retrouvées dans d'autres articles, notamment elles sont observées par Sarpkaya \textit{et al} \cite{Sarpakaya1991}. Mais aussi des pairs de  \og{} blob \fg{} noirs qui correspondent à des tourbillons dont l'axe de rotation est perpendiculaire à la surface de l'eau.\\
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/MecansimeReconnexionWillert97.pdf_tex}
+  \caption{Schéma du mécanisme de la reconnexion de la vorticité à la surface de l'eau propre.(a) Le tube du vortex primaire se déforme en intéragissant avec la surface libre (b) Le vortex se brise pour faire plusieur filament de vorticité avec la forme d'un "U" laissant à la surface des empreintes de pairs de vortex dont la vorticité est perpendiculaire à la surface. Schéma inspiré de Willert \textit{et al} \cite{Willert1997}.}
+  \label{fig:MecanismeReconnexion}
+\end{figure}
+Selon Willert \textit{et al} le mécansime de reconnexion de la vorticité primaire à la surface est le suivant. Le vortex primaire parvient à se connecter à la surface localement en éliminant la vorticité du tube la plus proche de la surface pour former deux lignes parallèles de vorticité en forme de \og{} U \fg{} (voir le schéma figure \ref{fig:MecanismeReconnexion}). La condition nécessaiore pour que la la connexion ait lieu est que la vorticité au coeur du vortex, la plus intense, soit amenée proche de la surface pour que le vortex  perde cette vorticité en faveur de la surface. Lorsque cela arrive, le vortex primaire se brise en plusieurs fragements qui vont disparaître rapidement. 
+
+Lorsque la surface de l'eau est contaminée, (Dans le cas de Willert ils ajoutent des molécules tensioactives) la connexion de la vorticité à la surface est retardée. En effet le vortex primaire ne peut plus se rapprocher suffisament de la surface car les molécules tensioactives forment une monocouche de molécules tensioactives dont la déformation par l'écoulement sous la surface entraîne la création de vorticité secondaire de signe opposé. Ce second vortex se situe entre la surface et le vortex primaire. Ce sond vortex intéragit avec le premier, pouvant aller jusqu'à le faire rebondir dans un autre direction. C'est le le rebond du vortex, notamment décrit par \cite{Bernal1989, Tryggvason1992, Hirsa1994}. Ce qui empêche le premier enroulement de transferer la vorticité parallèle à la surface, vers la surface. Sans quoi, Willert montre que la reconnexion à la surface ne peut pas avoir lieu. Willert \textit{et al} observent aussi l'apparition du ridge de Reynolds à la surface de l'eau après lequel finalement ils arrivent à observer des structures (plus petites et moins marquées) qui ressemblent à la reconnexion de vorticité normale à la surface.\\
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/WillertGharib97_manips.pdf_tex}
+  \caption{(a) (b) t = 3.50 s une pair de vortex modulée intéragit avec la surface d'eau contaminée. Le coeur du vortex bouge de gauche à droite (champ de vue 25 cm de haut). \cite{Willert1997}}
+\end{figure}
+ Part ailleurs Warncke et Gharib montrent que la présence de contaminants à la surface de l'eau peuvent restreindre le décollement des tourbillons dérrière un obstacle cylindrique perçant la surface d'un écoulement \cite{Warncke2000} jusqu'à les faire disparaître. Saprkaya montre que le transfert de la vorticité du volume de liquide vers les bords (la surface par exemple) ne peut arriver que si la surface est une interface sans cisaillement \cite{Sarpkaya1996} ce qui est a priori le cas hors de la région de Maranoni où l'écoulement à la surface est presque inexistant.\\
+
+Sachant cela, nous avons testé l'effet de la contamination pré-existante sur la génération des tourbillons à la surface de l'eau. Pour faire cela, nous avons injecté une solution tensioactive de Sodium Dodecylsufate (SDS, Sigma Aldrich $>99\%$, $\rm CH_3(CH_2)_12COOH$) contenant de l'acide Myristique (Sigma Aldrich $99\%$) à la surace d'eau ultra-pure. L'acide Myristique est insoluble dans l'eau, mais devient soluble dans la solution de SDS car il va être encapsulé dans les micelles de la solution de SDS. On présente les résultats de l'injection pour différentes concentrations d'acide Myristique sur la figure \ref{fig:ContaminationVortex}. Lorsque la concentation en acide Myristique est faible c'est à dire de $[\rm AcidMyr]=1~wt\%$ (voir figure \ref{fig:ContaminationVortex}\textcolor{blue}{(a)}) la structure de l'écoulement est similaire à celle que l'on a vu pour le TTAB (voir figure \ref{fig:Injection1}\textcolor{blue}{(b)}. Les tourbillons naissent à la frontière de l'écoulement de Marangoni et sont émis simultanément. La structure comence à changer lorsque nous augmentons la concentration. À $[\rm AcidMyr]= 5.4~wt\%$ ((figure \ref{fig:ContaminationVortex}\textcolor{blue}{(b)}). Les tourbillons sont plus difficilement discernables et une zone tampon apparaît de taille $w_b$ de l'ordre de $10$ mm qui sépare le bord de l'éculement de Marangoni de la zone d'émission des tourbillons. Nous pouvons voir ce phénomène distinctement sur les transformées polaires des figures (a) et (b): les figures \ref{fig:ContaminationVortex}\textcolor{blue}{(d)} et \ref{fig:ContaminationVortex}\textcolor{blue}{(e)}. Lorsque la concentration atteint $[\rm AcidMyr]=16.7~wt\%$ (\ref{fig:ContaminationVortex}\textcolor{blue}{(c)}), les tourbillons deviennent difficiles à voir et la taille de la zone tampon est devenue bien plus grande que la taille de l'écoulement lui même. Il faut aussi remarquer que la zone de Marangoni a diminué dans cette dernière expérience (voir figure \ref{fig:ContaminationVortex}\textcolor{blue}{(f)}).
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{1\textwidth}{!}{\input{./figures/chap2/ContaminationVortex.pdf_tex}}
+  \caption{Influence des contaminants sur la structure de l'écoulement. De la gauche à la droite $[\rm AcidMyr] = [1, 5.4, 16.7]~\rm wt\%$, débit volumique $Q=1~\rm mL\cdot min^{-1}$. La solution injectée contient du Sodium Dodecylsulfate (SDS) à une concentration de $[\rm SDS]=120~\rm mM$ \textit{i.e.} $15[\rm CMC]_{\rm SDS}$. (a) (b) (c)  vue du dessus de l'écoulement. (d)(e)(f) Transformée polaires.}
+    \label{fig:ContaminationVortex}
+\end{figure}
+
+
+Par conséquent, la contamination de la surface libre retarde et restreint la capacité de la vortictié à se connecter à la surface de l'eau. Dans les expériences présentées auparavant la naissance des tourbillons a lieu juste au bord de l'écoulement de Marangoni. Les observations montrées dans cette section confirment que nos expériences principales ne presentent pas ou presque pas de contamination de la surface de l'eau.  On en conclut que la surface de l'eau près de laquelle s'enroule la couche limite est peu contaminée et agit en conséquence comme une surface libre qui permet le transfert de la vorticité générée dans le volume vers la surface. Cependant cela n'explique pas l'émission simultanée de ces vortex et leur périodicité.
+
+\subsection{L'origine des tourbillons de la surface}\label{section:InstabiliteEnroulement}
+
+Nous avons pu établir précédemment que la surface de l'eau hors de l'écoulement de Marangoni est très peu contaminée car on peut voir l'apparition de vorticité par par paires. Ce qui résulte de la reconnexion d'un tube de vorticité présent sous la surface. Pourtant le vortex primaire ne présente aucun signe de destabilisation avant d'intéragir avec le fond du bassin. En revanche la structure des motifs d'emissions des tourbillons par pairs ressemble à ce qui est observé pour des pairs de vortex en effet de sol.\\
+
+Pour cela, on présente d'abord deux instabilités qui entre en compétition lorsqu'une paire de vortex se destabilisent: l'instaibilité de Crow et de Widnall.
+
+
+
+\subsubsection{Instabilité de Crow}
+L'instabilité de Crow est un phénomène que nous pouvons observer assez fréquemment dans le ciel à l'arrière d'un avion à haute altitude. Le passage à haute vitesse de l'avion génère deux tubes de vorticité contre-rotatifs (en haut à gauche de la figure \ref{fig:CrowInstability}\textcolor{blue}{(a)}) appelés traînée de condensation. Ils sont particulièrment visibles lorsqu'il s'agit de très gros avions comme par exemple un boeing 747 ou encore un A380 d'Airbus. Lorsque la vapeur d'eau se condense et rend le sillage des tourbillons visible nous pouvons assister à la destabilisation de la paire de tourbillons (milieu de la photo \ref{fig:CrowInstability}\textcolor{blue}{(a)}). Celle-ci se met à onduler puis avec le temps passant, nous pouvons voir la colonne de vapeur d'eau se briser en plusieurs anneaux de vapeur (visible en bas à droite de la figure \ref{fig:CrowInstability}\textcolor{blue}{(a)}).\\
+
+\begin{figure}[ht]
+  \centering
+  \input{./figures/chap2/CrowInstability_GLD.pdf_tex}
+  %\includegraphics[width=.5\textwidth]{./figures/chap2/CrowInstability_GLD.jpg}
+  \caption{Instabilité de Crow à l'arrière d'un avion. (a) On peut observer de droite à gauchw la destabilisation des tubes de vorticité. Photo prise à Villejuif, 94800, Sony $\alpha 6000$, ouverture f/6.3, et $t_{exp}=1/80~\rm s$ avec un objectif de 210 mm. (b) Schéma de la perturbation sinusoïdale des tubes de vorticité extrait de la revue de Leweke \textit{et al} \cite{Leweke2016}. Est representé les deux tubes de vorticités de rayon $a$ modulés sinusoïdalement par les perturbations de longueur d'onde $\lambda$ avec l'inclinaison de $\theta = 45^\circ$.}
+  \label{fig:CrowInstability}
+\end{figure}
+
+La destabilisation de ces tubes de vorticités survient lorsqu'ils subissent des perturbations sinusoïdales de grande échelle. Ces perturbations viennent déplacer les vortex localement par blocs sans modifier leur structure interne. Nous pouvons voir ces perturbations apparaitre sur la figure \ref{fig:CrowInstabilty}\textcolor{blue}{(a)}. Ces perturbations possèdent généralement une longueur d'onde caractéristique très grande en comparaison avec le rayon interne du tourbillon.  Les expériences et les simulations numériques montrent aussi que ce phénomène s'accompagne de déformations sinusoïdales symmétriques par rapport au plan central de la paire de tourbillon inclinées de $\theta = 45^\circ$ (voir figure \ref{fig:CrowInstability}\textcolor{blue}{(b)}). Ce résultat est notamment relevé dans la revue de Leweke, Le Dizès et Williamson \cite{Leweke2016}. Dans le cas des paires de vortex contre rotatifs, cette perturbation s'amplifie avec le temps jusqu'à ce que les coeurs des deux vortex se touchent et se superposent à des régions séparées périodiquement. La reconnexion de ces vortex transforme les deux premier vortexs longitudinaux en une série d'anneaux de vorticité à trois dimensions qui vont perdurer pendant une certain temps et possèdent leurs propre dynamique oscillatoire.  C'est l'instabilité de Crow (Crow 1970 \cite{Crow1970}).\\
+
+Il décrit le mécanisme de destabilisation via trois éléments schématisé sur la figure \ref{fig:MecanismeCrow}. Premièrement la rotation auto-induite du plan d'oscilation dans la direction opposée à la rotation du coeur du fluide (voir figure \ref{fig:MecanismeCrow}\textcolor{blue}{(a)}). Ensuite intervient l'interaction avec le second vortex. Cette intéracti résulte en un étirement du premier vortex dans la direction portée par l'axe d'angle $\theta = 45^\circ$ par rapport à l'horizontale (voir figure \ref{fig:MecanismeCrow}\textcolor{blue}{(b)}). Enfin, le troisième élément dépend du mouvement dû à la combinaison des perturbations des deux vortex qui induit également une rotation et un étirement du tourbillon (voir figure \ref{fig:MecanismeCrow}\textcolor{blue}{(c)}). L'instabilité survient alors lorsque pour une combinaison adequate du rayon du tourbillon $a$, de la longueur d'onde $\lambda$ et de l'inclinaison du plan d'oscillation $\theta$, les trois mécanismes s'annulent entre eux et que la vague est maintenue à un certain angle $\theta$ où le taux d'accroissement de l'instabilité est positif.
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/MecanismeCrow.pdf_tex}
+  \caption{Instabilité de Crow. Illustration des trois mécanismes intervenant par rotation et étirement du plan contenant l'oscillation du vortex. Schéma inspiré de Leweke \textit{et al} \cite{Leweke2016}}
+  \label{fig:MecanismeCrow}
+\end{figure}
+
+\subsubsection{Instabilité ellipitique ou de Widnall}
+
+Aux perturbations de grande longueur d'onde décrite par Crow, les pairs de vortex peuvent développer des perturbations de courtes longueurs d'ondes au sein de leur coeur et de taille comparable au rayon du vortex. Ces perturbations ont été étudiées précisément par Leweke et Williamson et Meunier et Leweke  en 98 et 2005 \cite{Leweke1998, Meunier2005} pour les pairs de vortex contre-rotatifs et co-rotatifs que l'on peut visualiser sur la figure suivante.
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/WidnallInstaiblity.pdf_tex}
+  \caption{Visualisation de l'instabilité elliptique de pairs de tourbillons (a) Figure extraite de Leweke 1998 (Figure 5 (a)) \cite{Leweke1998}, nous pouvons voir la perturbation de courte longueur d'onde qui déforme le coeur des deux tourbillons $Re=2750$. (b) Photo de Meunier et Leweke 2005 $Re =4140$ (2001)}
+  \label{fig:WidnallInstability}
+\end{figure}
+Le mécanisme qui déclenche cette instabilité a été étudié dans les années 70 par Moore et Saffman \cite{Moore1975}, puis par Tsai et Widnall \cite{Tsai1976}. C'est Widnall qui a proposé une analyse de l'instabilité en 1974 \cite{Widnall1974}. L'instabilité de Widnall s'explique par deux perturbations (modes de Kelvin) qui entrent en résonance modificant la structure axisymmétrique de chacun des deux vortex et de leurs écoulement de base. Cette résonance entraîne l'amplification exponentielle de ces modes de Kelvin donnant lieu à l'instabilité. Cette instabilité apparait dans de nombreux systèmes comme le montre la revue de Kerswell en 2002 \cite{Kerswell2002}.\\
+
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Definition des modes de Kelvin:}}\\
+    Le champ de vitesse de l'écoulement définit par Kelvin s'écrit comme suit:
+    \begin{equation}
+      \vv{u}(r)\cdot {\rm e}^{i\left(kz+m\theta-\mathcal{\omega} t\right)}.
+    \end{equation}
+    $k$ est le nombre d'onde axial, $m$ est le nombre d'onde azimuthal, et $\mathcal{\omega}$ est la fréquence complexe du mode (à ne pas confondre avec la vorticité).\\
+  \end{definition}
+\end{ombredef}
+
+La perturbation elliptique induite par l'étirement du vortex voisin est caractéristisée par un nombre d'onde azimuthal $m=2$. Donc la condition pour avoir une résonance pour cette perturbation pour deux modes de Kelvin ($k_1$, $m_1$, $\omega_1$) et ($k_2$, $m_2$, $\omega_2$) est donnée par:
+
+\begin{equation}
+  k_1=k_2; ~ |m_1-m_2|=2, ~\omega_1=\omega_2.
+\end{equation}
+
+Ce qui donne la possibilité à plusieurs combinaison de nombre d'onde azimuthaux mais l'expérience a montré que l'instabilité est de plus grande amplitude si les modes sont égaux.
+
+
+Dans le cas de pairs de vortex contre-rotatifs à des Reynolds suffisamment grands, l'instabilité de Crow et de Widnall peuvent se développer simultanément. L'instabilité de Widnall va se développer rapidement dans les sites où l'instabilité de Crow force les deux vortex à se rapporcher favorisant la perturbation d'un vortex par l'autre.
+
+\subsubsection{Vortex en effet de sol}
+
+Dans cette section on considère les intéractions entre paires de vortex et un mur (fond du bassin). Cette configuration est intéressante dans notre cas car l'enroulement de la couche limite croît dans un espace confiné, la surface de l'eau au-dessus et le fond du bassin par en-dessous. C'est aussi une configuration qui est importante à étudier pour les avions au décollage ou à l'atterissage près des pistes de l'aéroport. Ou encore pour étudier les écoulements de jonctions dont on a discuté la croissance du tourbillon par rapport à notre modèle.L'approche de deux pairs de vortex contra-rotatifs vers un mur a été étudié par plusieurs auteurs. Notamment Lamb en 1932  \cite{} qui a montré que les vortex se séparent en suivant une trajectoire hyperbolique. Dee et Nicolas en 1968 ont montré expérimentalement que les vortex rebondissent en s'approchant de la surface immobile \cite{}. Cet effet a été ensuite expliqué en détails par Peace et Riley \cite{} en 1983 :
+%\begin{figure}[h!]
+%  \centering
+%  \input{./figures/chap2/SketchVortexGroundEffect.pdf_tex}
+%  \caption{Schéma d'une paire de vortex en effet de Sol. Une paire de vortex est crée par le battement de de deux volets parallèles. La paire de vortes se déplace en direction du fond du bassin.}
+%  \label{fig:SketchVortexPair}
+%\end{figure}
+\begin{wrapfigure}{l}{.5\textwidth}
+  %\centering
+  \input{./figures/chap2/SketchVortexGroundEffect.pdf_tex}
+  \caption{Schéma d'une paire de vortex en effet de Sol. Une paire de vortex est crée par le battement de de deux volets parallèles. La paire de vortes se déplace en direction du fond du bassin.}
+  \label{fig:SketchVortexPair}
+\end{wrapfigure}
+
+Lorsqu'une paire de vortex s'approche du fond une couche limite de vorticité de signe opposé se forme près du mur en-dessous de chaque vortex. Cette couche limite peut se séparer de la paroie pour former un deuxième vortex de signe opposé. Si le vortex primaire est suffisament fort il peut entraîner le second vortex. Par conséquent, un deuxième vortex est crée s'enroulant autour du vortex primaire. L'intéraction entre le vortex primaire et le second donne une vitesse opposée à la vitesse initiale du vortex primaire, responsable de l'effet de rebond identifié par Dee et Nicolas.\\
+
+le second vortex est connu pour être très instable \cite{Luton1997}. En effet, Harris et Williamson \cite{} rélève avec de très beau résultats expérimentaux que le second vortex développe un oscillation sinusöidale parallèle à l'axe de roation du vortex secondaire. Ils voient également cette instabilité évolué et donné lieu à des structures périodiques de génération de pairs de vortex qui se déplacent les unes vers les autres. L'analyse de stabilité du second vortex de Harris et Williamson montre que la longueur de l'instabilité est proportionnelle à la distance $d$ qui est la distance entre le coeur du vortex primaire et secondaire ($\lambda\propto d$). De plus la longueur d'onde mesurée est proche de la longueur d'onde prédite pour les modes les plus instable d'une instabilité de type Crow.
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{.8\textwidth}{!}{\input{./figures/chap2/HarrisWilliamsonEntourlement.pdf_tex}}
+  \caption{Harris and Williamson (a) Enroulement du second vortex lors de la collision du vortex primaire avec la paroie (b) destabilisation du second vortex (c) }
+\end{figure}
+La structure de ces motifs ressemble à ceux que l'on peut observer pendant l'instabilité de pairs de votex en effet de sol à de plus grands nombres de Reynolds $\mathrm{Re}_{\Gamma}=\Gamma/\nu\sim 10^3$ \cite{Harris2012}. C'est pourquoi, on pense que les motifs observés proviennent de la même instabilité. C'est une hypothèse qui est aussi soutenue par la proportionnalité entre $\lambda$ et $h$ (voir figure \ref{fig:lambda}). En effet lorsque le tourbillon primaire intéragit avec le fond de la cuve il possède un rayon de l'ordre de $h/2$ donc la distance $d$ entre le tourbillon primaire et secondaire est de l'ordre de $h$. Ona donc une instabilité dont la longueur d'onde semble proportionnelle à la distance entre le coeur du vortex primaire et secondaire, comme pour le vortex en effet de sol de Harris. Ceci est confirmé par le champ de vorticité suivant que l'on peut mesurer et observer la signature du vortex secondaire. La distance entre le coeur du vortex primaire et secondaire est : $d = $.
+
+
+Par conséquent on conclut que les motifs des pairs de tourbillons observés dans le plan de l'interface eau/air hors de la zone de Marangoni résultent d'une instabilité de déplacement de type Crow de courte longueur d'onde ($\lambda\propto h$). Lorsque le tourbillon secondaire se destabilise il peut transférer sa vorticité à la surface considérée propre en suivant le mécanisme décrit par Willert.
+
+

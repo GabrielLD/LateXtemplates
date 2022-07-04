@@ -1,0 +1,687 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+% !TeX root = mythesis.tex
+\chapter{Interface et tension superficielle}
+
+Dans cette partie, nous introduisons les concepts qui seront nécessaires à la compréhension du sujet de cette thèse. Nous y développerons quelques aspects relatifs à l'effet Marangoni ce dernier étant caractérisé par une différence de tension de surface le long  une interface entre deux fluides, en particululier entre l'eau et l'air. Dans une premier temps nous définirons le concept de tension de surface d'un point de vue mécanique avec des illustrations expérimentales. Ensuite nous essaierons d'apporter une définition thermodynamique de la tension superficielle. Nous montrerons qu'elle peut être mesurée suivant différentes expériences. Ensuite nous nous intéresserons à la génération de l'effet Marangoni thermo-capillaire puis soluto-capillaire via l'étalement de gouttes contenant des molécules tensioactives. Enfin nous présenterons la problèmatique qui nous intéresse.
+
+\section{Tension de surface et capillarité}
+
+Comme chacun d'entre nous peut s'en rendre compte dans la vie quotidienne, les liquides comme l'eau ont une surface généralement plane. Cependant Nous pouvons voir que ces surfaces planes sont capables de se déformer, de bouger, et même d'adopter des formes géomètriques très particulières et très stables. En effet. les petites gouttes ou les bulles de savon peuvent prendre des formes parfaitement sphèriques comme l'illustre la figure ci dessous \ref{fig:VieQuotidienne}\textcolor{blue}{(a)(b)}.
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{.9\textwidth}{!}{\input{./figures/chap1/VieQuotidienne.pdf_tex}}
+  \caption{(a) Des gouttes de rosée sur une feuille. Nous pouvons remarquer la forme sphèrique presque parfaite de ces gouttes grâce à la tension superficielle. \textit{crédits photo : Maxime Pincet}. (b) Une bulle de savon suspendue dans l'air. \textit{crédits photo: Adrian Scott}.}
+  \label{fig:VieQuotidienne}
+\end{figure}
+
+Ces formes géomètriques sont dues au fait que la surface est assimilable à une membrane tendue comme un ballon de baudruche. La tension de cette membrane est caractérisée par la tension de surface que l'on notera dans la suite $\gamma$. La tension de surface apparaît à l'interface entre deux fluides non miscible, ce qui induit des intéractions particulière: ce sont les effets capillaires. La science des interfaces est un domaine de recherche qui a débuté au XIX$^{\rm ème}$ siècle avec Pierre Simon de Laplace (1749-1927) et Thomas Young (1773-1829). Ce domaine a ensuite donné lieu à de nombreux ouvrages notamment Henri Bouasse \cite{Bouasse1924}, DeGennes, Brochard-Wyart et Quéré \cite{DeGennes2005}. Ou dans un contexte plus vulgarisé au livre \og Ce que disent les fludies \fg de Étienne Guyon, Jean Pierre Hulin et Luc Petit \cite{Guyon2011}.
+
+\subsection{Origine Physique de la tension de surface}
+
+La capillarité est l'étude des interfaces entre deux fluides non miscibles. Cela peut être entre de l'eau et de l'huile, de l'eau et de l'air ou encore du mercure et de l'acide sulfurique. Un liquide est composé de molécules qui sont proches les unes des autres: c'est un état condensé. Ces molécules tendent à s'attirer entre elles, grâce aux intéractions de VAN DER WAALS. Une molécule est donc attiré par ses voisines avec la même intensité dans toutes les directions, sauf si cette molécule est à la surface du liquide, où elle perd la moitié de ses interactions comme l'illustre le schéma \ref{fig:MoleculesMalheureuse}. Dans ce cas les molécules sont dans un état énergétique défavorable.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/InterfaceMolecules.pdf_tex}
+  \caption{Les molécules situées à la surface perdent approximativement la motié de leurs intéractions attractives. Avec les flèches vertes nous avons représenté les intéractions attractives entre les molécules de même nature, en pointillés sont représentées les intéractions répulsives. En rouge les intéractions attractives perdues.}
+  \label{fig:MoleculesMalheureuse}
+\end{figure}
+
+Antonin Marchand propose cette interprétation de l'orgine de la tension superficielle \cite{Marchand2011}. Loin de la surface les molécules se trouvent dans un état parfaitement équilibré, elles subissent de partout les mêmes intéractions répulsives et attractives. En revanche, la symmétrie est brisée pour une molécule proche de la surface. Donc pour restaure l'équilibre les intéractions répulsives dirigées vers le haut doivent équilibrer les intéractions attractives dirigées vers le volume. Dans la direction parallèle à l'interface, la symétrie est conservée a priori, et donc les forces parallèles à l'interface devraient être à l'équilibre. Mais en pratique les forces attractives sont plus fortes que les forces répulsives ce qui a pour conséquence de faire apparaître une force positive : la tension de surface.
+
+Pour minimiser la perte des intéractions attractives ou cohésives le système essaye de \textbf{minimiser sa surface} à travers laquelle il intéragit avec le fluide étranger. C'est pourquoi une bulle de savon va chercher à s'approcher d'une forme parfaitement sphèrique car la sphère est la surface minimale pour un volume donné. Il en va de même pour les gouttelettes d'eau, etc.\\
+
+\subsection{La force capillaire d'un point de vue mécanique}
+\subsubsection{Définition de la tension de surface}
+La tension de surface est la quantité fondamentale à prendre en compte dans l'étude des surfaces. Elle se manifeste à l'échelle macroscopique par des effets spectaculaires. Si l'on considère une surface d'aire $\mathcal{A}$. Pour augmenter cette surface de $\mathrm{d}\mathcal{A}$, il faut fournir un travail $\mathrm{d}W$ qui est proportionnel au nombre de molécules à emmener du volume du liquide à la surface. $\mathrm{d}W$ est donc proportionnel à $\mathrm{d}\mathcal{A}$.
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition - Tension de surface:}\\
+    Par définition de $\gamma$ on a :
+    \begin{equation}
+      \delta W = \gamma d\mathcal{A}.\label{eq:TravailDeSurface}
+    \end{equation}
+    $\gamma$ correspong au travail à fournir pour augmenter la surface d'une unité. Elle est de la dimension d'une énergie par unité de surface ($\mathrm{J}\cdot \mathrm{m}^{-2}$).
+  \end{definition}
+\end{ombredef}
+Pour illustrer cette définition, nous pouvons faire une expérience très simple. Nous formons un film de savon sur un cadre en forme de \og U \fg maintenu horizontalement avec une tige transversale mobile (voir schéma \ref{fig:U}). Si nous augmentons la surface du film en déplaçant légèrement la tige il faut fournir un travail $dW$. Ce travail est proportionnel à l'augmentation de la surface $d\mathcal{A}$. La surface du film augmente alors de $l\cdot dx$.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/SchemaManipU.pdf_tex}
+  \caption{Schéma du dispositif expérimental qui permet d'illustrer et de définir la tension de surface.}
+  \label{fig:U}
+\end{figure}
+
+Il faut remarquer que $\gamma$  est également de la dimension d'une raideur ($\rm N\cdot m^{-1}$). Donc  la tension de surface peut être également considérée comme une force par unité de longeur. Nous pouvons donc écrire la force exercée par la tension de surface sur le barreau comme : 
+\begin{equation}
+  \left\|\vv{\mathrm{d}F}\right\| = 2\gamma \left\| \vv{\mathrm{d}l}\right\| \label{Force de tension de surface}. 
+\end{equation}
+Le facteur $2$ vient du fait que sur un film liquide mince, il y a deux interfaces liquide-air. Les deux formes de cette loi sont équivalentes si le processus est réversible:
+
+\begin{equation}
+  F = -\frac{dW}{dx} = -2\gamma l.
+\end{equation}
+
+
+Par conséquent la force est dirigée vers la gauche, vers le film savonneux, d'où le signe négatif.
+\subsubsection{Expériences avec la tension de surface}
+Le principe de la tension de surface peut être illustré par de très jolies expériences. Nous en avons schématisé une autre ci-dessous. Un film de savon est tiré dans un anneau avec une une ficelle piégée dans le plan du film. Dans un premier temps la ficelle est détendue puisque le film exerce la même force de part et d'autre de la ficelle (figure \ref{fig:FigExperienceDeTensionSuperficielle}\textcolor{blue}{(a)}). Lorsque le film de savon contenu à l'intérieur de la ficelle est percé. Alors la ficelle se tend instantanément tirée par le film de savon environnant. La ficelle sert d'interface entre le film de savon et l'air qui a pris la place du film de savon percé. 
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/FicelleAnneauSavon.pdf_tex}
+  \caption{Schéma d'une ficelle souple piégée dans un film de savon. (a) la tension de surface est la même partout dans le film de savon que ce soit à l'intérieur de la ficelle ou autour donc la ficelle est déformée et relax. (b) Lorsque l'expérimentateur perce le film de savon, la tension de surface du film tend la ficelle.}
+  \label{fig:FigExperienceDeTensionSuperficielle}
+\end{figure}
+
+\begin{ombreremarque}
+  \begin{remarque}
+    {\textbf{Ce que nous retenons : }}\\
+    \noindent La tension de surface trouve son origine au niveau moléculaire mais se traduit par des effets macroscopiques, visible à l'oeil nu. Nous pouvons définir de cette façon la tension superficielle $\gamma$ comme l'énergie (ou le travail) à fournir pour augmenter la surface d'une unité. Dans la section suivante nous cherchons à définir thermodynamiquement cette quantité.
+  \end{remarque}
+\end{ombreremarque}
+
+
+\clearpage
+\subsection{Capillarité et ménisques}
+
+Comme nous l'avons évoqué, les interfaces liquides-air tendent à adopter une forme de surface minimale, mais cela n'est pas toujours possible. En particulier lorsque la gravité n'est plus négligeable devant les forces capillaires comme le montre la  photo \ref{fig:BulleTropGrande} où la force dde tension de surface ou force capillaire n'est plus capable d'empêcher la déformation de la bulle. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.5\textwidth]{./figures/chap1/BulleTropGrandeKuka_Racza.jpg}
+  \caption{Les dimensions de cette buylles sont de l'ordre du mètre ($L_{bulle}>l_c$) subit des forces (le poids et les mouvements de masse d'air) d'intensité supérieures à celle des forces capillaires. Il en résulte une bulle déformée.\textit{crédit photo : Kuka Racza}.}
+  \label{fig:BulleTropGrande}
+\end{figure}
+
+C'est le cas lorsque les dimensions du système deviennent supérieures à une certaine grandeur critique, appelée \textbf{longueur capillaire} et notée $l_c$ (voir équation \eqref{eq:LongueurCapillaire}).
+
+\begin{ombredef}
+  \begin{definition}
+    \noindent\textbf{Définition - Longueur capillaire}\\
+    \begin{equation}
+      lc \equiv \sqrt{\frac{\gamma}{\rho g}}\label{eq:LongueurCapillaire},
+    \end{equation}
+    où $\rho$ est la masse volumique du liquide considéré et $g$ la norme du champ de pesanteur. Pour l'eau pure $l_c$ est de l'ordre de $3$ mm.
+  \end{definition}
+\end{ombredef}
+
+Les interfaces liquides se courbent lorsqu'elles entrent en contact avec un solide. C'est le cas par exmple lorsqu'un gerris (araignée d'eau) se déplace à la surface d'un étang. Ou encore lorsque de l'eau est contenue dans un verre d'eau, entre la paroie et la surface de l'eau se forme un ménisque. Cette courbure tend à se résorber par l'effet de la tension de surface. La relation entre la courbure et la tension de surface est donnée par l'équilibre entre la pression hydrostatique et la différence de pression entre l'intérieur du liquide $P_l$ et l'éxtérieur du liquide $P_v$. C'est l'équation de Young-Laplace qui donne cette différence de pression:
+
+
+\begin{ombretheo}
+  \begin{theo}
+    \noindent \textbf{Théorême - Loi de Young-Laplace}\\
+    \begin{equation}
+      P_v-P_l = 2\gamma \mathcal {C} = \gamma\left(\frac{1}{R_1}+\frac{1}{R_2}\right)\label{eq:YoungLaplace}.
+    \end{equation}
+    où $\mathcal{C}$ est le rayon de courbure de l'interface, avec $R_1$ et $R_2$ les rayons de courbures principaux (voir figure \ref{fig:YoungLaplace}). Il faut noter que le signe devant les rayons de courbures dépend de la position du centre de la courbure. Ils sont comptés positivement si le centre est dans la plase liquide.
+  \end{theo}
+\end{ombretheo}
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/Laplace.pdf_tex}
+   \caption{(a) Schéma de la loi de Young Laplace. Le shéma présente une interface entre un gaz et un liquide avec deux courbures de rayons $R_1$ et $R_2$ tournées dans le sens du liquide. (b) Illustration de la loi de Young Dupré avec un angle de contact en un point triple entre les phases solides, liquide et gaz. }
+  \label{fig:YoungLaplace}
+\end{figure}
+
+Lorsque deux fluides non-miscibles sont en contact. la géométrie de leur connexion est décrite par la relation de Young-Dupré.
+\begin{ombretheo}
+  \begin{theo}
+    \noindent \textbf{Théorême - Loi de Young Dupré}\\
+    la loi de Yung-Dupre met en relation l'angle de contact avec les trois tension de surface.
+    \begin{equation}
+      \gamma_{LG}\cos{\theta}+\gamma_{SL}-\gamma_{SG} =0\label{eq:YoungDupre}
+    \end{equation}
+    où $\theta$ est l'angle de contact entre l'interface liquide-gaz e la ligne de contact solide. $\gamma_{LG}$ est la tension superficielle entre le liquide et le gaz, $\gamma_{SL}$ entre le solide et le liquide et $\gamma_{SG}$ entre le solide et le gaz.
+  \end{theo}
+\end{ombretheo}
+
+\subsection{Description et définition thermodynamique de la tension de surface}
+
+Pour définir la tension de surface à partir de la thermodynamique. Pour cela il faut définir ce qu'est une interface, nous nous interesserons à la définition d'une interface idéale au sens de Gibbs. Aussi, nous définirons les grandeurs fondamentale de la thermodynamique dans le cas d'un système à deux phases séparées par une interface, ce qui nous amènera à définir la tension de surface à partir de l'énérgie libre puis grâce à l'énergie de Gibbs. 
+
+\subsubsection{L'interface de Gibbs et l'excès surfacique}
+
+la présence d'une interface influence généralement les paramètres thermodynamiques des sytèmes. On considère un système composé de trois parties. Deux phases $\alpha$ et $\beta$ séparées par une interface $\sigma$. Nous pouvons considérer deux cas soit l'interface est infinitésimale et sépare les phases $\alpha$ et $\beta$ par une ligne très fine, c'est la convention de Gibbs. C'est un cas idéal, nous disons aussi que l'interface de Gibbs est une interface idéale. Ou on considère que la région interfaciale comprend un volume ($V^{\sigma}\neq 0$). Dans la convention de Gibbs, il faut dnc considérer deux phases $\alpha$ et $\beta$ séparées par une frontière infintésimale. Ainsi dans le modèle de Gibb, nous devons considérer un volume total $V=V^{\alpha}+V^{\beta}$, avec $V^{\sigma}=0$. Et pour toutes les grandeurs extensives:
+
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/DefInterface.pdf_tex}
+  \caption{Schéma du système à deux phases séparées par une interface. (a) Représentation d'une interface idéale selon Gibbs séparant deux phases. (b) Représentation alternative , modèle de Guggenheim avec une interface étendue.}
+  \label{fig:SchemaInterface}
+\end{figure}
+
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition- Grandeurs extensives: }\\
+    
+    On définit l'énergie interne $U$ qui correspond à l'énergie que le système renferme à l'échelle microscopique. $U$ est égale à la somme de l'énergie cinétique de chaqe entité élémentaire de masse non nulle et de toutes les énergies potentielles. $N$ est le nombre de molécules contenues dans le systèmes, et enfin $S$ est l'entropie du système. Ces grandeurs peuvent être écrites comme la somme des trois composantes du système, $\alpha$ et $\beta$ pour les volumes des deux phases et $\sigma$ pour l'interface.   \end{definition}
+\end{ombredef}
+    \begin{align}
+        U   &=   U^{\alpha}+U^{\beta}+U^{\sigma} \label{eq:EnergieInterne};\\
+        N_i &=   N^{\alpha}_i+N^{\beta}_i+N^{\sigma}_i \label{eq:NombreMolecules};\\
+        S  & =   S^{\alpha}+S^{\beta}+S^{\sigma} \label{eq:Entropie}. 
+    \end{align}
+
+
+La contribution des deux phases au systèmes se déduit comme suit. On note $u^{\alpha, \beta}$ les énergies internes du système par unité de volume dans les deux phases. Elles sont donc déterminées par les régions homogènes contenues dans le volume de ces phases. Proche de l'interface, ces énergies internes changent mais nous considèrons le volume total de chaque phase pour déterminer les énergies internes. Ainsi on en déduit que:
+
+\begin{equation}
+  U = u^{\alpha}V^{\alpha}+u^{\beta}V^{\beta}+U^{\sigma}.
+\end{equation}
+
+De la même façon, la composition du système change lorsque nous nous rapprochons de l'interface. Pour prendre cela en compte on écrit la concentration pour chaque composante $i$ du système dans chaque phase que l'on note $c_i^{\alpha, \beta}$.  Ainsi nous pouvons écrire:
+
+\begin{equation}
+  N_i = c_i^{\alpha}V^{\alpha}+c_i^{\beta}V^{\beta}+N_i^{\sigma}.\label{eq:Ni}
+\end{equation}
+
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Défintion- La concentration surfacique:}\\
+  
+    À partir de cette équation \eqref{eq:Ni} nous pouvons définir une quantité qui correspond à une concentration surfacique, notée comme l'excès de surface par Butt, Graf et Kappl \cite{Butt2006}.
+
+    \begin{equation}
+      \Gamma = \frac{N_i^{\sigma}}{A}.\label{eq:SurfaceExcess}
+    \end{equation}
+
+    $N_i^{\sigma}$ est le nombre de molécules de la $i$ème composante proche à l'interface. $A$ est l'aire de l'interface séparant les deux phases. $\Gamma$ est homogène à une quantité de matière par unité de surface. Nosu la décrirons donc comme une concentration surfacique. 
+  \end{definition}
+\end{ombredef}
+
+Le problème du modèle de Gibbs est lié à la position de l'interface. Où doit-on placer l'inteface ? Pour répondre à cette question, le plus évident est de considérer le cas où un liquide partage une interface avec sa phase gazeuse. Lorsque l'on passe de la phase liquide à la phase gazeuse, la concentration en molécule diminue continuellement. La concentration est maximale dans le volume du liquide et devient minimale dans la phase gazeuse. Dans ce cas il semble naturel de placer l'interface idéale au sens de Gibbs là où il n'y a plus d'excès surfacique, c'eat à dire $\Gamma=0$, au milieu de la zone interfaciale.\\
+
+Si l'interface idéale est placée plus loin dans la phase vapeur alors le nombre de molécules total extrapolé à partir de la phase liquide prédit un nombre plus grand de molécule qu'il ne l'est réellement $N<c^{\alpha}V^{\alpha}+c^{\beta}V^{\beta}$. Inversement, si l'interface idéal est placé en amont dans la phase liquide alors le nombre total de molécules extrapolé à partir de la phase liquide sera plus petit qu'il ne l'est réellement: $N>c^{\alpha}V^{\alpha}+c^{\beta}V^{\beta}$.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/RegionInterfacial.pdf_tex}
+  \caption{Schéma de la concentration en molécules en fonction de la distance au liquide. La concentration est maximale dans le volume de liquide et diminue jusqu'à un minimum dans la phase gazeuse (a) Poisiton de l'interface lorsque $\Gamma = 0$ (b) Si l'interface est placée plus loin dans la phase gazeuse  $\Gamma < 0$. (c) Si l'interface est placée en amont dans la phase liquide alors $\Gamma > 0$.}
+  \label{fig:SurfaceExces}
+\end{figure}
+
+
+\subsubsection{Les relations fondamentales de la thermodynamique et défintion de la tension de surface}
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition - Énergie interne:}\\
+    Nous pouvons réecrire la variation infinitésimale de l'énergie interne du système en fonction des quantités extensives, comme l'entropie $S$, le volume $V$, le nombre de molécules $N_i$ ainsi que l'aire de l'interface entre les deux phases $A$ et de la quantité intensive, la température du système.
+    \begin{equation}
+      dU = TdS-PdV+\sum_i\mu_idN_i+dW. \label{eq:EnergieInterneInf}
+    \end{equation}
+    $W$ est le travail sans l'expansion qui est compris par le terme de Pression $PdV$, en revanche il contient le travail de la surface $\gamma dA$ lorsque l'aire change. $\mu_i$ est le potentiel chimique de chaque composante dans l'une et l'autre phase. $TdS$ permet de prendre en compte la variation de l'énergie interne avec la variation d'entropie. $\mu_idN_i$ considère la variation de l'énergie interne par rapport à la composition en substances chimisque du système étudié. 
+  \end{definition}
+\end{ombredef}
+
+Nous pouvons séparer l'énergie interne en exprimant les trois composantes du système:
+\begin{align}
+  dU = & dU^{\alpha}+dU^{\beta}+dU^{\sigma}\\
+  = & TdS^{\alpha}+\sum_i\mu_i^{\alpha}dN_i^{\alpha}-P^{\alpha}dV^{\alpha}\\
+    & +TdS^{\beta}+\sum_i\mu_i^{\beta}dN_i^{\beta}-P^{\beta}dV^{\beta}\\
+    & +TdS^{\sigma}+\sum_i\mu_i^{\sigma}dN_i^{\sigma}+\gamma dA.
+\end{align}
+
+Cette équation se simplifie aisément car $dV = dV^{\alpha} + dV^{\beta}\Rightarrow dV^{\alpha} = dV - dV^{\beta}$. Cela donne :
+
+\begin{align}
+  dU = & TdS-P^{\alpha}dV - \left(P^{\beta}-P^{\alpha}\right)dV^{\beta}\\
+       & + \sum_i\mu_i^{\alpha}dN_i^{\alpha}+\sum_i\mu_i^{\beta}dN_i^{\beta}\\
+       & +\sum_i\mu_{i}^{\sigma}dN_i^{\sigma}+\gamma dA.
+\end{align}
+L'énergie libre $F$ est une fonction d'état extensive dont la variation permet d'obtenir le travail utile susceptible d'être fourni par un système thermodynamique fermé $dN_i=0$ à température constante $T$. 
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition - Énergie libre ou énergie de Helmholtz:}\\
+    La variation infinitésimale de l'énergie libre de Helmholtz d'un système s'écrit:
+
+    \begin{equation}
+      dF = -SdT-PdV+\sum_i\mu_idN_i+dW \label{eq:EnergieHemholtz}.
+    \end{equation}
+    \end{definition}
+\end{ombredef}
+
+Nous pouvons l'écrire comme pour l'énergie interne comme la somme de chaque composante du système:
+
+\begin{align}
+  dF = & dF^{\alpha}+ dF^{\beta}+ dF^{\sigma}\\
+  = & -SdT-P^{\alpha}dV-\left(P^{\beta}-P^{\alpha}\right)dV^{\beta}\\
+  + & \sum_i \mu_i^{\alpha}dN_i^{\alpha}+\sum_i\mu_i^{\beta}dN_i^{\beta}+\sum_i\mu_i^{\beta}dN_i^{\sigma}+\gamma dA.\label{eq:EnergieLibre}
+\end{align}
+
+\noindent\textbf{Conditions d'équilibre}\\
+
+Dans un système à l'équilibre l'équation \eqref{eq:EnergieLibre} peut être grandement simplifiée car les potentiels chimiques dans les trois phases sont égaux. En supposant que le système est fermé et qu'il n'y a pas d'échange de quantité de matière avec l'extérieur ($dN_i=0$). Dans ce cas le nombre de molécules dans les trois phases ne sont plus indépendant car la somme $N_i=N_i^{\alpha}+N_i^{\beta}+N_i^{\sigma}$ est constante. On ne peut pas que faire varier deux des trois quantités en même temps, prenons $N_i^{\alpha}$ et $N_i^{\beta}$ variant indépendamment. Dans ce cas $N_i^{\sigma}$ est déterminé par les deux autres quantités: $dN_i^{\sigma}=-dN_i^{\alpha}-dN_i^{\beta}$. Par conséquent on peut simplifier l'équation comme suit:
+
+\begin{equation}
+  dF = -\left(P^{\alpha}-P^{\beta}\right)dV^{\beta}+\gamma dA+\sum_i\left(\mu_i^{\alpha}-\mu_i^{\sigma}\right)dN_i^{\alpha}+\sum_i\left(\mu_i^{\beta}-\mu_i^{\sigma}\right)dN_i^{\beta}.
+\end{equation}
+
+À l'équilibre, donc avec un volume, une température, et un nombre de molécules constant, l'énergie libre est minimisée. Au minimium la dérivé par rapport à toutes les variables independantes doit être égal à 0:
+
+\begin{equation}
+  \frac{dF}{dN_i^{\alpha}}=\mu_i^{\alpha}-\mu_i^{\sigma}=0,~\mathrm{et}~\frac{dF}{dN_i^{\beta}}=\mu_i^{\beta}-\mu_i^{\sigma}=0.
+\end{equation}
+
+par conséquent $\mu_i^{\alpha}=\mu_i^{\sigma}=\mu_i^{\beta}$.  Il en résulte :
+
+\begin{equation}
+  dF = -\left(P^{\beta}-P^{\alpha}\right)dV^{\beta}+\gamma dA.
+\end{equation}
+
+Cette dernière équation permet de définir la tension superficielle par la thermodynamique.
+
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition - Tension de surface et énergie libre (Helmholtz):}\\
+    La tension de surface est la dérivée de l'énergie libre par rapport à l'aire du système à température, volume et quantité de matière constante.
+    \begin{equation}
+      \left.\frac{\partial F}{\partial A}\right|_{T,V,V^{\beta},N_i}
+    \end{equation}
+  \end{definition}
+\end{ombredef}
+
+La tension de suface nous dit comment l'énergie libre du système varie avec la surfae $A$, lorsque la température, le volume total, le volume de la phase $\beta$ et le nombre de molécules sont constants. La température $T$, le volume total $V$, et le nombre de molécules $N_i$ sont facilement controlables expérimentalement en revanche le volume de la phase $\beta$ peut être compliqué à conserver constant. En revanche $dF/dA=0$ n'est pas possible car $A$ et $V^{\beta}$ sont liés. Si le volume d'un corps change alors sa surface aussi. Avec ce raisonnement nous pouvons redémontrer l'équation de Young-Laplace. En effet une loi de géométrie différentielle donne :
+\begin{equation}
+  \frac{\partial V}{\partial A} = \left( \frac{1}{R_1}+\frac{1}{R_2}\right)^{-1}\label{eq:geometrie}.
+\end{equation}
+Avec $R_1$, et $R_2$ les rayons de courbure de l'interface. À l'équilibre si l'on a $dF/dA = 0$ alors :
+\begin{align}
+  \frac{dF}{dA}=&\frac{\partial F}{\partial A}+\frac{\partial F}{\partial V^{\beta}}\cdot\frac{\partial V^{\beta}}{\partial A}\\
+  =&\gamma-\left(P^{\beta}-P^{\alpha}\right)\cdot \frac{\partial V^{\beta}}{\partial A}=0.
+\end{align}
+En utilisant l'équation \eqref{eq:geometrie} et en posant $\Delta P = (P^{\beta}-P^{\alpha})$ on en déduit l'équation d'Young Laplace $\Delta P = \gamma \left(\frac{1}{R_1}+\frac{1}{R_2}\right) $ définie précédemment.
+
+
+\subsubsection{Énergie de gibbs et définition de la tension de surface}
+
+Il existe une équation plus utile pour définir la tension de surface thermodynamiquement. Nous pouvons définir la tension de surface grâce à l'énergie de Gibbs. L'énergie de Gibbs est généralement plus utilisée que l'énergie libre car ses variables $T$,$P$ sont constantes dans la plupart de ses applications.
+
+
+\begin{ombredef}
+  \begin{definition}
+    \noindent \textbf{Définition - Énergie de Gibbs}\\
+    \begin{equation}
+      dG = -SdT + VdP + \sum_i\mu_idN_i +\gamma dA
+    \end{equation}
+  \end{definition}
+\end{ombredef}
+
+Dans le cas où l'interface est plane on a $P=P^{\alpha}=P^{\beta}$ dans quel cas:
+
+\begin{align}
+  dG = & -SdT+V^{\alpha}dP^{\alpha}+V^{\beta}dP^{\beta}+\sum_i\mu_idN_i+\gamma dA\\
+     = & -SdT+VdP +\sum_i\mu_idN_i+\gamma dA.
+\end{align}
+
+Cette équation permet de définir la tension de surface :
+
+\begin{equation}
+  \left.\frac{\partial G}{\partial A}\right|_{T,P, N_i}=\gamma.
+\end{equation}
+
+La tension de surface augmente avec l'énergie de Gibbs lorsque la surface augmente lorsque la température, la pression et le nombre de molécules total augmente.\\
+
+Il est possible d'évaluer l'intensité de la tension superficielle. En considèrant qu'elle doit être de l'ordre de grandeur de l'énergie de liaison $\epsilon$ (dans le volume) divisée par la surface de la section transversalle de la molécule $a^2$ où $a$ est de l'ordre du nanomètre. Donc à la surface l'énergie de liaison est deux fois plus petite: $\epsilon/2$. Dans ce cas, l'excès d'énergie libre par unité de surface est de l'ordre de $\epsilon/2a^2$. Pour des huiles, les forces d'intéractions sont du type de Van der Waals, alors $\epsilon \sim k_{B}T$ avec $k_{B}$ la constante de Boltzmann. À une température ambiante de $T=25^{\circ}~\rm C$, $\epsilon$ vaut typiquement $1/40~\rm eV$. Ce qui nous donne, en ordre de grandeur, une tension superficielle qui vaut $\gamma=20~\rm mJ\cdot m^{-2}$. Pour l'eau pure, l'énergie de liaison est plus grande ce qui donne une tension de surface de l'ordre de $\gamma=72~\rm mJ\cdot m^{-2}$. Nous donnons quelques valeurs de la tension de surface dans le tableau ci-dessous:
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{cccccc}
+    \hline \hline
+    Hélium ($4$ K) & Éthanol & Glycérol & Eau & Eau/Huile & Mercure \\ \hline \hline
+    $0.1$ & $23$ & $63$ & $73$ & $50$ & $485$ \\ \hline  
+  \end{tabular}
+  \caption{Tabulation de la tension superficielle pour différents liquides en mJ$\cdot\rm m^{-2}$. Source \cite{DeGennes2005}}
+\end{table}
+
+\begin{ombreremarque}
+  \begin{remarque}
+    \noindent \textbf{Ce que nous retenons:}\\
+    Nous considérons donc l'interface entre deux fluides, en particulier l'air et l'eau dans la suite de notre étude comme une interface idéale, suivant la définition donnée par Gibbs. C'est à dire une frontière infinitésimale séparant deux phases par exemple liquide et gazeuse.
+    La tension de surface peut être définie comme la variation de l'énergie libre (ou de Helmholtz) par rapport à la surface $\mathcal{A}$ lorsque la température, le volume total, le volume de la phase gazeuse et le nombre de molécules dans le systèmes sont considérés constants. Nous pouvons aussi la définir à partir de l'énergie de Gibbs, plus pratique car il suffit que la température, la pression et le nombre de moléculs contenues dans le systèmes restent constants pour que la tension de surface soit égale à la varitiation de $G$ par rapport à la surface $\mathcal{A}$.
+
+    \begin{equation}
+      \left.\frac{\partial F}{\partial A}\right|_{T,V,V^{\beta}, N_i} \equiv \gamma;~~~\mathrm{et} ~~~ \left.\frac{\partial G}{\partial A}\right|_{T,P, N_i} \equiv \gamma.
+    \end{equation}
+  \end{remarque}
+\end{ombreremarque}
+
+\clearpage
+\subsection{Mesures de la tension de surface}
+
+\subsubsection{Méthode de Whilhelmy}
+
+Le tensiomètre à plaque de Whilhelmy est un appareil de mesure de la tension superficielle d'un liquide à l'équilibre. La méthode consiste à utiliser une fine plaque reliée à une balance de précision. La plaque peut être constituée simplement de papier filtre, ou de verre. Pour les plaques les plus résistantes nous pouvons même utiliser du platine traité pour la mouillabilité de la surface. La plaque doit être perpendiculaire à l'interface air-liquide comme sur le schéma qui illustre cette méthode \ref{fig:Whilhelmy}. Pour obtenir une mesure la tension superficielle, l'expérimentateur mesure la force gravitationelle de la lamelle qui apparaît lorsque la plaque est en contact avec le liquide. C'est à dire la force exercée par le liquide sur la plaque. La relation enre la tension de surface $\gamma$ et la force exercée par le liquide est donnée par l'équation de Whilhelmy.
+
+\begin{equation}
+  \gamma = \dfrac{F_{\rm surface/liquide}}{L} = \dfrac{F_{\perp}}{L\cdot\cos{\theta}}\label{eq:Whilhelmy}
+\end{equation}
+
+Lorsque la plaque est complètement mouillée, c'est à dire que l'angle de contact entre le liquide et la plaque est de $\theta = 0^\circ$, l'équation devient simple puisque le cosinus est égal à $1$. Dans ce cas, nous obtenons la mesure directe de la tension de surface en connaissant la longueur de la plaque et la force mesurée par la balance de précision. En pratique, l'expérimentateur doit s'assurer du complet mouillage de la plaque en la plongeant totalement dans le liquide et en tirant la plaque jusqu'à la posisition du premier contact avec le liquide. 
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{1\textwidth}{!}{\input{./figures/chap1/Whlhelmy.pdf_tex}}
+  \caption{Schéma de la méthode de la plaque de Whilhelm}
+  \label{fig:Whilhelm}
+\end{figure}
+
+\clearpage
+\subsubsection{Montée d'un liquide par capillarité}
+
+Dans cette section, nous décrivons la méthode de la mesure de la tensin de surface par la monté d'ne liquide dans un capillaire. Ce phénomène illustre la loi connue sous le nom de la loi de Jurin. Cette loi relie la hauteur de montée du liquide dans le capillaire à l'équilibre avec la tension de surface entre entre le liquide et la phase gazeuse. L'expérien consiste à touche la surface d'un liquide (de l'eau par exemple) avec un tube très fin. Un ménisque concave se forme entre le liquide et les paroies du capillaire et le liquide grimpe jusqu'à atteindre une certaine hauteur d'équilibre $h$. La hauteur dépend du rayon du tube $r$ et de la tension de surfae entre le liquide et l'air $\gamma$.
+
+
+la montée du liquide dans le capillaire se traduit thermodynamiquement par une variation de l'énergie libre. Qui selon la loi de Young Dupré (équation \eqref{eq:YoundDupre}) peut être écrit comme $F=-\gamma\cos{\theta}2\pi r$. Et la variation de l'énergie gravitationnelle est $F_{\rm grav}=\pi r^2\int_0^h\rho g z dz = \pi r^2 \rho g h^2 /2$.  À l'équilibre, l'énergie libre totale $F_{\rm totale}=F+F_{\rm grav}$ doit être minimale, c'est à dire: $dF_{\rm tot}/dh=0$. Cela entraîne la fameuse loi de Jurin:
+
+\begin{equation}
+  h = \frac{2\gamma \cos{\theta}}{\rho g r}\label{eq:LoiDeJurin}.
+\end{equation}
+
+Grâce à cette équation, en mesurant la hauteur du capillaire et l'angle de contact, nous pouvons obtenir une mesure de la tension de surface entre le liquide et l'air.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/JurinLaw.pdf_tex}
+  \caption{}
+  \label{fig:MonteeCapillaire}
+\end{figure}
+\clearpage
+\subsubsection{La méthode de la goutte pendante}
+
+La dernière méthode que l'on présentera est la méthode de la goutte pendante. Cette méthode est bien pratique car elle demande très peu de liquide. Cette méthode est basée sur la forme de gouttes à la sortie d'un capillaire. Les petites gouttes tendent à être sphèrique grâce aux effets de la tension de surface comme nous l'avons vu sur la photo \ref{fig:VieQuotidienne}. Au contraire la gravité terrestre déforme la goutte. Plus la goutte est volumineuse plus la gravité peut la déformer. C'est pourquoi les grandes gouttes sont génèralement plus aplaties que les plus petites.\\
+
+Lorsque les effets de tension superficielle et les effets gravitationnels sont à l'équilibre nous pouvons déterminer la tension superficielle d'un liquide en fonction de la forme de la goutte. Le montage est assez simple, il nous faut une seringue avec une aiguille tournée vers le centre de la Terre. Une caméra qui permette d'avoir une image très nette du contour de la goutte et un éclairage homogène. Lorsque la goutte formé au bout de la seringue est sur le point de tomber c'est le moment où il faut prendre la photo et faire la mesure (c'est l'instant où les forces de tension superficielle et de gravité sont à l'équilibre). Pour mesurer la tension de surface, nous pouvons utiliser un plug-in du logiciel ImageJ qui permet d'ajuster l'équation qui décrit le profil d'une goutte dont le paramètre ajustable est la tension de surface du liquide. En ajustant le profil de la goutte, nous mesurons la tension de surface du liquide. Le plug-in a été développé par Adrian Daerr \cite{Daerr2016}. Le profil théorique de la goutte est issu de la résolution numérique de l'équation de Young-Laplace. L'équation \eqref{eq:Goutte} dicte la forme de la goutte axisymétrique \cite{Gassin2013}. 
+\begin{equation}
+  \gamma \left(\dfrac{1}{R_1}+\dfrac{1}{R_2} \right) = - \Delta \rho g z + \gamma \dfrac{2}{R_0}\label{eq:Goutte}
+\end{equation}
+
+$R_0$ est le rayon de courbure à l'apex de la goutte (sommet O sur la figure \ref{fig:GouttePendante}\textcolor{blue}{(a)}), $R_1$ et $R_2$ sont les rayons de courbure principaux, $\Delta\rho$ est la valeur absolue de la différence de masse volumique du liquide dans la goutte par rapport au liquide extérieur à la goutte. $g$ est la norme de l'accélération de la pesanteur et $\gamma$ la tension superficielle.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/GouttePendante.pdf_tex}
+  \caption{Illustration de la méthode de la goutte pendante. (a) - Schéma du dispositif. (b) - Image de la goutte pendante sur ImageJ obtenue après capture par la caméra (crédits photo : \cite{Daerr2016} ). }
+  \label{fig:GouttePendante}
+\end{figure}
+
+\clearpage
+\section{Introduction aux tensioactifs}
+
+\subsection{Généralités}
+
+Les \textbf{tensioactifs}, aussi appelés \textbf{surfactants} sont des molécules \textbf{amphiphiles}. Cela signifie qu'elles possèdent une tête polaire hydrophile, qui \og aime \fg l'eau, et une chaîne d'hydrocarbures hydrophobes, qui \og n'aime pas \fg l'eau, comme l'illustre le schéma de la figure \ref{fig:TensioactifsGeneralite}\textcolor{blue}{(a)}. La tête hydrophile peut être ionique ou non-ionique. À l'interface eau-air, les têtes hydrophiles sont préférentiellement dans l'eau, et les queues hydrophobes dans l'air \ref{fig:TensioactifsGeneralite}\textcolor{blue}{(a)}. L'étude de l'adsorption de cette famille de molécules a fait l'objet de nombreuses publications, la revue de Chang et Franses publiée en 1994 \cite{Chang1994} en fait une description détaillée. 
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/TensioactifGeneralite.pdf_tex}
+  \caption{(a) - Représentation de la structure générale d'un tensioactif, montrant la tête hydrophile et la queue hydrophobe de la molécule. (b) - Représentation de l'agencement des tensioactifs en solution aqueuse. Les têtes hydrophiles des tensioactifs s'adsorbent dans l'eau à l'interface eau-air, tandis que les molécules en solution tendent à former des structures appelées micelles, qui sont énergétiquement favorables.}
+  \label{fig:TensioactifsGeneralite}
+\end{figure}
+\
+Le nom surfactant est le diminutif pour \og surface active agents \fg, en effet le principal effet de l'adsoprtion de ces molécules est la diminution de la tension superficielle. Nous avons vu précédemment que la tension de surface résulte de l'absence d'une partie des intéractions cohésive pour les molécules proche d'une interface. Cela entraîne un excès d'énergie libre près de la surface. Les molécules tensioactives en venant s'adsorber à l'interface occupent de la place à l'interface et diminuent la surface effective occupée par les molécules d'eau à l'interface. par conséquent le surplus d'énergie libre diminue avec la tension de surface. Nous pouvons observer cet effet en mesurant la tension de surface d'un liquide lorsqu'on ajoute des tensioactifs. Vance Bergeron a étudier la stabilisation de film liqudie grâce aux tensioactifs. Dans une de ses études il présente des mesures de l'évolution de la tension de surface en fonction de la concentration en tensioactifs que nous utilisons pour illustrer ces propos (vois figure \ref{fig:AjoutTensioactifs}) \cite{Bergeron1997}.\\
+\subsection{Concentration Micellaire Critique}
+Lorsque la concentration en tensioactifs est suffisante, l'interface eau-air est entièrement recouverte de tensioactifs. Puis à une concentration supérieure à la \textbf{Concentration Micellaire Critique (CMC)}, les molécules s'agrègent et forment ce que nous appellons des \textbf{micelles} (voir figure \ref{fig:TensioactifsGeneralite}\textcolor{blue}{(b)}). Les micelles sont des capsules à l'intérieur desquelles se trouvent les chaînes d'hydrocarbures insolubles, et à l'extérieur se trouvent les têtes des surfactants qui sont hydrophiles. 
+
+\begin{figure}
+  \centering
+  \resizebox{.6\textwidth}{!}{\input{./figures/chap1/VBergeronSurfaceTensionDecrease.pdf_tex}}
+  \caption{Nous observons une diminution de la tension superficielle lorsque la concentration en molécules tensioactives augmente. À partir de la CMC, la tension de surface ne diminue plus. \cite{Bergeron1997}}
+  \label{fig:AjoutTensioactifs}
+\end{figure}
+
+\begin{ombredef}
+  \begin{definition}
+    {\textbf{Définition - Concentration Micellaire Critique}}\\
+
+    la Concentration Micellaire Critique est définie comme la concentration à partir de laquelle un monomère ajouté dans l'eau a la même probabilité de rester seul que d'aller former une micelle.
+  \end{definition}
+\end{ombredef}
+
+La mesure de la CMC permet de caractériser la solubilité de la molécule. Effectivement, plus elle est hydrophobe, plus l'état micellaire est favroable énergétiquement, et donc plus sa CMC sera basse. La valeur de la CMC dépend du tensioactif considéré, c'est à dire par la queue et la tête de la molécule. Mais aussi du solvant dans lequel la molécule est dissoute. D'ailleurs nous pouvons voir sur le graphique de Vance bergeron pour la famille des $\rm C_{n}TAB$ qui ont tous une tête ionique hydrophile avec un Brome. que la CMC diminue lorsque la longueur de la chaîne carbonnée augmente. Pour $n=16$ la CMC est atteinte à $c=0.8~\rm mM$ tandis que pour $n=10$ la cmc est atteinte à $c=60~\rm mM$ environ. Nous reportons quelques exemples de mesures de la CMC présentés dans la littérature pour des tensioactifs que nous utiliserons dans nos expériences présentées dans cette thèse.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{ccc}
+    \hline \hline 
+    Nom & Acronyme & CMC ($\rm mmol\cdot L^{-1}$) \\ \hline \hline
+    Decyl Trimethyl Ammonium Bromide & C$_{10}$TAB & $62.5$\\
+    Dodecyl Trimethyl Ammonium Bromide & C$_{12}$TAB & $15.4$ \\
+    Tetradecyl Trimethyl Ammonium Bromide & C$_{14}$TAB & $3.6$ \\
+    Hexadecyl Trimethyl Ammonium Chloride & C$_{19}$TAC& $1.6$ \\ \hline \hline 
+  \end{tabular}
+  \caption{CMC de différents tensioactifs. crédits source \cite{Holmberg2002}, rajouter une source pour HTAC}
+  \label{Table:TableCMC}
+\end{table}
+
+\begin{ombreremarque}
+  \begin{remarque}
+    {\textbf{ Ce que nous retenons: }}\\
+
+    Les tensioactifs sont des molécules amphiphiles, qui ont la particularité de s'adsorber aux interfaces entre liquides et gaz. Leur nom provient de leur capacité à modifier la tension de surface. Au delà d'une certaines concentration les molécules tensioactives s'agrègent et forment des micelles. La concentration à partir de laquelle les agrégats apparaissent est dénommée la Concentration Micellaire Critique (CMC). La CMC caractérise est une mesure de la solubilité du tensioactif. Le caractère soluble du tensioactif dépend de la structure de la queue et de la tête de la molécule.
+  \end{remarque}
+\end{ombreremarque}
+\clearpage
+
+\chapter{Effet Marangoni}
+
+Dans la partie précédente nous avons définit et décrit ce qu'est la tension de surface. Nous avons également évoqué des molécules capables de modifier cette tension surperficielle dans un régime statique ou à l'équilibre. Mais lorsque nous ajoutons des tensioactifs, la tension de surface est modifiée localement, il existe donc un régime transitoire où la tension de surface n'est pas la même sur toute la surface du liquide. La différence de tension de surface le long de l'interface déclenche l'effet que l'on appelle l'effet Marangoni.
+
+\section{Histoire}
+
+L'effet Marangoni a été mis en évidence la première fois par James Thomson en $1855$ lorsqu'il a étudié le phénomène des larmes de vin \cite{Thomson1855} (voir photo \ref{fig:TearsOfWine}\textcolor{blue}{(a)}). Après avoir agité doucement le verre de vin, le front de liquide le plus haut retombe par endroits sous la forme de larmes. Ce phénomène résulte de la compétition entre la gravité qui tire le liquide vers le centre de la Terre et l'effet Marangoni qui s'y oppose. la couche de liquide le long de la paroi est plus fine en haut du verre qu'au fond, favorisant l'évaporation de l'alcool. Il apparait une différence de concentration en alcool entre le haut du verre et le bas du verre. Comme l'alcool a une tension de surface plus faible que l'eau,  nous obtenons un gradient de tension de surface le long de l'interface entre le vin et l'air dirigé vers le haut du verre, c'est l'effet Marangoni illustré sur le schéma \ref{fig:TearsOfWine}\textcolor{blue}{(b)}. Dans ce cas l'effet Marangoni s'oppose à la gravité entraînant l'apparition de ces jolies larmes de vin que nous pouvons aisément voir par réflection ou transparence.
+\begin{figure}[h]
+  \centering
+  \input{./figures/chap1/TearsOfWine.pdf_tex}
+  \caption{(a) - Les larmes de vins dans le reflet du verre. \textit{Vin Santo à $15\%$ d'alcool.} (b) - Illustration de l'écoulement de Marangoni dans le phénomène des larmes de vin.}
+  \label{fig:TearsOfWine}
+\end{figure}
+
+Plus tard, c'est le physicien Carlo Marangoni, qui, en 1865 a étudié de façon plus générale pendant sa thèse à Pavia (Italie), l'effet qui aujourd'hui porte son nom. Dans sa thèse intitulée \og Sull'espansione delle goccie d'un liquido galleggianti sulla superficie di altro liquido \fg \cite{Marangoni1865}. Jusque là nous avons uniquement évoqué l'effet Marangoni généré grâce à des molécules tensioactives. Mais, l'effet marangoni peut être déclenché également par un gradient de température le long de l'interface.
+\clearpage
+\section{Marangoni soluto-capillaire}
+
+\subsection{Principe}
+Une expérience qui plaît beaucoup aux curieux est l'expérience qui consiste à déposer des grains de poivre à la surface de l'eau et à ajouter une goutte de liquide vaisselle au centre du récipient. Les grains de poivres sont alors presque instantanéments déplacés vers le bord du récipient. L'effet Marangoni est responsable de la distanciation des grains de poivre comme l'illustre la figure \ref{fig:Distanciation}. 
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap1/Distanciation.pdf_tex}
+  \caption{Expérimentation sur l'effet Marangoni en cuisine. (a) - Un bol est remplit d'eau du robinet. À la surface de l'eau on dépose du poivre moulu. Le poivre sert de traceur de l'écoulement. (b) - Avec un coton tige, on prend une goutte de liquide vaisselle (Paic citron). Dès que le coton tige imbibibé touche l'interface entre l'eau et l'air le poivre est projeté rapide,ent jusqu'au bords du bol.}
+  \label{fig:Distanciation}
+\end{figure}
+
+Au point de dépôt, les tensioactifs diminuent la tension de surface, ce qui crée une différence de tension de surface entre le point de dépot (le centre de la surface du bol d'eau) et le reste de la surface. Ce gradient de tension superficielle met en mouvement les deux fluides (ici l'eau et l'air) de part et d'autre de l'interface: c'est ce qu'on appelle \textbf{l'écoulement de Marangoni}. L'écoulement s'arrête une fois que la concentration en tensioactif à la surface s'est homogénéiser (et donc la tension surperficielle aussi).
+
+\begin{figure}[h!]
+  \input{./figures/chap1/SketchPrincipeMarangoniFlow.pdf_tex}
+  \caption{Schéma de la mise en mouvement des fluides de part et d'autre de l'interface. (a) Avant dépôt des tensioactifs sur la surface propre. (b) - Un écoulement se déclence à l'interface de la zone de faible tension surperficielle vers la zone de tension de surface maximale}
+  \label{fig:PrincipeMarangoniFlow}
+\end{figure}
+
+L'expérience faite avec le liquide vaisselle est assez simple à comprendre puisque dans le liquide vaisselle il y a un mélange de surfactant solubles et insolubles. Et si les effets de la solubilité des tensioactifs ont des effets non triviaux sur la tension de surface dans le régime statique, dans le cas de l'écoulement de Marangoni ils le sont aussi. Dans le cas des tensioactifs solubles, le transport des molécules par l'écoulement entre en compétition avec la diffusion des molécules dans le volume menant ainsi à une distance caractéristique d'étalement. Cette distance caractéristique à été observée dans ce type de situations.
+
+
+\subsection{Avancement du front d´étalement}
+
+Beaucoup d'études se sont penchés sur la problèmatique du rayon de l'étalement des surfactants. Notamment Jensen et Grotberg, qui ont étudié le comportement ce rayon $r$ en fonction du temps. Les simulations clasiques partent d'un film plat présentant une couche de tensioactifs insolubles. Les résultats montrent l'apparition d'un front s'éloingant du point d'injection des tensioactifs, mais également un amincissement du film liquide près de la zone d'injection. Cet amincissement serait dû à un couplage entre le gradient de tension de surface et la contrainte visqueuse. (couplage surface volume ? ). Les tensioactifs ne font pas que s'étaler à la surface. Ils créent également un écoulement volumique et déforment l'intefface.\\
+
+
+
+Il a été montrer que le front d'avancée des tensioactifs suit une loi de puissance $t^{1/2}$ pour la configuration linéaire et $t^{1/4}$ pour la configuration axisymétrique. Ces comportements on également été observés expérimentalement, même lorsque le tensioactif est soluble.\\
+
+
+\subsection{Étalement de tensioactifs solubles}
+
+Dans le cas des tensioactifs solubles, la relation entre la tension de surface et la concentration de tensioactifs est un ingrédient crucial dans une telle modèlisation et de nombreuses équations d'état peuvent être choisies, les plus courantes étant celle deFrumkin  ou de Sheludko. Dans le cas d'un solution diluée, une équation d'état linéaire est utilisée (Henry).\\
+
+
+Pour des tensioactifs solubles à des concentrations au-delà de la CMC, le comportement des tensioactis et donc leur étalement est radicalement différent. Il semblerait que l'affinité du tensioactifs pour l'interface, sa solubilité, sa capacité à former des micelles et à les casser puissent tous jouer un rôle, mais la situation est bien moins claire qu'aux concentrations plus faibles. Des expériences ont montré un étalement en deux temps: Un étalement initial rapide en $t^{1/2}$ et un étalement tardif lent en $t^{1/4}$, ces lois de puissance dépendent de la solubilité du tensioactif dans le sens où plus celui-ci est soluble, plus les étalements sont lents, et à l'inverse moins il est soluble, plus les puissances deviennet grande jusqu'à pouvoir atteindre $3/4$. \\
+
+Edmonstone  ont modèlisé l'étalement de la goutte de tensioactifs à des concentrations au de la de la CMC et on montré que les micelles restent dans la goutte. Celle-ci agit comme un réservoir de tensioactifs ce qui explique l'augmentation de la loi de puissance pour le premier stade d'étalement. Enfin si l'étalement initial est très rapide on arrive meme a fare demouiller completement le film liquide pres du point d'injection.
+
+\subsection{instabilité de digitation}
+L'étalement de tensioactifs sur film mince a églament montré l'apparition d'une instabilité hydrodynamique de digitation. Pour laquerlle de nombreux auteurs ont tenté d'expliquer le phénomène qui semble être du à une collaboration entre gradients de concentration en tensioactifs, intéraction avec le substrat et pré-existence d'un film et concentration en tensioactifs.
+
+
+\subsection{Écoulement fleurit}
+
+blablabla
+
+
+\subsection{Étalement sur couche épaisse}
+
+
+L'étude de l'étalement stationnaire de tensioactifs est plus retreinte. à la fin des années 60, Ruckenstein. a étudié expérimentalement et théoriquement le dépot continu d'alcools solubles dans l'eau sur de l'eau. ils observent la formation d'une tache de rayon constant dans le temps et une recirculation toroidale sous la tache.LES RAYONS DE COURONNE MESURÉS SON CENTIMÉTRIQUES ET LES VITESSES D'ÉCOULEMENT SURFACIQUES SONT DE L'ORDRE DU DEMI-mètre par seconde.  Ils trouvent une dépendance linéaire du diamètre de la tache qvec le débit. mesure de la vitesse d'étalement qui augmente tres vite puis décroit.\\
+
+
+Mizev observe également une tache qui decroit sans le temps sur 5 minutes. ils observent également des cellules de recirculation à l'extérieur de la tache . Ils évoquent un mécanisme de formarttion de la teche en mettant en avant le role des insolubles à l'etérieur . la fin de la tache correspond à l'équiolibre entre le flux de Marangoni dans le sens des r croissants. et le film d'insolubles qui croit vers le point d'injection . Au bout d'un moment, le film d'insolubles a atteint le point d'injkection et le $\Delta\gamma$ devient nul.\\
+
+
+Cylindre débordant. ce qui permet de se placer dans le cas d'une surface inifinie car elle est toujours renouvelée Les études menées dans un cylindre débordant permettent de mettre en évidence une augmentation drastique de la vitesse due aux tensioactifs mais surtout d'accéder aux profils de concentration de surface et de tension interfaciale.
+
+Études de Leroux et al sur l'étalement de l'écoulement de Marangoni.
+\subsection{Modèlisation de l'écoulement de Marangoni solutal}
+
+\subsection{Applications}
+
+
+
+
+\clearpage
+\section{Marangoni thermo-capillaire}
+
+Effectivement l'effet Marangoni thermo-capillaire consiste à générer l'effet Marangoni grâce à un gradient de température $\Delta T$ le long de l'interface entre deux fluides non miscibles.\\
+
+C'est Bratukhin et Maurin qui évoquent l'effet Marangoni thermo-capillaire dans leur publication de 1967 \cite{Bratukhin1967}. Dans cette étude ils proposent une modèlisation d'un écoulement généré par la présence d'un gradient de température à la surface d'un fluide. Ils reportent que ce gradient de température induit un changement de tension surperficielle donnant lieu à un cisaillement tangentielle de la surface du liquide le mettant en mouvement. Dans ce premier articles, ils s'intéressent aux états stationnaires indépendant du temps $\left(\partial/\partial t=0\right)$. Ils utilisent les équations de Navier Stokes couplées  à une équation de la diffusion de la chaleur:
+
+\begin{equation}
+ \left(\vv{v}\cdot\vv{\nabla}\right)\vv{v} = -\frac{1}{\rho}\vv{\nabla}\left(P\right) + \nu\Delta\vv{v},~~~~\text{et}~~~~\vv{v}\cdot\vv{\nabla}T = \chi \Delta T.
+\end{equation}
+Où $\vv{v}$ est la vitesse de l'écoulement, $P$ la pression hydrostatique, $\rho$ la masse volumique du liquide, $\nu$ la viscosité cinématique.  $T$ est la température et $\chi$ le coefficient de diffusion de la chaleur. L'écoulement est aussi considérer incompressible donc :
+
+\begin{equation}
+  \rm div \vv{v} = 0.
+\end{equation}
+
+Il ajoutent à ces équations les conditions aux limites tels que la vitesse et la température doivent se dissiper à l'infini, \textit{i.e.} loin de l'écoulement. La vitesse azimuthale est nulle ainsi que la variation de la température par rapport à $\theta$. De plus on a :
+
+\begin{equation}
+  \eta\frac{1}{r}\frac{\partial v_ r}{\partial \theta} = \frac{\partial \gamma}{\partial T}\frac{\partial T}{\partial r}.
+\end{equation}
+Avec $\eta$ la viscosité dynamique et $\gamma$ est le coefficient de tension de surface. Leurs calculs semblent montrer que les forces capillaires donnent lieu à un étalement du liquide depuis la source de chaleur. Ils semblent également obtenir des résultats qui semblent correspondre à des boucles de recirculation où l'écoulement revient versl a source formant une boucle.  Ensuite ils se sont intéressés à la modèlisation de la stabilité de cet écoulement en incluant les termes temporels \cite{Bratukhin1982} $\left(\partial / \partial t \neq 0\right)$. La stabilité est testée en perturbant le système avec des perturbation monotone. Avec cette fois comme conditions à l'interface:
+
+\begin{equation}
+  \theta =\frac{\pi}{2},~r\neq 0,~v_{\theta}=\frac{\partial T}{\partial \theta}=0, ~\frac{\eta}{r}\frac{\partial v_r}{\partial \theta}=\frac{\partial \gamma}{\partial T}\frac{\partial T}{\partial r},~\frac{\eta}{r}\frac{\partial v_{\phi}}{\partial \theta} = -\frac{\partial \gamma}{\partial T}\frac{1}{r}\frac{\partial T}{\partial \phi}.
+\end{equation}
+
+L'analyse conduite par Bratukhin et Maurin conduit à une relation clef :
+
+\begin{equation}
+  A = -\frac{\partial \gamma}{\partial T}\frac{Q}{2\pi v\eta \kappa }
+\end{equation}
+
+Le paramètre $A$ correspond à l'intensité de la source $Q$ adimensionné. En effet, en prenant $[\gamma] = M\cdot L\cdot T^{-2}$, $[T]=\Theta$, $[Q]=M\cdot L^{2}T^{-3}\cdot L^{-2}$, $[\eta] = M\cdot L^{-1}\cdot T^{-1}$, $[v] = L\cdot T^{-1}$ et la conductivité thermique $\kappa = M\cdot L \cdot T^{-3}\cdot \Theta^{-1}$. On obtient $[A] = 1$. L'intensité de la source adimensionné $A$ permet à bratukhin \textit{et al} de caractériser la stabilité de l'écoulement de Marangoni thermo-capillaire. Notamment ils en tirent des modes $m$ pour lesquelles A présentent des valeurs critiques. D'ailleurs leur écoulement est instable pour de très petites valeurs de l'intensité de la source. Par exemple pour un nombre infini de modes $m\rightarrow \infty$ ils trouvent un nombre $A\rightarrow 7$ Ce qui correspond pour eux à une source de $10^{-4}~\rm Watts$.\\
+
+
+Ce modèle est illustré par des expériences réalisées par Pshenichnikov et Iatsenko (PY) en 1974 \cite{Pshenichnikov1974}. Pour produire un écoulement de ce type PY injectent une solution contenant $10\%$ d'alcool et $90\%$ d'eau à travers le tube capillaire que nous pouvons voir sur le schéma \ref{fig:PYfig}\textcolor{blue}{(a)}. Ils injectent la solution avec un débit très faible (entre $Q=3.0\cdot 10^{-4}$ et $1.0\cdot 10^{-1}~\rm g\cdot s^{-1}$). Lorsque l'injection commence, l'effet Marangoni est déclenché et un écoulement radial apparait. Ils observent alors un écoulement qui part de la source, non-axisymétrique et qui, pour certains débits critiques forme des boucles de recirculation à la surface de la cuve(voir la photo de PY \ref{fig:PYfig}\textcolor{blue}{(b)}). Les cellules de recirculations partent de la source et rebouclent sur la source, ce qui était prédit par le modèle de Bratukhin \cite{Bratukhin1967, Bratukhin1982}. Le nombre de modes est aussi piloté par l'intensité de la source, nous n'avons présenté ici que le mode à 8 cellules, mais sur leur article ils présentent plusieurs modes (3,4,6,8).
+
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap2/PY.pdf_tex}
+  \caption{Expérience de Pshenichnikov 1974 \cite{Pshenichnikov1974} (a) Schéma du dispositif expérimental de la convection de Marangoni, inspiré de \cite{Pshenichnikov1974}. (b) Instabilité de l'écoulement à huit cellules de recirculation, }
+  \label{fig:PYfig}
+\end{figure}
+
+V. Shtern et F. Hussain se sont intéressés à l'analyse de cette instabilité dans les années 90. Et ils montrenant que l'instabilité azimuthale observée par PY et moèlisée par Bratukhin et Maurin est commune à de nombreux écoulement divergent \cite{Shtern1993}. L'analyse de Shtern de ces écoulement met en lumière trois nombres adimenssionés qi permettent de caractériser la stabilité des écoulements soluto et thermo-capillaires. Il définit ainsi le \textbf{nombre de Reynolds}, le \textbf{nombre de Schmidt} et le \textbf{nombre de Marangoni}.
+
+\begin{ombredef}
+  \begin{definition}
+    {\noindent \textbf{Définition - Nombre de Reynolds}}\\
+    Le nombre    de Reynolds (Re) caractérise la compétition entre les forcesd'inerties et de viscosité.
+    \begin{equation}
+      Re = \frac{r\langle v_r \rangle}{\nu}.
+    \end{equation}
+    {\noindent \textbf{Définition - Nombre de Schmidt}}\\
+    Le nombre de Schmidt (Sc) traduit la compétition entre la diffusion de la quantité de mouvement et la diffusivité massique. 
+    \begin{equation}
+      Sc = \frac{\nu}{D}.
+    \end{equation}
+
+    {\noindent \textbf{Définition - Nombre de Marangoni}}\\
+    Le nombre de marangoni (Ma) compare le transport par l'écoulement de Marangoni et le transport lié à la diffusion des molécules.
+    \begin{equation}
+      Ma = \frac{Q}{2\pi\nu \eta D}\frac{d\gamma}{dT}.
+    \end{equation}
+  \end{definition}
+\end{ombredef}
+
+Ce dernier correspond au nombre adimensionné que Bratukhin et Phsenichnikov assimile à un flux thermique adimensionné. Shtern \textit{et al} relient ces termes à travers la relation suivante:
+
+\begin{equation}
+  Ma^2 = 2\pi Sc Re^{3}.
+\end{equation}
+
+Nous nous intéresserons dans l'analyse de nos résultats à comparer l'instabilité azimuthale caractérisée dans cette littératyre aux phénomènes que nous allons vous présenter dans la suite de cette étude.
+
+
+
+\section{Problèmatique}
+
+\clearpage
+\chapter{Illustrations}
+\clearpage
+
+\subsection{Bulles}
+
+
+\begin{figure}[h!]se 
+  \centering
+  %\includegraphics[scale=.5]{./figures/chap1/bulle_carree.png}
+  \input{./figures/chap1/bulles.pdf_tex}
+  \caption{ Bulles dans un support cubique fait avec du fil d'étain. Le liquide savonneux est fait à base de PAIC citron dilué dans de l'eau de robinnet. (a) Alors que nous nous attendons à ce que le film savonneux recouvre les six faces du cube, on observe que le liquide savonneux se rejoins depuis les arrêtes du cube au centre du cube. Les filsms savonneux en se rejoignat au centre forment un film carré de savon. (b) Nous pouvons réussir à former une bulle cubique au centre du cube en étain en piègeant de l'air au mieux du savon qui se rejoint au centre du cube.}
+  \label{fig:bullecarree}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Bulles triangulaire}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \caption{ruban de Moebius}
+\end{figure}
+
+\clearpage
+\subsection{Injection de la solution de tensioactif}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.92]{./figures/chap1/Injection_transparente_Schlieren.png}
+  \caption{Injection de la solution de tensioactif à la surface de l'eau ultra-pure. On a placé sous la cuve un motif de points noir aléatoires permettant d'observer l'écoulement sans traceurs. Ce motif permet de mesurer la déformation de la surface de l'eau par l'écoulement grâce à la méthode de Free Surface Synthetic Schlieren \cite{Moisy2009}. Lorsque la pointe de l'injection touche la surface, on remonte un petit peu la pointe à fin de créer un ménisque entre l'injection et la surface de l'eau de façon à déposer les tensioactifs sur la surface de l'eau.}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.92]{./figures/chap1/Injection_emulsion.png}
+  \caption{Injection de l'émulsion de Tensioactif vers la fin de l'expérience. La surface de l'eau est déjà saturée par l'emulsion est l'écoulement de marangoni n'existe plus. Boitier caméra Sony $\alpha 6000$, objectif 200 mm, texp 1/640, ISO200, f/6.3.}
+\end{figure}
+
+\clearpage
+\subsection{Tourbillons de Marangoni}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.92]{./figures/chap1/Tourbillons_Marangoni.png}
+  \caption{Génération de Tourbillons par l'écoulement de Marangoni, pour une épaisseur d'eau de $h=15~\rm mm$ et un débit molaire de $Q_{a}=1.2~\rm \upmu mol\cdot s^{-1}$. Boitier Sony $\alpha 6000$, objectif 200 mm, ISO 800, texp 1/160 f/29.0.}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.92]{./figures/chap1/Tourbillon_mousse.png}
+  \caption{Visualisation d'un tourbillon sur la fin de d'une expérience. On voit que la surface de l'eau est déjà saturée par l'émulsion. Boitier Sony $\alpha 6000$, objectif 200 mm, ISO 200, texp 1/800, f/6.3}
+\end{figure}
+
+\clearpage

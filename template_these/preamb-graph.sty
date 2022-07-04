@@ -1,0 +1,46 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+%%% Preamble for graphicss %%%
+\ProvidesPackage{preamb-graph}[2020/10/06 0.4 graphics options for PhD thesis (J.Hare)]
+%%% Options
+\RequirePackage{kvoptions}
+\RequirePackage{etoolbox}
+\SetupKeyvalOptions{family=preambgraph,prefix=preambgraph@,setkeys=\kvsetkeys}
+\DeclareStringOption[]{floatbarrier}[section]
+\DeclareDefaultOption{\PackageWarning{preamb-graph}{Unknown option ‘\CurrentOption’ in preamb-graph}}
+\RequirePackage{graphicx} 
+\PassOptionsToPackage{svgnames,table,hyperref}{xcolor} % Only color names from SVG
+\RequirePackage{xcolor} 
+%%% Paths to  figures (better defined localy in each chapter file)
+%\graphicspath{{./fig1/},{../fig2/}}
+%%% to include pages or part of  PDF files
+\RequirePackage{pdfpages}
+\RequirePackage{subcaption} % this loads caption and define subfigure envoronment
+%%% Format français des légendes
+\captionsetup[figure]{name=Fig.,labelsep=quad,labelfont=normalfont,textfont=sl,%
+   singlelinecheck=true,width=0.9\linewidth}
+%%% Options handling
+\ProcessKeyvalOptions{preambgraph}
+%\ifcsempty{preambgraph@floatbarrier}{\typeout{**** floatbarrier is not set *****}\relax}{%
+%\typeout{**** floatbarrier is set *****}
+%\in@{\preambgraph@floatbarrier}{section}\ifin@\PassOptionsToPackage{\preambgraph@floatbarrier}{placeins}\fi
+%}
+\ifdefstring{\preambgraph@floatbarrier}{section}{\PassOptionsToPackage{\preambgraph@floatbarrier}{placeins}}{\relax}
+%%% defines \FloatBarrier
+\RequirePackage{placeins}   % for  \FloatBarrier
+%%% For graphics  embedded  in the text (discouraged for a thesis)
+%\usepackage{wrapfig,picins}   %avoid wrapfig and picins in favor of floatflt
+%\usepackage{floatflt}
+%%% Setting or a better control of floats placement  (figures, tables)
+%%% see https://tex.stackexchange.com/questions/39017
+\renewcommand{\topfraction}{0.8}      % up to 80% of page of top-floats (default 0.7)
+\renewcommand{\bottomfraction}{0.5}   % up to 50% of page of bottom-floats (default 0.3)
+\renewcommand{\textfraction}{0.15}    % minimum size of the text area (default 0.2)
+\renewcommand{\floatpagefraction}{0.7} % minimum of the page/column occupied by floats on a float page (defaut 0.5)
+%%% Other usefull packages
+%\RequirePackage{epstopdf}   % to include  EPS files (convert to PDF on thefly)
+%\RequirePackage{lapdf}   %  directly write graphics into DF
+%\RequirePackage{float} \RequirePackage{nonfloat} \RequirePackage{endfloat} \RequirePackage{topfloat}
+\endinput
+%end of preamb-graph package

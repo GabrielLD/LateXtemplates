@@ -1,0 +1,97 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{versionswitch}[2020/10/06 0.4 Switch between archiv and diffus (J.Hare)]
+\RequirePackage{inputenc}
+\RequirePackage{graphicx}
+\RequirePackage{etoolbox}
+\RequirePackage{bibentry}
+\DeclareOption{archiv}{\@diffusfalse} 
+\DeclareOption{archiev}{\@diffusfalse} 
+\DeclareOption{diffus}{\@diffustrue}
+\DeclareOption{diffusion}{\@diffustrue}
+\DeclareOption{quotetext}{\@quotetexttrue}
+
+\newif\if@diffus
+\newif\if@quotetext
+\ProcessOptions\relax
+
+\providecommand{\citedfromname}{Source:}
+
+\@ifpackagewith{french}{babel}{\addto\captionsfrench{\def\citedfromname{Citation de\ }}}{}
+\@ifpackagewith{english}{babel}{\addto\captionsenglish{\def\citedfromname{Citation from\ }}}{}
+
+%% initize content to suppress
+\gdef\copyrightreplacetext{}
+
+%% define \patchincludegraphics invoked if diffus for figure
+\newcommand{\patchincludegraphicstodraft}{
+	\patchcmd{\Gin@setfile}%
+	{\rlap{ \ttfamily\expandafter\strip@prefix\meaning\@tempa}}%
+	{\rlap{\parbox{\Gin@req@width}{\centering\ttfamily\expandafter\strip@prefix\meaning\@tempa\\[10pt] \copyrightreplacetext}}}%
+	{\message{--- includegraphics patch draft success ---}}{\message{--- includegraphics patch draft failure ---}}
+}
+
+%% define \patchcaption invoked  for figure (ref in added as footnote when making caption)
+\newcommand{\patchcaptionforcopyright}{
+	\let\ori@makecaption=\@makecaption
+	\patchcmd{\@makecaption}{2}%
+	{2 - Source :\raisebox{-1.2ex}{\Large\protect\footnotemark}}% 
+	{\message{--- caption patch final success ---}}{\message{--- \@makecaption patch final failure ---}}
+}
+
+%% togledraft mode
+\if@diffus
+	\patchincludegraphicstodraft
+\fi
+
+%% main environement for graphics
+\newenvironment{copyrighted}[2][]{%
+	\bgroup%
+	\patchcaptionforcopyright%
+	\gdef\copyrightreplacetext{\sffamily #1\bibentry{#2}}%
+	\if@diffus 
+		\Gin@drafttrue 
+	\else
+		\Gin@draftfalse
+	\fi%
+}{%
+	\egroup
+	\footnotetext{Source~: \copyrightreplacetext}
+	\gdef\copyrightreplacetext{}%
+%	\let\@makecaption=\ori@makecaption
+}
+
+%% main environement for text
+
+\newsavebox{\CRtext@box}
+
+\newenvironment{copyrightedtext}[2][]{%
+	\gdef\copyrightreplacetext{#2#1.}%
+	\vspace*{0.5\baselineskip}%
+	\begin{lrbox}{\CRtext@box}%
+	\begin{minipage}{\linewidth}%
+	\if@quotetext	\begin{quote}\slshape \else\fi
+}{%
+	\footnotemark%
+	\if@quotetext	\end{quote}\else\fi
+	\end{minipage}
+	\end{lrbox}
+	\if@diffus 
+%		\settoheight{\CRtext@box@ht}{\usebox\CRtext@box}
+%		\settowidth{\CRtext@box@wd}{\usebox\CRtext@box}
+		\setlength{\fboxsep}{0pt}%
+		\noindent\fbox{%
+		\begin{minipage}[t]{\linewidth}%
+		\mbox{\llap{\vphantom{\usebox\CRtext@box}}		}
+		\smash{\parbox[c]{\linewidth}{\centering\ttfamily \citedfromname \\ \copyrightreplacetext}\\}
+		\end{minipage}%
+		}
+	\else
+		\noindent\usebox\CRtext@box
+	\fi%
+	\vspace*{0.5\baselineskip}%
+	\footnotetext{\citedfromname \copyrightreplacetext}
+	\gdef\copyrightreplacetext{}%
+}
+\AtBeginDocument{\nobibliography*}
+\endinput
+%end of versionswitch package

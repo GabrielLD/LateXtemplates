@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{citebackref}[2020/10/06 0.4 back references in  bibliography (J.Hare)]
+\PassOptionsToPackage{pagebackref}{hyperref}
+\RequirePackage{backref}
+\RequirePackage{hyperref}
+
+\newcommand{\frmtbackref}[1]{\hspace*{\fill}\mbox{\small #1}}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+\ifcase#1\frmtbackref{\BRnotcited}\or\frmtbackref{\BRcited page #2}\else\frmtbackref{\BRcited pages #2}\fi}
+\renewcommand*{\backreftwosep}{\BRand~}\renewcommand*{\backreflastsep}{, \BRand~}
+
+\newif\ifBRfrench\@ifpackagewith{babel}{french}{\BRfrenchtrue}{\BRfrenchfalse}
+\ifBRfrench\addto\captionsfrench{\def\BRnotcited{Non cité~}\def\BRcited{Cité~}\def\BRand{et}}
+\else\gdef\BRnotcited{Not cited}\gdef\BRcited{Cited~}\gdef\BRand{and}\fi
+\endinput
+%end of citebackref package

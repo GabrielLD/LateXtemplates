@@ -1,0 +1,412 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+% !TeX root = mythesis.tex
+
+\chapter{Propulsion de bateau de Marangoni}
+
+\vspace*{\fill} \epigraph{\itshape \og AA prit le voilier des mains de Cheng Xin et poussa un cri d'admiration. Puis elle demanda à Cheng Xin de la suivre dans la salle de bains. Avec un petit couteau, elle découpa un minuscule morceau de savon et elle fit un trou à l'arrière du voilier dans lequel elle coinça le fragment de savon. Elle releva la tête et adressa un sourire mystérieux à Cheng Xin, puis elle déposa délicatement le voilier sur la surface tranquille de l'eau.
+
+  Le voilier se déplaça de lui-même et gagna l'autre extrémité de la baignoire.
+
+  Chen Xin comprit immédiatement la cause de ce phenomène : une fois le savon dissous dans l'eau, il avait diminué la tension superficielle de l'eau à l'arrière du voilier, tandis que celle à l'avant était restée inchangée. Le bateau s'était ainsi retrouvé propulsé vers l'avant.
+
+  Un éclair illumina subitement ses pensées. Dans ses yeux, la surface paisible de l'eau de la baignoire était devenue l'espace obscur, et le petit voilier en papier, un vaisseau naviguant à la vitesse de la lumière dans un néant sans fin...\fg{}}{Liu Cixin\\ (Le problème à trois corps)}
+\vfill\clearpage
+
+\section{Propulsion d'insectes à la surface de l'eau}
+À l'echelle du milimètre la force capillaire prédomine face à l'attraction terrestre. Dans la nature, on peut observer certains insectes qui profitent des effets de tension de surface pour survivre, se déplacer et se nourrir à la surface de l'eau \cite{Milne1978}. Les plus connus sont peut-être les gerris ($d\sim 5\rm mm$) des araignées d'eau que l'on voit souvent se déplacer à la surface des mares d'eau (voir figure \ref{fig:insectes}\textcolor{blue}{(a)}). Ils sont capables de rester sur la surface de l'eau grâce aux poils présents sur leurs pates qui leur confère un effet hydrophobe leur permettant de s'appuyer sur l'eau sans couler \cite{Yang2019, Benzaquen2018}. Ils peuvent ainsi se déplacer en ramant avec leur longues jambes. Mais ce n'est pas leur seule particularité, leurs membres posés sur l'eau sont capable d'obtenir des informations sur leur environnement car ce sont des capteurs de vibration les rendant capables de détecter: soit des proies piégées par l'eau soit l'attaque d'un prédateurs. Ils sont également capable de communiquer avec d'autres gerris en générant des petites vagues à la surface de l'eau, notamment pour se reproduire. 
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/insects.pdf_tex}
+  \caption{Photo d'insectes à la surface d'une mare d'eau. (a) Il s'agit d'un gerris à la surface de l'eau. On peut voir comment les pates hydrophobe du gerris déforment la surface de l'eau en s'appuyant dessus. (b) Sur cette photo on observe une microvelia à la surface de l'eau après s'être propulsé grâce à l'effet Maragoni. On peut voir la trace de la propulsion car elle a écarté les impureté sur son chemin laissant une trainée de couleur claire. (Photo prise par Andersen en 1982)}
+  \label{fig:insectes}
+\end{figure}
+
+D'autres types d'insectes peuvent se propulser à de très grandes vitesses à la surface de l'eau en utilisant l'effet Marangoni  \cite{Hu2006}. La première observation de la propulsion d'un insecte par effet Marangoni a été relevée par Billard et Bruyant en 1905: en voyant un insecte terrestre tomber dans une mare d'eau, en lachant des tensioactifs, l'insecte s'est auto-propulsé vers le bord de l'étang et a pu atteindre la terre ferme rapidement. Ce phénomène a ensuite été observé pour plusieurs autres insectes comme des coleptères, ou d'autres insectes semi-aquatiques comme la microvelia ($d\sim 2~\rm mm$) (voir figure \ref{fig:insectes}\textcolor{blue}{(b)}) capables de se propulser à des vitesses de l'ordre de $v_{\rm prop}\sim 20~\rm cm\cdot s^{-1}$. Le mécanisme utilisé par ces insectes est analogue au mécanisme qui permet de creer un écoulement par dépôt de tensioactifs à la surface d'un liquide. Burton et Bush \cite{Burton2014} ont montré ainsi qu'ils pouvaient propulser des petits objets appelés les bateaux de Marangoni à des vitesses  similiares à celles de la microvelia. Le bateau consistait simplement en un morceau de plastique découpé dans lequel on accrochait un petit bloc de tensioactif à base d'éthanol. Ce type de système a été par la suite beaucoup utilisé pour étudier des comportements observés dans la nature comme la communication via signaux chimiques entre insectes, la mise en place de mouvement collectifs avec plusieurs individus. La plupart de ces études ont été réalisée avec un tensioactif non soluble que l'on appelle le camphre.
+
+  \section{Les Bateaux de camphre}
+  Les bateaux de camphres appairaissent dans la littérature dès le XVII ème siècle, utilisés comme jouets pour enfants. Les premiers articles scientifiques sur ce système apparaissent au XIX ème siècle, ils sont évoqués par Charles Tomlinson en 1862 \cite{Tomlinson1862} puis par Lord Rayleigh en 1890 \cite{Rayleigh1890}. Ils sont souvent utilisés pour étudier des phénomènes ayant lieu aux interfaces fluide -- fluide. Le camphre est un composé organique issu de la distillation des racines, tiges et écorce du camphrier. Il possède de nombreuses propriété bénéfiques pour les systèmes immunitaires et pour la peau. Mais ce qui nous intéresse ici c'est sa capacité à changer la tension de surface des fluides, notamment de l'eau. C'est en effet un tensioacitf non-soluble, il s´évapore dans l'air, ce qui permet de garder une surface liquide propre, libre de molécules tensioactives. C'est pour ces raisons que le camphre est souvent utilisé pour étudier la propulsion de petits objets ($d\in [1-10~\rm mm]$). Les bateaux de camphres sont généralements composé de deux parties: un flotteur en plastique et d'un moteur qui consiste à simplement coller une particule de camphre au flotteur (voir figure \ref{fig:sketchcamphor}) \cite{Nakata2018}.
+  
+  \begin{figure}[h!]
+    \centering
+    %\includegraphics[angle = -90, width=.9\textwidth]{./figures/chap3/sketchcamphor.pdf}
+    \input{./figures/chap3/sketchcamphor.pdf_tex}
+    \caption{Schéma de la propulsion des bateaux de Camphre, à $t=0~\rm s$ le bateau est posé à la surface de l'eau. Les particules de camphres s'étalent à la surface de l'eau. L´étalement est asymétrique car le flotteur empêche le tensioactif de s'étaler vers l'avant. Il en résulte une différence de tension de surface entre l'avant et l'arrière du bateau propulsant le bateau vers l'avant. À $t>0~\rm s$ Le bateau se déplace avec un mouvement uniforme ($v_{b}=~\rm constante$) car les particules de camphres s'évaporent dans l'air laissant la surface propre. Ce schéma est inspiré de \cite{Nakata2018}.}
+    \label{fig:sketchcamphor}
+  \end{figure}
+  
+ Donc le bateau est posé sur la surface de l'eau à $t=0~\rm s$. Les particules de camphres entrent en contact avec l'interface eau/air et s'étalent à la surface. Le plastique du flotteur empêche les particules de s'étaler vers l'avant du bateau ce qui entraîne un étalement asymétrique des particules de camphre sur la surface. Alors une différence de tension de surface entre la proue et la poupe du bateau apparaît. À l'arrière, où les tensioactifs sont en plus grandes concentration, la tension de surface $\gamma$ diminue jusqu'à $\gamma_{\rm min}$ alors qu'à l'avant, elle reste maximale $\gamma_{\rm max}$. Cette différence de tension de surface génère une force capillaire qui permet de propulser le bateau vers l'avant. De plus, le camphre étant très insoluble et volatile, il se dissout très peu dans e volume d'eau et en s'évaporant l'interface reste propre. Donc le bateau de camphre peut avancer avec une vitesse constante pendant toute sa traversée \cite{Kitahata2018}.
+
+  Certaines propriétés du mouvement de ces objets qui sont pourtant très simple à concevoir sont similaires à des phénomènes observables dans la nature et permettent d'apporter une compréhension sur le vivant. De la même manière que certains insectes peuvent prendre des décisions à partir des signaux chimiques qu'ils reçoivent de leur environnement, les bateaux peuvent sentir des signaux chimiques et changer leur façon de se déplacer. Notamment lorsque l'on change le pH de la phase aqueuse le bateau est capable de changer sa trajectoire. Il peut passer d'un mouvement uniforme à un mouvement intermittent ou mêmes'arrêter complètement \cite{Lida2002}. Outre cela, lorsque plusieurs bateaux de camphres sont placés dans un même canal, des mouvement synchronisés peuvent se mettre en place \cite{Hayashima2000}. Les bateaux se synchronisent après une dizaine de secondes. Lorsque le bateau $\alpha$ accélère le deuxieme $\beta$ décélère générant ainsi des mouvements en opposition de phase stationnaire tant que les bateaux sont propulsés. Ces résultats suggèrent que les bateaux peuvent "sentir" les molécules de camphres étant restée à la surface de l'eau après le passage d'un bateau. Leur synchronisation s'opère alors sur la modulation de leur vitesses respectives. D'autres modes d'interaction entre plusieurs bateaux dans un canal annulaire ont été mis en évidence: des chaines de collision, des modes de bouchons avec une onde de choc pouvant se propager similaire à ce que l'on peut observer sur les autouroutes lorsque le traffic est important \cite{Nishimori2010, Nishimori2017}. Par ailleurs lorsque les bateaux sont, non pas dans un canal confiné, mais libres de se déplacer dans tout le plan d'une surface liquide, des mouvements collectifs peuvent également être observés \cite{Grzybowski2008, Grzybowski2011}. En effet à partir d'un nombre suffisant de bateaux posés sur la surface, ils se déplacent en groupe et dans une même direction (voir figure \ref{fig:BateauxDeCamphre}\textcolor{blue}{ii.b)}) jusqu'à même former des motifs stationnaires (voir figure \ref{fig:BateauxDeCamphre}\textcolor{blue}{ii.c)}).
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/BateauxDeCamphre.pdf_tex}
+  \caption{(i) Schéma des différents type de comportements collectifs de disque de camphredans un canal circulaire \cite{Nishimori2017} . (i.a) Deux disques se déplacent à la même vitesse soit avec espacement fixe soit oscillant. (i.b) Des mouvements réciproques. (i.c) Mouvement oscillant. (i.d) Mouvement en chaine. (i.e) Modes de bouchons avec propagation d'une onde de choc. (ii)Des images de Bateaux de Marangoni. \cite{Grzybowski2008}  (ii.a) Deux bateaux se déplacenent indépenamment de l'autre. (ii.b) Septs bateaux se déplacent dans une même direction. (ii.c) 48 bateaux sont posés dans la cuve, et forment un motif stationnaire.}
+  \label{fig:BateauxDeCamphre}
+\end{figure}
+ Ces systèmes, en plus d'apporter une certaine compréhension du vivant permettent également d'explorer certaines applications. Clément Gouiller \cite{Gouiller2021} utilise les bateaux de camphres comme un moyen de créer du mélange de part la distribution des bateaux sur la surface du liquide et en même temps de dé-mélanger grâce à l'écoulement de Marangoni. D'autres scientifiques s'intéressent à ce type de système dans le but de développer des micro-robots \cite{Song2007}. D'autres voient dans ce type de système comme un moyen de générer de l'énergie. Par exmple en créant courant électrique grâce à un aimant placer sur le dos du bateau \cite{Matsushita2009}.
+
+\section{Billes liquides et bulles}
+Ce qui est intéressant c'est la variété de systèmes qui présentent des comportement similaires. On peut observer des phénomèmes similaires dans le domaines des billes liquides et des bulles. Certains développent des billes liquides capables de s'auto-propulser. Parmis ceux là on peut trouver les gouttes de mercure qui ont été très étudiées. Ces expériences consistes à placer une goutte de mercure et un morceau de cristal de dichromate de potassium $\rm Kr_2Cr_2O_7$ dans un récipient remplit d'une solution d'acide sulfurique $\rm H_{2}SO_{4}$. Lorsque le e cristal se dissout et atteint la goutte de mercure. Cette dernière s'allonge et se déplace vers le cristal. Le mouvement de la goutte de mercure est dû à une force générée par le gradient de concentration du dichromate de potassium autour de la goutte de mercure qui entrâine une anisotropie de la tension de surface autour du mercure et de l'angle de contact \cite{Nakata2000}. Plus généralement on trouve des billes liquides contenant une solution de tensioacif (SDS) ou de camphre encapsulé dans une couche de poudre de fluorosilicate qui confère à la bille une enveloppe hydrophobe perméable. La solution de tensioactif peut alors se dissoudre dans l'eau à travers la paroie de la bille générant l'effet Marangoni suffisant pour se propulser. \cite{Binks2015, Nguyen2015, Fujii2016, Binks2017, Bormashenko2018} (voir figure \ref{fig:liquidmarbles}\textcolor{blue}{(a)}). Ces systèmes présentent des domaines d'applications intéressants sur le transport de molécules chimiques \cite{Bandyopadhyay2021} notamment en médecine. On peut également utiliser ces systèmes pour étudier le vivant. En effet les billes liquides peuvent, de la même façon que les bateaux de camphre, sentir leur environnment via des signaux chimiques \cite{Pumera2014} (voir figure\ref{fig:liquidmarbles}\textcolor{blue}{(b)}). Les bulles aussi présentes des comportements analogue:avec des bulles qui se propulse grâce à des effets Marangoni thermo-capillaires \cite{Nazareth2019, Brown2020}.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/LiquidMarbles.pdf_tex}
+  \caption{(a) Est une photo prise par Bormashenko \textit{et. al.} \cite{Binks2017} d'une bille liquide contenant une solution de camphre entourée de poudre de fluorosilicate. (b) Ce type de système analogue aux bateaux de Camphre sont sensibles à leur environnement comme Zhao {\textit et. al.} le montrent dans leur étude \cite{Pumera2014} en déposant une bille liquide dans un labyrinthe elle va explorer le labyrinthe en évitant des zones occupées par d'autres solutions tensioactives (SDS) ainsi on voit la bille éviter le canal entre le point "X" et "S" où la solution de SDS a été déposée.}
+  \label{fig:liquidmarbles}
+\end{figure}
+
+\section{Modèlisation}
+
+Plusieurs modèles tentent d'expliquer la propulsion de ce type d'objets grâce à l'effet Marangoni sur des couches de liquides. Les modèles proposés par le groupe de Satoshi Nakata \cite{Hayashima2001} pour décrire les bateaux de Camphre sont écrits à partir de deux équations principales. Dans un premier temps on considère l'équation de Newton pour décrire le mouvement de la particule. La force de propulsion du bateau  est la Force capillaire $\vv{F_{\rm M}}$ générée par la différence de tension de surface autour du flotteur. Celle-ci est contre-balancée par une force de frottement $\vv{F_{\rm fr}}$ souvent écrite comme la force de Stokes proportionnelle à la vitesse.
+
+\begin{equation}
+  m\vv{\frac{\mathrm{d}\vv{v}}{\mathrm{d}t}} =\vv{ F_{\rm M}} + \vv{F_{\rm fr}}.
+  \label{eqn:eqnNewtongenerale}
+\end{equation}
+
+La difficulté de ces modèles réside dans l'expression de la force capillaire, notamment sur la variation de la tension de surface $\Delta\gamma$, qui est souvent supposé ou déterminé par les mesures expérimentales. En effet, $\Delta\gamma$ dépend du profil de la concentration en tensioactif autour du flotteur. Le profil de concentration dépend de la solubilité et de la volatilité du tensioactif. Puis il faut prendre en compte l'équation de transport des tensioactifs:
+
+\begin{equation}
+ \frac{\partial v}{\partial t}=D\Delta v -k v + F.
+  \label{eqn:eqntransport}
+\end{equation}
+
+Cette équation considère la diffusion de la couche de camphre dans l'air à travers le coefficient de diffusion $D$, $k$ est la somme des ratios de l'evaporation et de la dissolution de la couche de camphre à l'interface entre le liquide et l'air. $F$ est une fonction liée à la diffusion des particules de camphre du bateau vers la couche de camphre à l'interface eau/air. En résolvant ce couple d'équation Nakata {\textit et. al} arrivent à décrire les mécanismes mis en jeu dans les différents modes de propulsion des bateaux de camphre.\\
+
+E. Lauga et Anthony M.J. Davis \cite{Lauga2012} ont montré qu'il fallait également prendre en compte l ´ecoulement de Marangoni dans les équations, ce qui n´était pas fait jusque là. Ils  modèlisent le système comme un disque rigide placé à la surface d'un liquide visqueux relargant des tensioactifs insolubles. Le modèle décrit par Lauga {\textit et. al} se base sur une équation d'état linéarisée qui fait le lien entre la variation de la tension de surface et le profil de concentration en tensioactif à la surface du liquide, ce qui lui permet de calculer dans la limite des faibles nombres capillaires,  Peclet et de Reynolds: le profil de concentration, de pression et de vitesse de propulsion du disque. Ils montrent à travers leurs calculs que négliger le frottement visqueux, dû à l'écoulement de Marangoni, sur le flotteur surestime la vitesse de propulsion du bateau de $50\%$. Donc l écoulement de Marangoni joue un rôle important dans l'étude de la propulsion des Bateaux de Marangoni/camphre.\\
+
+L'importance de l'écoulement de Marangoni est également soulevée par l'étude de Hendrik Ender et Jan Kierfeld \cite{Ender2021} plus récente. Cette étude numérique considère une sphère symmétrique dans dans un écoulement de Stokes qui relargue avec un flux continu des molécules tensioactives. Ender {\textit et. al} à travers leur étude numérique à faible nombre de Reynolds montrent l'existence de deux régimes de propulsion des Bateaux de Marangoni. Un premier régime qui correspond à un régime diffusif à faible vitesse et petit nombre de Peclet ($\mathrm{Pe}\gg1$) qui correspond au régime de propulsion que traite E. Lauga {\textit et. al}. Et un second régime dominé par l'advection à grande vitesse de propulsion. Ender {\textit et. al} déterminent la vitesse de propulsion du bateau en écrivant une force de propulsion totale qui résulte de la somme de a Force capillaire et la force de poussée liée à l'écoulement de Marangoni en lui-même.
+
+\begin{equation}
+  F_{\rm M, tot} = F_{\rm M, capillaire} + F_{\rm M, flow}.
+\end{equation}
+
+Cette force de propulsion est compensée par une force de frottement de type Stokes proportionnelle à lavitesse de propulsion. Ces calculs montrent que l'écoulement de Marangoni a un rôle important dans la propulsion du bateau dans le régime diffusif ($\mathrm{Pe}\gg1$). En revanche dans le régime dominé par le transport ($\mathrm{Pe}\ll 1$), l'écoulement de Marangoni semble comme négligeable.
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/Force_de_Marangoni_ender.pdf_tex}
+  \caption{Figure de Ender sur les forces de Marangoni}
+\end{figure}
+
+Par ailleurs, dans le cas de propulsion de Bateaux de Marangoni plus fortes, Giuseppe Pucci {\textit et. al} \cite{Pucci2019} montre que c'est la force de friction de peau, comme force opposée au mouvement du bateau, qui intervient dans des régimes intermédiaires d'écoulement (entre l'écoulement de Stokes et turbulent) autour d'objets plats.\\
+
+
+Aussi, Hassan Masoud and Michael J. Shelley \cite{Masoud2014} on étudié de façon théorique les mouvement collectifs de particles actives chimiquement (pouvant modifier la tension de surface et créer ainsi un écoulement) sur une couche liquide. Ils montrent numériquement que l'effet Marangoni généré par ces particules tensioactive crée un couple suffisant sur le liquide pour le mettre en mouvement et pour transporter les particules elles-mêmes conduisant à leur agrégation. Les résultats de leurs analyses semblent montrer que la dynamique d'agrégation de ces particules est similaires aux modèles expliquant l'agrégagion de colonies de bactéries.
+
+\section{Les bateaux de Marangoni}
+  Il a été montré qu'il est possible de générer un écoulement de Marangoni controllé, non pas avec du camphre mais avec des tensioactifs solubles \cite{Roche2014, Leroux2016}. Il est donc possible de propulser des petits objets grâce à des tensioactifs solubles de la même manière que les bateaux de camphre. Cependant, une dimension s'ajoute au système qui est la solubilité du tensioactif. En effet, comme ils sont solubles ils vont pouvoir quitter l'interface en se dissolvant dans l'eau. Par conséquent pendant le mouvement du bateau l'eau est progressivement contaminée le tensioactif et donc la tension de surface de l'eau diminue également. Cela a pour conséquence que le bateau peut plus conserver une vitesse constante au cours de son mouvement, contrairement aux bateaux de camphres, mais sa vitesse va diminuer progressivement car la différence de tension de surface diminuera avec la contamination de l'eau (voir figure \ref{fig:sketchsoapboat}).
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/sketchsoapboat.pdf_tex}
+  \caption{Schéma des bateaux de Marangoni solubles}
+  \label{fig:sketchsoapboat}
+\end{figure}
+On peut trouver quelques exemples d'études de la propulsion des bateaux de Marangoni solutal dans la littérature: Ming Su\cite{Su2007} montre que l'on peut controller les trajectoires des flotteurs en déposant des gouttes d'éthanol (soluble dans l'eau) passant de trajectoires rectilignes à circulaires. Par ailleurs Cheng Luo montre qu'il est possible de propulser des micro-bateaux faits à partir d'une résine SU-8 (couramment utilisée dans la fabrication de micro-systèmes) sur lesquels il dépose un réservoir d'isopropanol (IPA). Ces bateaux peuvent atteindre des vitesses moyenne entre $0.15~\rm m\cdot s^{-1}$ et $0.3~\rm m\cdot s^{-1}$ \cite{Luo2008}. Samarat Sur \cite{Sur2019} a étudié les trajectoires ainsi que l'évolution de la vitesse en fonction du temps des bateaux de Marangoni fonctionnant au savon commercial ou à l'éthanol. Ils mesurent une décroissance exponentielle de la vitesse avec le temps. Is observent aussi des transitions entre trajectoires linéaires et circulaires malgré le fait que le nageur soit parfaitement symétrique. Jusque là,  toute la littérature traitant de flotteur propulsés grâce à l'effet Marangoni que ce soit avec des tensioactifs insolubles (camphre) ou soluble (alcools) s'intéresse au type de trajectoire ainsi qu'à la transition entre trajectoires circulaires et linéaire ainsi qu'à des intéractions entre multiples bateaux via l'étalement des tensioactifs autour des bateaux qui conduisent même à l'apparition de mouvements collectifs. En revanche, à ma connaissance, peu d'études se sont intéressées aux effets de la solubilité sur la propulsion des bateaux. Dans la suite de ce chapitre on présente une étude expérimentale sur la propulsion de bateaux de Marangoni dont a source d'énergie est une solution de tensioactif soluble dont on pourra changer la solubilité pour en étudier les effets sur la propulsion du bateau. 
+
+\subsection{Méthode expérimentale}
+
+\subsubsection{Dispositif expérimental}
+Le dispositif experimental construit pour étudier la propulsion des bateaux par effet Marangoni est composé d'une cuve en forme de fleur (voir figure \ref{fig:DispositifExp}\textcolor{blue}{(a)}) posée sur une pateforme pour assurer l'horizontalité de la cuve sous laquelle se trouve un panneau de LED permettant d'éclairer la cuve. On filme par dessus avec une caméra (Imagine Source DMK $\rm 23U445$) à une fréquence de 10 images par secondes pour suivre la trajectoire du bateau. La forme particulière de la cuve est primordiale pour ces expériences. En effet  si la cuve est cylindrique le bateau est rapidement piégé par le ménisque formé par la surface de l'eau avec le bord de la cuve et est contraint de longer les bords de la cuve. Le contact avec les bords ralentit considérablement le bateau. Si la cuve est de forme carrée le bateau peut se bloque dans un coin de la cuve. Ce type de probèmes, Olivier Dauchot les a également rencontré dans ses expériences de mouvement collectif \cite{Deseigne2010}. Nous observons ainsi que le bateau dans la cuve fleurie est moins souvent soumis à des effets de bords également, il passe la majeure partie du temps à faire des boucles entre les alvéoles dirigeant le bateau vers le centre de al cuve (voir figure \ref{fig:DispositifExp}\textcolor{blue}{(b)}).
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/Dispositif_Exp_Bateau_Marangoni.pdf_tex}
+  \caption{(a) Photo du dispositif expérimental: la cuve fleurie. La cuve est creusée dans un bloc de plexiglas de $h=5 \rm cm$ de hauteur et $40~\rm cm$ de côté. Lorsque le bateau rencontre le mur La forme de la cuve le redirige vers le centre de la cuve. (b) Trajectoire d'un bateau. Le départ du bateau a lieu au point rouge {\Huge \borderfillcircle{red}{red}}, la position du bateau est représentée par le rectangle noir {\borderfillsquare{black}{black}}. (c) Schéma d'un bateau de Marangoni. Composé de deux parties un flotteur en gris foncé et d'une languette de papier filtre imbibée de tensioactif en gris clair. La languette de tensioactif est fixée au flotteur par une goutte de vernis à ongle.}
+  \label{fig:DispositifExp}
+\end{figure}
+
+Le bateau est composé de deux parties. La première est le flotteur, il s'agit d'une feuille de plastique transparente dont on découpe un morceau en lui donnant la forme d'un hors-bord plat, de longeur typique $L=2~\rm cm$ et de largeur $W = 1.5~\rm cm$ (voir figure \ref{fig:DispositifExp}\textcolor{blue}{(c)}). La deuxième partie est le moteur du bateau. Il s'agit d'une languette de papier filtre que l'on imbibe de solution de tensioactif préparée au préalable. Le moteur est fixé sur le bateau à $l_1 = 1~\rm cm$ du bord, avec une petite partie dépassant du bateau ($l_2 = 2~\rm mm$) qui sera en contact avec la surface de l'eau et de largeur $w=5~\rm mm$. On ajoute une pointe de vernis à ongle de couleur sombre pour fixer le moteur au bateau, le vernis aide également à la détection du bateau pour reconstituer numériquement la trajectoire. Le poids du bateau imbibé de tensioactif est fixé à $m = 50~\rm mg$ mesuré par la balance de précision. La solution de tensioactif est préparée à l'avance. Une masse de tensioactif est pesée $m_{\rm tensioactif}$ avec une balance de précision puis dissout dans un volume d'eau milipore, généralement de $V=50~\rm mL$ ce qui permet de faire voyager beaucoup de bateaux de Marangoni. On présentera les résultats d'expériences menées pour les concentrations suivantes: $c\in [0.01, 0.02, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0]~\rm mol\cdot L^{-1}$ ainsi que pour quatre tensioactifs soluble différents le hexadecyltriméthylammonium chloride (HTAC), le Tétradécyltriméthylammonium bromide (TTAB), le Dodécyltriméthylammonium bromide (DoTAB) ainsi que le Décyltriméthylammonium bromide (DeTAB) de concentration micellaire critique (CMC) respectives $1.6\cdot 10^{-3}~\rm mol\cdot L^{-1},~4\cdot 10^{-3}~\rm mol\cdot L^{-1},~15\cdot 10^{-3}~\rm mol\cdot L^{-1},~ 65\cdot 10^{-3}~\rm mol\cdot L^{-1}$. Le moins soluble étant le tensioactif avec la plus petite CMC et inversement.
+
+\subsubsection{Détection et suivi du bateau}
+
+Dans le but d'étudier la propulsion des bateaux de Marangoni, on commence par reconstituer la trajectoire du bateau. Pour cela il faut faire un traitement d'image que l'on réalise avec ImageJ et la librairie Sckikit-image de Python \cite{van2014scikit}. Dans un premier temps on fait un seuillage de la balance des bancs et noirs de la séquence d'images prise par la caméra (voir figure \ref{fig:TraitementImageBateauxMarangoni}\textcolor{blue}{(a)}). Ensuite, on sélectionne une image de référence: la première image du film lorsque le bateau n'est pas encore posé sur l'eau. En soustrayant cette image aux reste de la séquence d'images on obtient le film avec le bateau en noir sur un fond complètement blanc (voir figure \ref{fig:TraitementImageBateauxMarangoni}\textcolor{blue}{(b)}).
+\begin{figure}[h!]
+  \centering
+  \resizebox{.8\textwidth}{!}{\input{./figures/chap3/Traitement_image_bateau_Marangoni.pdf_tex}}
+  \caption{Traitement d'images sous python. (a) Image obtenue par capture via une camera imagine source à 10 images par secondes. (b) Après traitement des images avec Python on obtient une image complètement blanche avec le bateau en noir. De cette façon on peut, en calculant le barycentre de pixels noir, reconstituer la trajectoire du bateau numériquement.}
+  \label{fig:TraitementImageBateauxMarangoni}
+\end{figure}
+
+Une fois que cela est fait, la détection du bateau est assez simple. Pour cela, on calcule le barycentre de pixels noirs sur chaque image de la séquence à l'aide de a librairie Trackpy de Python \cite{Allantrackpy2021}. Cette méhode est très sensible à l'acquisition du film  et à la qualité du traitement d'image. Une fois que l'on s'est assuré que le barycentre du bateau est correctement calculé on peut répéter l'opération pour l'ensemble du film à partir de l'instant où le bateau est posé sur la surface de l'eau. De cette façon on peut reconstruire numériquement la trajectoire du bateau au cours du temps et l'analyser.
+
+
+\subsubsection{Mesure de déformation de l'interface}
+
+Au cours des expériences sur les trajectoirs des bateaux on a pu observer des émissions d'ondes au tour du bateau lorsqu'il se déplace à grande vitesse $v \gtrapprox 20~\rm cm\cdot s^{-1}$. Certaines observations étaient assez curieuses notamment lorsque le bateau se rapproche des murs de la cuve, avant de toucher le bord il rebondit d'abord  sur les vagues réfléchient par le mur le dirigeant vers le centre de la cuve. On a voulu caractériser plus précisément ces ondes. Pour cela différentes techniques existent comme la \textit{free-surface synthetic Schlieren} (FS-SS) développée par Frédéric Moisy, Marc Rabaud et Kévin Salsac \cite{Moisy2009} ou la \textit{synthetic Schlieren imaging} (SSI) proposée par Sander Wildeman \cite{Wildeman2018} dont on a discuté la méthode dans la partie expérimentale du chapitre deux (\textcolor{blue}{II.$1.2$}). On présente les résultats de cette expérience dans la section \textcolor{blue}{III.$5.2.$b)}
+
+\subsubsection{Vélocimétrie par images de particues (PIV)}
+
+Une composante qui est donc essentielle à comprendre dans l'étude de la propulsion des bateaux de Marangoni, est le rôle de l'écoulement de Marangoni (voir la section sur la modèlisation des bateaux de camphres). Afin d'observer cet écoulement invisible à l'oeil nu car la solution de tensioactif est transparente on utilise la technique de "Particle Image Velocimetry"  qui est une méthode commune dans l'étude des écoulements lents et turbulents. Elle consiste à ensemencer le fluide que l'on veut sonder avec des particles bien chosies qui se laisseront entraîné par l'écoulement et dont on pourra suvire le déplacement. Pour cela il faut que les particules satisfassent une condition sur le nombre de Stokes ($\mathrm{S_{\rm tk}} < 1$):
+
+\begin{equation}
+  S_{\rm tk} = \dfrac{t_{0}v_0}{l_0},
+\end{equation}
+
+avec $v_0$ la vitesse caractéristique de l'écoulement, $l_0$ l'échelle spatialle de variation de $v_0$ et $t_0$ le temps de relaxation d'une seule particule fluide. Si on se place dans le cas d;'un régime visqueu (Re$=\dfrac{v_{M}L}{\nu} = \dfrac{0.003\times 3E-2}{1\cdot 10^{-6}}=60<100$), alors $t_0 = \dfrac{\rho_{p}d_{p}^2}{18\rho_l\nu_l}$.\\
+
+On utilise des particules de  taille typique de l'ordre de $d_{\rm p} = 60\cdot 10^{-6}~\rm m$, de masse volumique $\rho_{\rm p} = 100~\rm kg\cdot m^{-3}$ sur de l'eau de masse volumique $\rho_{\rm } = 1000~\rm kg\cdot m^{-3}$ et de viscosité cinématique  $nu_{\rm l} = 1\cdot 10^{-6}~\rm m^{3}\cdot s^{-1}$. Ce qui donne un nombre de Stokes $S_{\rm tk} = 1\cdot 10^{-4}\ll 1$. Donc les particules se feront entrainées par l'écoulement sans que leur inertie ne perturbe la mesure de la vitesse de l'écoulement. On mesure le champ de vitesse grâce à la toolbox PIVlab de Matlab \cite{ThielickePivlab2021}.
+
+\subsection{Observations}
+Dans cette section sont présentés les observations expérimentales obtenues sur les bateaux de Marangoni. Dans un premier temps, sont présentés les mesures de vitesse du bateau pour différents paramètres expexpérimentaux. Ensuite sont présentées les mesures de déformation de l'interface généré par le passage du bateau sur l'eau. Enfin, on observera l'écoulement généré par l'effet Marangoni à l'arrière du bateau lorsque celui-ci est posé à la surface du bateau.
+
+\subsubsection{Trajectoire et mesures de vitesse}
+
+Une fois la trajectoire reconstruite numériquement en suivant la position du bateau à chaque instant, on peut calcuer la vitesse du bateau au cours du temps $v(t)$, simplement par a máthode des différences finies. On utilise un filtre du type savgol sur Python pour lisser le résultat. On montre sur la figure ci-dessous une mesure de la vitesse du bateau au cours du temps pour les quatre différents tensioactif à a même concentration initiale $c_0=0.1~\rm mol\cdot L^{-1}$.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap3/Deceleration_bateau_Marangoni.pdf}
+  \caption{Mesure de l'évolution de la vitesse $v(t)$ au cours du temps pour quatre tensioactifs différnts pour la même concentration initiale $c_0$. (a) HTAC $\rm CMC = 1.6~\rm mM$ (b) TTAB $\rm CMC = 4--5~\rm mM$ (c) DoTAB $\rm CMC = 15~\rm mM$ (d) DeTAB $\rm CMC = 65~\rm mM$.}
+  \label{fig:DecelerationBateauMarangoni1}
+\end{figure}
+
+On observe que le bateau une fois posé sur l'eau part directement avec une vitesse $v(t=0~\rm s) = v_0$ non nulle et est ralentit au cours du temps. On observe des chutes de vitesses sur les graphiques \ref{fig:DecelerationBateauMarangoni1}. Elles correspondent à des évènements de chocs du bateau contre les paroies de la cuve en forme de fleur. Ces évènements sont très bref et ne semblent pas changer drastiquement la vitesse du bateau. C'est un indice qui montre que la propulsion du bateau est entretenue par l'effet Marangoni. On a répété cette mesure pour les quatre tensioactifs (HTAC, TTAB, DoTAB, DeTAB)  pour une gamme assez large de concentrations allant de $c=0.01~\rm mol\cdot L^{-1}$ à $c=1.0~\rm mol\cdot L^{-1}$. Sur la figure \ref{fig:DecelerationBateauMarangoni} sont présentés des mesures moyennes sur trois réalisations pour chaque tensioactif de la vitesse du bateau au cours du temps. On peut observer que les quatre mesures présentent une décélération de la vitesse $v(t)$ qui semble proportionelle à une exponentielle décroissante. D'une part la vitesse initiale diminue lorsque la CMC du tensioactif augmente. C'est à dire plus le tensioactif est soluble moins la force de propulsion dû à l'effet Marangoni est forte. D'autre part on peut observer que le temps de vie du bateau semble diminuer également avec une augmentation de la CMC. D'ailleurs sur la figure \ref{fig:VitesseInitiale}\textcolor{blue}{(a)} où sont tracés es vitesses initiales moyennes pour chaque concentration et tensioactif que si l'on fixe une concentration initiale donnée $c_0$ on peut voir que la vitesse initiale du bateau augmente lorsque la CMC diminue. Ainsi le HTAC présente les meilleurs résultat en terme de vitesse de propulsion que le DeTAB qui est le moins performant. Par conséquent plus le tensioactif est soluble moins l'effet Marangoni est efficace et moins il perdure dans le temps pour faire avancer le bateau.\\
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap3/Vitesse_initiale_versus_concentration_vitesse_grande_concentration.pdf}
+  \caption{(a) Mesure de la vitesse $v_0$ en fonction de la concentration initiale en tensioactif pour es quatre tensioacifs. (b) Évolution de la vitesse $v(t)$ pour le TTAB à très haute concentration initiale $c_0=1~\rm mol\cdot L^{-1}$.}
+  \label{fig:VitesseInitiale}
+\end{figure}
+
+Outre cela, sur la figure présentant les résultats de la vitesse initiale en fonction de la concentration initiale en tensioactif (voir figure \ref{fig:VitesseInitiale}\textcolor{blue}{(a)}). On peut voir un effet notable de la concentration. On observe en effet deux régimes un à faible concentration $c\leq 0.1~\rm mol\cdot L^{-1}$ où la vitesse initiale du bateau semble croître rapidement avec la concentration initiale $c_0$. En revanche, dans le régime à haute concentration, on remarque que la vitesse initiale du bateau n'augmente quasiment plus en comparaison au premier régime. S'ajoute à ces effets de la concentration, le fait que pour les très hautes concentrations $c_0=1~\rm mol\cdot L^{=1}$ on peut observer également deux régimes de décélérations du bateau avec des pentes différentes (voir figure \ref{fig:VitesseInitiale}\textcolor{blue}{(b)}). 
+
+Pour expliquer ce phénomène on peut penser à deux raisons différentes. La première concerne l'étalement des tensioactifs. À faible concentration, lorsque le bateau est posé sur l'eau localement l'interface proche du bateau n'est pas saturée en tensioactif, on a donc pas atteint la différence de tension de surface maximale entre l'avant et l'arrière du bateau localement. Ainsi en augmentant la concentration de tensioactif tant que l'interface n'a pas atteint la saturation, la différence de tension de surface peut augmenter et donc a force de propulsion du bateau jusqu'à ce que la concentration surface $\Gamma$ atteigne son maximum $\Gamma_{\rm max}$ donc une différence de tension de surface maximale. Aors la force de propulsion ne pourra plus passer au-delà d'une certaine valeur. Ce qui pourrait expliquer la saturation de la vitesse initiale du bateau $v_{\rm 0}$.\\
+
+La seconde explication, pourrait être liée à l'intéraction entre les vagues générées par le bateau et le bateau lui-même. En effet il est un phénomène connu par les hydrodynamiciens: lorsqu'un objet se déplace à la surface de l'eau,dès que l'objet se déplace à des vitesses supérieurs à la vitesse $v_{\rm ondes} = \left(4g\gamma/\rho\right)^{1/4} = 22.90~\rm cm\cdot s^{-1}$, il peut générer des ondes stationnaires que l'on appelle des ondes gravito-capillaires. Cette vitesse correspond en ordre de grandeur aux vitesses initiales à partir desquelles on peut observer l'apparition du deuxième régime (voir figure \ref{fig:VitesseInitiale}\textcolor{blue}{(a)}). L'apparition de ces ondes pourrait généré une force de friction supplémentaire. Ce qui augmenterait la dissipation aux grades vitesses. Cette force de friction supplémentaire pourrait disparaître aux temps longs lorsque la vitesse du bateau n'est plus suffisante pour généré les vagues. Dans la partie suivante on cherche à observer expérimentalement ces ondes et à les caractériser.
+
+
+\subsubsection{Sillage du bateau}
+
+On applique la méthode de Wildeman présentée dans la section III.5.1.c) afin d'observer et de mesurer la génération des vagues par le bateau. Sur la figure ci-dessous on présente uen cartographie de la déformation de l'interface à deux instants t au cours de la traversée du bateau. La première mesure est prise au bout de 10 secondes après le départ du bateau où la vitesse du bateau est $v> 23~\rm cm\cdot s^{-1}$ (voir figure \ref{fig:DeformationWideman}). On peut voir la forme du bateau qui apparaît grâce au ménisque formé entre le bateau et la surface de l'eau. On remarque a présence à l'avant du bateau des ondes qui sont formés et qui ressemblent à des ondes de sillage que l'on peut voir sur des photos de navires se déplaçant à grande vitesse ou des canards sur un lac (voir figure \ref{fig:OndesNature}). De plus on peut voir sur l'ensemble de la cuve, des creux et des pics de déformations, ces motifs correspondent aux ondes générées par le bateau qui se réfléchissent sur les paroies qui et se propagent partout dans la cuve. En revanche sur la mesure aux temps longs $t=87~\rm s$, on observe que le bateau ne génère plus d'ondes à l'avant, on remarque alors que la surface du bassin est au repos. La transition entre les deux observations correspond effectivement au moment où la vitesse du bateau passe en dessous de la vitesse critique de génération des ondes capillaires.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.8]{./figures/chap3/Generation_de_vagues.png}
+  \caption{Déformation de surface dans la cuve fleurie}
+  \label{fig:DeformationWildeman}
+\end{figure}
+
+On peut caractériser ces ondes en mesurant l'angle d'ouverture du sillage. Pour cela c'est plus simple de faire la mesure dans un canal linéaire qui empêche le bateau de se mettre à tourner. On mesure comme sur la figure suivant l'angle d'ouverture des ondes de sillage que l'on compare à la théorie. (à revoir)\\
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.8]{./figures/chap3/Generation_de_vagues_lineaire.png}
+  \caption{Déformation de surface dans un canal linéaire, mesure des angles.}
+  \label{fig:DeformationWildemanLineaire}
+\end{figure}
+
+On observe donc des ondes générées par le bateau, qui sont bien presentes lorsque le bateau se déplace aux grandes vitesses, supérieures à la vitesse critique des ondes gravito-capillaires. On discutera dans la section III.6. de l'importance de la prise en compte de ce phénomène dans le modèle prédisant les vitesses initiales du bateau.
+\clearpage
+\subsubsection{\'Ecoulement de Marangoni (manips à refaire)}
+
+On a discuté de l'écoulement de Marangoni solutal dans le chapitre 2 de cette thèse, on sait donc que lorsqu'on dépose une goute den tensioactif à la surface d'un bain liquide, les fluides de part et d'autres de l'interface sont mis en ećoulementde la zone de faible tension de surface vers la zone de tension de surface maximale.
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap3/PIV_mesure_ecoulement.pdf}
+  \caption{observation de l'écoulement de Marangoni}
+\end{figure}
+
+Cependant on a pas encore observé la structure de l'écoulement généré par effet marangoni à l'arrière du bateau. cet écoulement est important à caractériser car il a potentiellement un imapct sur la vitesse du bateau et sur comment se vidange le reservoir de tensioactif du bateau. On presente ainsi les résultats des mesures de PIV de surface de l'écoulement de Marangoni. D'après ces mesures n peut dire deux choses, on peut voir que l'écoulement démare 1a l'arrière du bateau de façon unidirectionnelle depuis l'arrière du bateau en s'éloignant du bateau. Dans les premeirs instant on observe des cellules de recirculation apparaitre qui se transforment en un simple jet très lent$v \approx 0.25~\rm cm\cdot s^{-1}$. En revanche ce qui est intéressant c'est que l'écoulement est maintenu pendant une centaine de secondes ce qui correspond à la durée de vie du bateau. Cet aspect est très important car il signifie que la décélération de la vitesse n ést pas simplement un ralentissement intertiel mais est maintenu par l'effet Marangoni du débuyt à la fin. Le ralentissement du bateau est don essentiellement dû au réservoir qui se vide au cours du temps. (à amélioré / refaire des manips)
+
+\subsection{Modèle de propulsion des bateaux de Marangoni}
+
+Dans cette section on propose un modèle mathématique décrivant l'evolution de la vitesse en fonction de la concentration intiale de tensioactif et du temps. On a montré avec les résutats expérimentaux que le bateau de Marangoni se déplace spontanément sur la surface de l'eau dès l'instant qu'il est posé à la surface de l'eau. En effet le réservoir de solution de tensioactif étant fixé à l'arrière du bateau. Dès que le bateau touche la surface de l'eau, les tensioactifs s'étalent à la surface de l'eau à l'arrière du bateau, diminuant ainsi la tension de surface tandis ce qu'à l'avant du bateau la tension de surface reste maximale car la coque du bateau empêche les tensioactifs de s'étaler vers l'avant du bateau. Par conséquent une différence de force capillaire apparaît entre les deux extrémités poussant le bateau vers l'avant. On essaye dans cette partie d'écrire un modèle le plus simple possible afin de décrire la propulsion des bateaux de Marangoni en prenant en compte les effets de la solubilité. Dans un premier temps on écrit l'équation de newton qui décrit le système du bateau propulsé à la surface de l'eau. Ensuite on écrira les équations d'état permettant de relier la variation de la tension de surface à la concentration.
+
+\subsubsection{Équation de Newton}
+
+L'équation de Newton que l'on va considérer s'écrit: 
+\begin{equation}
+  m\frac{d\vv{v}}{dt} = \vv{F_{\rm M}}+\vv{F_{\rm D}}.
+  \label{eqn:Newton}
+\end{equation}
+
+Où $m$ est la masse du bateau, $\vv{v}$ est la vitesse du bateau, on notera $v=||\vv{v}||$ a norme de la vitesse. $F_{\rm M}$ est la force de propulsion du bateau lié à l'effet Marangoni qui va entretenir le mouvement du bateau et $\vv{F_{\rm D}}$ est la force de frottement qui s'oppose au déplacement du bateau.
+
+\subsubsection{La force de frottement}
+
+L'expression de la force de frottement peut être trouvée dans la littérature pour plusieurs régimes d'écoulement. La distinction entre ces régimes dépend essentiellement du nombre de Reynolds de l'écoulement $\mathrm{Re}_{\rm L}=vL/\nu$. Le coefficient de viscosité cinématique est $\nu=1\times 10^{-6}~\rm m^{2}\cdot s^{-1}$ pour l'eau à $T=20^{\circ}\rm~C$, $L$ est la longueur cractéristiques du bateau. Le nombre de Reynolds traduit la compétition entre les force intertielles et visqueuses. Ainsi on peut distinguer trois régimes pour lesquels la force de frottement s'écrira différemment \cite{Pucci2019}: un régime à petit nombre de Reynolds ($\rm Re< 10^{2}$) où la viscosité domine et correspond à ce qu'on appelle le frottement de Stokes, où la force de frottement est proportionnelle à la vitesse de l'écoulement $v$. Alors qu'à très grand nombre de Reynolds ($\mathrm{Re}>10^6$), on parle d'un frottement appelé \og form drag\fg{} qui dépend de la forme de l'objet et dont la force de frottement est proportionnelle à la vitesse $v^2$. Entre ce ces deux régimes il existe un régime intermédiaire qui s'applique bien aux objets plats qui vont frotter le long de leur \og peau\fg{} pendant leur déplacement sur le liquide ou dans le liquide, et si la couche limite ne se détache pas de l'objet, alors la force de frottement est proportionnelle à $v^{3/2}$.
+
+
+
+\begin{table}[h!]
+  \centering
+\begin{tabular}{c|c|c}
+
+  Frottements de Stokes          & friction de peau                              & Form drag       \\
+  $Re < 1000$          & $1000 < Re < 10^6$                         & $Re > 10^6$        \\ \hline \hline
+                       &                                            &                  \\
+ $F_{\rm D} = \propto v$ & $F_{\rm D} = \propto v^{3/2}$ & $F_{\rm D} = \propto v^2$  \\
+                       &                                            & \\ \hline \hline
+\end{tabular}
+\caption{Différentes expression pour la force de frottement.}
+\label{table:dragforce}
+\end{table}
+
+On peut évaluer le nombre de Reynods de notre système en prenant en compte les vitesses initiales du bateau $v$ comprises entre 13cm$\cdot\rm s^{-1}$ et $35~\rm cm\cdot s^{-1}$, donne des nombres de Reynolds compris entre $2582$ et $6951$. On peut donc considérer l'expression de la friction de peau pour écrire la force de frottement sur le bateau de Marangoni. On peut calculer la relation de la force de frottement de peau avec la vitesse en intégrant la contrainte de cisaillement de peau sur la surface du corps du bateau:
+
+\begin{equation}
+  F_{\rm D} = \int_{\rm S}C_{\rm f}\frac{\rho v^{2}}{2}\mathrm{d}S = \int_{\rm S}C_{\rm f}\frac{\rho v^{2}}{2}l\mathrm{d}L.
+\end{equation}
+
+$C_{\rm f}$ est le coefficient de frottement de peau dont l'expression générale s'écrit (dans le cas d'un écoulement laminaire) comme $$C_{\rm f} = \frac{\tau_{\rm w}}{\frac{1}{2}\rho v^2} = \frac{0.664}{\sqrt{\frac{\rho v L}{\eta}}}=\frac{0.664}{\sqrt{\rm Re_{L}}}$$.
+
+
+\begin{equation}
+  F_{\rm D} = 0.664\rho l\sqrt{\nu L}v^{\frac{3}{2}}=\beta v^{\frac{3}{2}}.
+  \label{eqn:frottement}
+\end{equation}
+
+\subsubsection{La force de propulsion}
+
+
+Contrairement à la discussion sur la force de frottement qui est bien documentée dans la littérature, déterminter l'expression de la force de Marangoni est une tâche plus difficile. En effet il faudrait predre en compte le transport des tensioactis à la surface par l'écoulement généré par l'effet Marangoni. De plus les tensioactifs utilisés sont solubles dans l'eau, donc il faut prendre en compte les mécanismes d'adsorption et de désorption des tensioactifs. On essaye de proposer ici un modèle le plus simple possible en exprimant la force de Marangoni comme une différence de force capillaire entre l'avant et l'arrière du bateau de la forme $F_{\rm M} = \alpha L\Delta\gamma(t)$. $\alpha$  coefficient géomtrique dépendant de la forme du bateau et $\Delta\gamma$ est la différence de tension de surface entre l'avant et l'arrière du bateau. $\Delta\gamma$ dépend du temps. En effet le réservoir du bateau a une quantité finie de tensioactifs qui n'est pas renouvelé et donc la cocnentration en tensioactif à l'arrière du bateau évolue au cours du temps et donc la différence de tension de surface également. La variation temporelle de $\Delta\gamma$ peut aussi être liée à la décroissance de la tension de surface de l'eau pendant le mouvement du bateau.En tout cas on propose d'écrire la différence de tension de surface comme un produit d'une fonction de la concentration initiale en tension actif $c_0$ et d'une fonction temporelle. $\Delta\gamma(t) = f(c_0)\times g(t) = \Delta\gamma_0(c_0)\times g(t)$.\\
+
+La relation entre $\Delta\gamma_0$ et la concentratrion initiale en tensionactif $c_0$ peut être obtenue grâce à la thermodynamique des interfaces \cite{Chang1994}. En effet l'isotherme d'adsoprtion de Gibbs permet de relier la variation de $\gamma$ en fonction de l'activité des substances chimiques $\ln(c)$ avec $\Gamma$ la concentration surfacique de tensioactif:
+
+\begin{equation}
+  \Gamma = \frac{1}{RT}\frac{\partial \gamma}{\partial \ln(c)}.
+  \label{eqn:Gibbs}
+\end{equation}
+
+R est la constante des gaz parfaits $R = 8.314~\rm J\cdot K^{-1}\cdot mol^{-1}$, $T$ la température en Kelvin (K). On peut résoudre l'équation \eqref{eqn:Gibbs} en utilisant l'isotherme de Langmuir qui relie $\Gamma$ à la concentration $c$:
+
+\begin{equation}
+  \Gamma(c) = \Gamma_{\rm max}\frac{K_{\rm L}c}{1+K_{\rm L}c}
+  \label{eqn:Langmuir}
+\end{equation}
+
+$K_{\rm L}$ est la constante de l'équilibre d'adsoprtion de Langmuir. Enfin, en résolvant l'équation \eqref{eqn:Gibbs} avec \eqref{eqn:Langmuir} on obtient la relation suivante:
+
+\begin{equation}
+  \Delta\gamma = RT\Gamma_{\rm max}\ln(1+K_{\rm L}c).
+\end{equation}
+
+Pour finir d'exprimer la force de propulsion, on suppose la fonction temporelle de la forme d'une exponentielle puisque les profils de décélération de vitesse $v(t)$ semblent exponentiellement décroissantes. De cette façon on écrira la force de Marangoni de la forme suivante :
+
+\begin{equation}
+  F_{\rm M} = \alpha \Delta\gamma_0(c_0){\rm e}^{-\frac{t}{\tau_{\rm M}}}= \alpha LRT\Gamma_{\rm max}\ln(1+K_{\rm L}c_0){\rm e}^{-\frac{t}{\tau_{\rm M}}}.
+\end{equation}
+
+$\tau_{\rm M}$ est un temps caractéristique de décroissance de la vitesse du bateau.
+
+\subsection{Résolution de l'équation}
+
+\subsubsection{Équation stationnaire}
+On obtient finalement l'équation différentielle à résoudre :
+
+\begin{equation}
+  m\frac{\mathrm{d}v(t)}{\mathrm{d}t} + \beta v(t)^{3/2} = \alpha L\Delta\gamma_0{\rm e}^{-\frac{t}{\tau_{\rm M}}}.
+  \label{eqn:differentielle}
+\end{equation}
+
+Dans un premier, on propose de résoudre l'équation stationnaire afin de déterminer la vitesse du bateau. Pour cela on doit simplement résoudre l'équation suivante:$ \beta v^{3/2} = \alpha L\Delta\gamma_0$. Ce qui se résout facilement à la main. Ainsi on détermine une relation entre la vitesse $v(t=0~\rm s) = v_0$ avec la concentration initiale en tensioactif $c_0$:
+
+\begin{equation}
+  v_0(c_0)=\left(\frac{\alpha RT\Gamma_{\rm max}}{0.664\rho l}\sqrt{\frac{L}{\nu}}\ln(1+K_{\rm L}c_0)\right)^{2/3}.
+  \label{eqn:v0}
+\end{equation}
+
+On peut comparer cette équation pour $v_0$ \eqref{eqn:v0} avec les données expérimentales. En effet on connaît l'ensemble des paramètres de l'équation notamment la constante $\Gamma_{\rm amx}$ qui est tabulée dans la littérature pour de très nombreux tensioactifs. On reporte dans le tableau II les valeurs de $\Gamma_{\rm max}$ trouvées dans la littérature \cite{Rosen, Kosaka2008}. En ce qui concerne $K_{\rm L}$ la constante d'équilibre d'adsorption des tensioactifs de l'istotherme de Langmuir est plus difficile à trouver. Néanmoins on peut trouver quelques valeurs reportées par \cite{Nguyen2017} pour certains tensioctifs : $\rm C_{14}TAB$, $\rm C_{15}TAB$, $\rm C_{16}TAB$ respectivement $K_{\rm L}=1.273,~1.584,~\rm et~ 2.017~m^{-3}\cdot mol^{-1}$. On utilisera donc $K_{\rm L}$ et $\alpha$ comme paramètres d'ajustement du modèle afin de le comparer aux expériences.\\
+
+Les résultats sont présentés sur la figure \ref{fig:modelev0}. On compare les mesures de vitesse initiale moyennée sur plusieurs voyages avec le modèle proposé pour $v_0(c_0)$. En fixant $\alpha=0.15$ pour toutes les courbes et en ajustant $K_{\rm L}$ on obtient un bon accord entre les courbes et les résultats expérimentaux. D'ailleurs les valeurs de $K_{\rm L}$ reportée sur le tableau II semblent du même ordre de grandeur que les valeurs indiquées dans la littérature. Outre cela, d'après Chang \textit{et. al} plus la moĺécule étudiée présente une valeur élevée pour la constante d'équilibre d'adsorption de l'isotherme de Langmuir plus elle est efficace comme tensioactif. C'est effectivement ce que l'on observe: le HTAC est le tensioactif qui permet d'atteindre les plus hautes vitesses de propulsion du bateau de Marangoni et cela correspond à la plus haute valeur de $K_{\rm L}$ ($K_{\rm L:}(HTAC) = 4.4~\rm m^{3}\cdot mol^{-1}$). Par aileurs le DeTAB étant le tensioactif présentant les vitesses les plus faibles obtient la valeur de $K_{\rm L}$ la plus faible ($K_{\rm L:}(DeTAB) = 1.1~\rm m^{3}\cdot mol^{-1}$). %En ce qui concerne $\alpha=0.15$, cette valeur semble correspondre au rapport d'aspect du bateau de Marangoni $1- \frac{W}{L} = 0.15$.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap3/Vitesse_initiale_versus_concentration_modele.pdf}
+  \caption{Comparaison entre les mesures de la vitesse initiale avec le modèle}
+  \label{fig:modelev0}
+\end{figure}
+
+
+Dorénavant, on peut prédire la vitesse initiale du bateau $v_0$ avec notre modèle. On peut relever le fait que ce modèle finalement semble permettre d'obtenir une mesure relativement précise de la constante d'équilibre $K_{\rm L}$ de l'isotherme de Langmuir. Il suffit pour l'obtenir de remplir le réservoir du bateau de Marangoni, d'enregistrer sa trajectoire, calculer l'évolution de la vitesse du bateau au cours du temps et d'ajuster l'équation \eqref{eqn:v0} pour obtenir une mesure de $K_{\rm L}$.
+
+\subsubsection{Équation temporelle}
+On se propose maintenant de résoudre l'équation temporelle \eqref{eqn:differentielle}. Cette équation est compiquée à résoudre à la main à cause de l'exposant de la vitesse dans le terme de la force de frottement de peau. On décide de chercher une solution numérique via Python avec la fonction odeint de la librairie Scipy \cite{2020SciPy-NMeth}. On résout l'équation en utilisant les paramètres tabulés pour $\Gamma_{\rm max}$, pour $K_{\rm L}$ les valeurs obtenues par l'ajustement de l'équation \eqref{eqn:v0} et on garde le paramètre $\alpha = 0.15$. Seulement, à l'équation différentielle complète \eqref{eqn:differentielle}, il nous faut prendre en compte un nouveau paramètre inconnu qui est le temps caractéristique de décroissance $\tau_{\rm M}$ qui permet de normalisé le temps dans l'exponentielle décroissante et qui caractérise la décroissance de la différence de tension de surface pendant que le réservoir se vide peu à peu au cours du temps. $\tau_{\rm M}$ sera le paramètre d'ajustement des courbes temporelle pour la solution de l'équation différentielle. On trace donc sur la figure \label{fig:decroissancemodele} les profils moyens de décélération de la vitesse obtenus expérimentalement en mesurant l'évolution de la vitesse au cours du temps. On utilise le paramètre $\tau_{\rm M}$ pour ajuster la solution de l'équation différentielle pour chaque tensioactif.
+
+
+\begin{figure}[h!]
+  \includegraphics[width=1\textwidth]{./figures/chap3/Deceleration_bateau_Marangoni_modele.pdf}
+  \caption{Comparaison entre les profils de vitesse expérimentaux et la solution numérique de l'équation différentielle}
+  \label{fig:decroissancemodele}
+\end{figure}
+
+On observe que la solution numérique proposée par Python est en assez bon accord avec les résultats expérimentaux. Il se trouve qu'à l'aide de ce modèle on peut quantifier une caractéristique de ces profils de décélération du bateau. En effet on peut remarquer à l'oeil que en fonction du tensioactif $\tau_{\rm M}$ varie. Il décroît lorsque la CMC augmente. Et il croît avec la concentration initiale en tensioactif. Ces mesures sont presentées dans la figure suivante \ref{fig:taum}. Ce résultat montre que plus la solution en tensioactif est concentrée plus elle est capable de maintenir une force de propulsion suffisante pour faire avancer le bateau. L'efficacité du tensioactif est également visible dans ce graphique, en effet, plus le tensioactif est soluble (CMC grande) plus $\tau_{\rm M}$ tend à être petit et donc le bateau peut se propulser moins longtemps. Il faut remarquer que pour le tensioactif le plus soluble le DeTAB $\tau_{\rm M}$ semble très peu changer avec la concentration.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.6\textwidth]{./figures/chap3/Temps_caracteristique_versus_concentration.pdf}
+  \caption{Mesure du temps caractéristique $\tau_{\rm M}$.}
+  \label{fig:taum}
+\end{figure}
+
+On a donc pu établir un modèle qui semble capturer les données expérimentales avec un assez bon accord.Ce modèle permet d'obtenir des mesures du coefficient $K_{\rm L}$. Ce modèle montre essentiellement que la décélération du bateau n'est pas inertielle. C'est à dire que l' effet Marangoni entretien e déplacement du bateau jusqu'à ce que la différence de tension de surface entre l'arrière et l'avant du bateau ne soit plus suffisante pour générer une contrainte permettant de pousser le bateau.\\
+
+Pour compléter ce modèle plusieurs points peuvent être discutés notamment les observations que l'on peut faire aux hautes concentrations/ aux hautes vitesses du bateau qui correspondent aux premiers instants de vie du bateau. D'une part,  on a pu montrer que des ondes sont générées par le bateau. Ces ondes peuvent induire une force de frottement supplémentaire que l'on a pas considérer dans le modèle. On discute dans la section III.6.1. de l'influence ou pas de cette force de frottement additionelle. D'autre part dans ce modèle, nous avons réduit la force de propulsion à la différence de tension de surface entre l'avant et l'arrière du bateau qui donne lieu à une force capillaire positive qui permet de propulser le bateau vers l'avant. Qu'en est-il de l'écoulement soluto-capillaire de Marangoni ? Lauga a montré que négliger cet écoulement pouvait induire une erreur de $50\%$ dans le calcul de la vitesse de propulsion du bateau. Enfin, un troisième point reste à discuter, il correspond à la vidange du reservoir de tensioactif du bateau. On a pris en comtpe naïvement la vidange par une loi exponentielle décroissante que.  Comment pourrait-on avoir accès à la mesure de la vidange du bateau exactement ? Ce sont ces trois points que l'on va aborder dans la section suivante.
+
+\section{Discussions}
+
+\subsection{Ralentissement à cause du sillage}
+
+Dans la section III.2.2. on a montré que pendant le déplacement du bateau on pouvait observer des générations d'ondes gravito-capillaires à l'avant du bateau lorsqu'il se déplaçait à des vitesses assez grandes $v>20~\rm cm\cdot s^{-1}$. Hors lorsqu'un objet de taille supérieur à la longueur capillaire (e $l_{\rm c} = \sqrt{\gamma/(\rho g)} = 2.7~\rm mm$) se meut assez vite, c'est à dire au-dessus d'une vitesse critique $v_{c}=(4g\gamma/\rho)^{1/2} = 22.90~\rm cm\cdot s^{-1}$ \cite{Thomson1871}, des ondes gravito-capillaires sont générés par l'objet en mouvement à la surface de l'eau.  
+
+\begin{figure}[h!]
+  \centering
+  \input{./figures/chap3/wave_drag_nature.pdf_tex}
+  \caption{Ondes gravito-capillaires dans la nature. (a) Photo d'un canard nageant à la surface d'un lac. On peut voir dans son sillage des ondes étant émises. (b) Photo de la NASA de l'île d'Amsterdam, on peut voir des ondes de sillages générés par e passage d'un courant marin autour de l'île}
+  \label{fig:OndesNature}
+\end{figure}
+
+Il a été montré par Marie Le Merrer \textit{et. al.} \cite{LeMerrer2011} que la génération des vagues gravito-capilaire autour d'un objet en déplacement à la surface de l'eau peut générer une dissipation supplémentaire appelée \og wave drag\fg{}, le frottement par les vagues. Marie Le Merrer met en évidence cette force supplémentaire de frottement en mesurant la décélération de gouttes d'azote liquide flottant par effet Leidenfrost au-dessus d'un bain liquide. Elle met en évidence ce phénomène en comparant la décélération de la goutte sur des substrat solide et liquide. Ainsi elle montre que sur un liquide les frottements peuvent être jusqu'à 100 fois supérieurs au solide. Elle décrit les forces mises en jeu à partir d'un modèle écrit par Raphaël Chévy et de Gennes où l'objet est remplacé par un champ de pression se déplaçant à la surface d'un liquide appliqué sur sur un cercle de rayon $b$. On considère $b\approx L/2$ dans le cas des bateaux de Marangoni. Ainsi la transformée de Fourier du champ de pression est $F\cdot\phi(kb)$ où F est la force verticale à laquelle le liquide est soumis, et $\phi(kb) = 2J_{\rm 1}(kb)/kb$ avec $J_{1}$ est la fonction de Bessel du premier ordre. Dans le cas d'un liquide visqueux on peut écrire la force de frottement par les vagues comme :
+
+\begin{equation}
+  F_{\rm vague} = \frac{F}{(2\pi)^2\rho}\int\mathrm{d}\vv{k}\left(\frac{ik|\phi(kb)^2\vv{k}}{\omega_0(k)^2-4\nu^2k^3q+(2\nu k^2-i\vv{k}\cdot\vv{v})^2}\right) \cite{LeMerrer2011}.
+  \label{eqn:waveresistance}
+\end{equation}
+
+Dans cette expression on peut reconnaître la relation de dispersion des ondes gravito-capillaires dans l'approximation des eaux profondes qui s'écrit: $q^2=k^2-i\vv{v}\cdot\vv{k}/\nu$, et $\omega_0(k)^2=gk+\gamma k^3/\rho$. Dans notre cas l'épaisseur d'eau est fixée à $h=15~\rm mm$ ce qui est bien plus grand que la longueur d'onde  des vagues crées par le bateau (qui est de l'ordre du milimètre \ref{fig:DeformationWildemanLineaire}). Comme pour les gouttes de Le Merrer \textit{et. al.}, $F$ correspond au poids $P=mg$ du bateau. On peut approximer la force de de frottement par les vagues en distinguant deux régimes par une vitesse critique qui est le rapport $\gamma/\eta$.  Pour des vitesses faibles, c'est à dire $v<\gamma/\eta$, la déformation du liquide est à l'équilibre, la tension de surface du bain liquide compense le poids de la goutte, alors Le Merrer décrit une force de frottement qui s'écrit comme $F_{\rm vague} = (P/(\gamma b))^2\eta v b$. Aux plus hautes vitesses $v>\gamma/\eta$ la déformation du liquide est déterminée par la compétition entre le poids et la dissipation visqueuse du liquide qui sert de support. Le plus vite la goutte glisse, moins la déformation sera profonde et donc la force de frottement sera moins grande. Dans ce cas la force de frottement s'écrit: $F_{\rm vagues}=P^2/(\eta v b)$.
+
+Dans notre cas on peut évaluer la transition à $\gamma/\eta\approx 70~\rm m\cdot s^{-1}$ qui est très très grand devant les vitesses du bateau que l'on obtient. On peut donc comparer la force de frottement de peau à la force de frottement par les vagues dans le régime de faible vitesse. On trace sur la figure
+\ref{fig:wavedragforce} la force de frottement de peau calculée pour les $v_0$ mesurés expérimentallements ainsi que la force de frottement par les vagues. On peut directement remarquer que la différence entre les deux forces est considérable. $F_{\rm D} = 10^2\times F_{\rm vagues} \gg  F_{\rm vagues}$. Par conséquent, on peut considérer comme négligeable le frottement par les vagues malgré leur génération.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1]{./figures/chap3/Forces_de_friction.pdf}
+  \caption{Comparaison entre la force de frottement de peau et la force de frottement par les vagues.}
+  \label{fig:wavedragforce}
+\end{figure}
+
+\subsubsection{Écoulement de Marangoni et vidange du réservoir}
+
+On a montré que lorsque qu'on dépose une goutte de tensioactif à la surface d'un bassin d'eau on peut observer un écoulement le long de l'interface partant du dépot de la goutte de tensioactif vers l'éxtérieur avec des vitesses d'écoulement pouvant atteindre des vitesses de l'ordre de $v\approx 0.1~\rm m\cdot s^{-1}$ \cite{Roche2014, Leroux2016} lorsqu'on injecte la solution de tensioactif avec un débit molaire constant. On peut donc se demander si cet écoulement doit être pris en compte dans les équations décrivant la propulsion des bateaux de Marangoni.\\
+
+Dans un premier temps on peut essayer de mesurer la vitesse de l'écoulement généré par l'effet Marangoni à l'arrière du bateau. D'après les mesures de \og{} Particle Image velocimetry \fg{}, l'écoulement apparît mais présente des vitesses très faibles. On mesure une vitesse maximum de l'ordre de $v_{\rm M, fl}=0.3~\rm cm\cdot s^{-1}$. On peut estimer un nombre de Reynolds pour cet écoulement de l'ordre de $mathrm{Re} \approx 30$ en prenant comme longueur caracteristique la largeur du bateau qui semble d'après les photos de l'écoulement être le diamètre du \og jet \fg{}. Cela correspond à un écoulement laminaire, d'ailleurs on peut observer que cet écoulement est bien visible comme un jet sans mélange. Les traceurs restent à l'extérieur du jet sans jamais le pénétrer. En revanche l'écoulement est maintenu pendant plusieurs dizaines de secondes jusqu'à une centaine de secondes suivant la concentration. Ce qui montre que l'effet Marangoni est bien présent du début à la fin de la traversée du bateau qui ne s'arrête que lorsque l'effet s'épuise. Par conséquent si l'écoulement a un effet direct sur la propulsion du bateau il est très petit voir négligeable car l'écoulement est très lent comparé à la vitesse de propulsion du bateau. L'effet Marangoni semble donc n'avoir qu'un effet sur le transport de tensioactif du moteur dans l'eau. C'est peut être l'argument qui nous manque pour écrire la partie temporelle de la force de propulsion de Marangoni.
+
+Si l'on compare ces résultats à la lumière du travail de Henkri Ender \cite{Ender2021} dont a discuté le modèle dans la section III.4.  Il essaye de décrire la propulsion des bateaux de Marangoni en fonction du nombre de Nusselt et de Peclet. Ils distinguent deux régime, un à petit peclet qui correspond à un régime dominé par la diffusion, à petites vitesses de propulsion. Et un régime dominé par le transport, à haute vitesse. Enfin ils écrivent la compétition entre les force de frottement de Stokes et les forces de propulsion de Marangoni en discutant de si l'écoulement de Marangoni a un effet sur la propulsion des objets sur l'eau.\\
+
+La diffusion dans un écoulement de transport peut être caractérisé par le nombre de Nusselt moyen Nu. $\mathrm{Nu}= 1$ pour un écoulement nul $\bar{v} = \frac{vL}{D} = 0$ où l'écoulement est purement diffusif. Dès qu'il y a du transport, alors le nombre de Nusselt devient positif $\mathrm{Nu}>1$. la vitesse adimenssionée $\bar{v}$  est importante car elle permet de distinguer les deux régimes et sert de paramètre de contrôle pour faire la transition entre le régime diffusif et le régime dominé par le transpot. Ender {\textit et. al} utilisent la définition suivante du Nusselt, valable pur des conditions aux limites de concentration constante \cite{Ender2021}.
+
+\begin{equation}
+  \rm Nu = \left\{
+  \begin{array}{ll}
+    1+\frac{1}{2}\bar{v}+... &~\mbox{pour}~\bar{u}\ll 1\\
+    0.6245\bar{v}^{1/3}       &~\mbox{pour}~\bar{u}\gg 1
+  \end{array}
+  \right.
+\end{equation}
+
+On a tracé sur la figure \ref{fig:NusseltPeclet} le Nusselt calculé pour une concentration constante donc à partir des mesures expérimentales de $v_0$ et comparé aux calcul nunériques réalisés par Ender. Dans notre cas $\bar{v}$ étant strictement positif même à très petite vitesse puisqu'il est comparé au coefficient de diffusion $D=1\times 10^{-10}~\rm m^{2}\cdot s^{-1}$, $\bar{v}$ devient très grande très vite. On peut observer que notre nusselt calculé est en accord avec les résultats numériques de Ender pour les quatre tensioactifs. On peut donc en déduire que nos expériences correspondent à un régime dominé par le transport des tensioactifs plutot que par un régime diffusif.
+  
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=.9]{./figures/chap3/Nusselt_peclet.pdf}
+  \caption{Comparaison des calculs du nombre de Nusselt et du Peclet aux résultat analytiques et numériques de Ender \textit{et. al} \cite{Ender2021}}
+  \label{fig:NusseltPeclet}
+\end{figure}
+
+Ensuite, Ender écrit les forces mises en jeu pour décrire la propulsion des gouttes par effet marangoni en fonction du nombre de Peclet. Il montre ainsi que pour un écoulement de marangoni fort $Pe\gg\bar{v}$ on peut observer deux réponse suivant si on se trouve dans le régime diffusif $\bar{v}\ll 1$ ou dominé par le transport $\bar{v}\gg 1$. Ainsi il observe que dans le régime diffusif la force totale de Marangoni $F_{\rm M, tot} = F_{\rm M} + F_{\rm M, fl}$ comprenant la force capiaire dû à la différence de tension de surface $F_{\rm M}$ et à la force de cisaillement provenant de l'écoulement en lui-même $F_{\rm M, fl}$ est sensiblement plus forte que la force de Marangoni capillaire $F_{\rm M,tot}>F_{\rm M}$. Tandis ce que dans le régime dominé par le transport $F_{\rm M,tot }\approx F_{\rm M}$, la force totale de Marangoni n'est pas affectée par l'écoulement de Marangoni. La raison donnée par Ender est que l'écoulement donne lieu a une couche limite de concentration autour de l'objet relargant des tensioactifs mais que sur l'échele de la couche limite, l 'écoulement de Marangoni ne s'est pas encore développé. Il ne se développe que plus loin à cause des conditions de non glissement.  Ainsi dans le régime $\bar{v}\gg 1$ et $\mathrm{Pe}\gg \bar{v}$ l'écoulement de Marangoni aussi fort soit-il n'a que peu d'impact sur la force de propsulion appliquée au nageur. En s'appuyant sur les arguments d'Ender on en conclut que l'écoulement de Marangoni n'a que peu d'impact également sur la propulsion des bateaux de Marangoni dans le cas de nombre de Peclet grand ($\mathrm{Pe}\gg 1$), comme on peut voir sur la figure \ref{fig:NusseltPeclet}, si on compare nos données à celle de Ender, tous nos points se retrouvent dans le régime ($\bar{v}\gg 1$ et $\mathrm{Pe}\gg \bar{v}$) dominé par le transport.

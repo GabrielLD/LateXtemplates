@@ -1,0 +1,21 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{preamb-work}[2020/01/13 0.3 Temporary use packages during thesis writing]%%%
+%%% Generation of fake text, display of labels, marking of working versions: 
+%%% to be deleted for the final version %%%
+\usepackage{lipsum} 
+\usepackage[math,toc]{blindtext}
+\renewcommand{\blindmarkup}[1]{\emph{#1}}
+\blindmathtrue
+\AddToShipoutPictureBG{% Add picture to background of every page
+  \AtPageLowerLeft{%
+    \raisebox{3\baselineskip}{\makebox[\paperwidth][c]{Version \today, \currenttime}}%
+}}
+\usepackage[notref,notcite]{showkeys}
+\usepackage[pdftex]{changebar}
+\usepackage{versions}          % permet d'activer ou non certains environnements
+
+\AfterEndPreamble{\nocite{*}}
+\endinput
+%end of preamb-work package

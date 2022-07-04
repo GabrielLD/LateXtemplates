@@ -1,0 +1,47 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+%%% Preamble for mathematics %%%
+\ProvidesPackage{preamb-math}[2020/10/06 0.4 math options for PhD thesis (J.Hare)]
+%%% Options
+\RequirePackage{kvoptions}
+\RequirePackage{etoolbox}
+\SetupKeyvalOptions{family=preambmath,prefix=preambmath@,setkeys=\kvsetkeys}
+\DeclareBoolOption[false]{ams}
+\DeclareBoolOption[false]{showonlyrefs}
+\DeclareBoolOption[false]{slantedgreekcaps}
+\DeclareDefaultOption{\PackageWarning{preamb-math}{Unknown option ‘\CurrentOption’ in preamb-math}}
+%%% Macro to define slanted greek capitals           
+\DeclareListParser*{\slantedgreekcaps}{,}
+\newcommand\ch@ngedef[1]{\csletcs{ori#1}{#1}\csletcs{#1}{var#1}}
+\newcommand\make@slantedgreekcaps{\slantedgreekcaps{\ch@ngedef}{Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}}
+%%% Options handling
+\ProcessKeyvalOptions{preambmath}
+\ifpreambmath@ams
+\typeout{**** amsmath is on ****}
+	\RequirePackage{mathtools}    % loads a super set of amsmath
+	\RequirePackage{amssymb,bm,bbm}     % mathematic symbols from  AMS + boldmath + blackboard
+    % numbering only equations referenced in the text
+	\ifpreambmath@showonlyrefs\typeout{**** showonlyrefs is true ****}\mathtoolsset{showonlyrefs,showmanualtags}\fi
+	\ifpreambmath@slantedgreekcaps\make@slantedgreekcaps\fi
+\else
+\typeout{**** amsmath is off ****}
+\fi
+\RequirePackage{icomma}              % comma as  decimal separator
+\RequirePackage{upgreek}             % greek upright letters  for  μm and β-decay
+%% Define new Unicode chars, with \DeclareUnicodeCharacter from utf8 option of inputenc
+%%% examples:
+\@ifpackagewith{inputenc}{utf8}{%
+\DeclareUnicodeCharacter{00B5}{\ensuremath{\upmu}}  % µ
+%\DeclareUnicodeCharacter{03C3}{\sigma}             % σ  
+}{\relax}
+
+%%% other packages
+%\RequirePackage[scr]{rsfso}             % better \mathcal with \mathscr
+%\RequirePackage{mathdots}               % dots for matrices and like
+%\RequirePackage[overload]{abraces}      % better horizontal braces
+%\RequirePackage[e]{esvect}              % better vectors 
+%\RequirePackage{pifont}                 % zapfdingbats; do you _really_ need them ?
+\endinput
+%end of preamb-math package
+

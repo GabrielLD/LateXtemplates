@@ -1,0 +1,75 @@
+
+%% script package de ma these et mise en page 
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+\usepackage{transparent}
+\usepackage[outline]{contour}
+\usepackage[margin=20mm, includeheadfoot, bindingoffset=5mm]{geometry}
+\input{./preamb/preamb-graph.tex}
+\input{./preamb/preamb-math.tex}
+\input{./preamb/preamb-util.tex}
+\input{./preamb/preamb-titles.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HYPERREF %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pagebackref]{hyperref}
+\hypersetup{colorlinks,linkcolor=DarkBlue,anchorcolor=DarkRed,%
+pdfdisplaydoctitle=true,pdfpagemode=UseOutlines,%
+bookmarksnumbered=true,bookmarksopen=true}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{thcover}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MATHS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{mathtools} % plutôt `mathtools` que `amsmath`
+\usepackage{esvect}
+\usepackage{amsfonts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[framemethod=tikz]{mdframed} % breakable frames and coloured boxes
+\usetikzlibrary{plotmarks} % librairie pour les graphes
+\usetikzlibrary{patterns}  % necessaire pour certaines choses predefinies sur tikz
+\usetikzlibrary{shadows}   % ombres des encadres
+\usetikzlibrary{backgrounds} % arriere plan des encadres
+
+\usepackage{pdfpages}
+
+\definecolor{definitionf}{RGB}{220,252,220}
+\definecolor{definitionl}{RGB}{39,123,69}
+\definecolor{definitiono}{RGB}{72,148,101}
+
+
+\definecolor{remf}{RGB}{230,240,250}
+\definecolor{remo}{RGB}{150,150,150}
+
+%%%%%%%%%% DEFINITION
+\newmdenv[tikzsetting={fill=definitionf}, linewidth=2pt, linecolor=definitionl, outerlinewidth=0pt, innertopmargin=5pt, innerbottommargin=5pt, innerleftmargin=5pt, innerrightmargin=5pt, leftmargin=0pt]{definition}
+
+\newmdenv[ tikzsetting={drop shadow={ shadow xshift=1ex, shadow yshift=-0.5em, fill=definitiono, opacity=1, every shadow } }, outerlinewidth=2pt, outerlinecolor=white, linecolor=white, innertopmargin=0pt, innerbottommargin=0pt, innerleftmargin=0pt, innerrightmargin=0pt]{ombredef}
+
+%%%%%%%%%% Remarques
+
+\newmdenv[tikzsetting={fill=remf}, linewidth=2pt, linecolor=remf, outerlinewidth=0pt, innertopmargin=5pt, innerbottommargin=5pt, innerleftmargin=5pt, innerrightmargin=5pt, leftmargin=0pt]{remarque}
+
+\newmdenv[ tikzsetting={drop shadow={ shadow xshift=1ex, shadow yshift=-0.5em, fill=remo, opacity=1, every shadow } }, outerlinewidth=2pt, outerlinecolor=white, linecolor=white, innertopmargin=0pt, innerbottommargin=0pt, innerleftmargin=0pt, innerrightmargin=0pt]{ombreremarque}
+
+
+%%%%%%%%%% THEOREME
+\definecolor{theof}{RGB}{255,216,218}
+\definecolor{theol}{RGB}{160,0,4}
+\definecolor{theoo}{RGB}{221,65,100}
+
+
+\newmdenv[tikzsetting={fill=theof}, linewidth=2pt, linecolor=theol, outerlinewidth=0pt, innertopmargin=5pt, innerbottommargin=5pt, innerleftmargin=5pt, innerrightmargin=5pt, leftmargin=0pt]{theo}
+
+\newmdenv[ tikzsetting={drop shadow={ shadow xshift=1ex, shadow yshift=-0.5em, fill=theoo, opacity=1, every shadow } }, outerlinewidth=2pt, outerlinecolor=white, linecolor=white, innertopmargin=0pt, innerbottommargin=0pt, innerleftmargin=0pt, innerrightmargin=0pt]{ombretheo}

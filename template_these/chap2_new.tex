@@ -1,0 +1,354 @@
+\part{Génération de Vorticité}
+  \chapter{Effet Marangoni}
+
+  Précédemment, nous avons défini des généralités sur la tension superficielle qui apparaît à l'interface entre deux fluides. Nous avons vu que cette tension peut être diminuée par l'ajout de molécules tensioactives dans le liquide lorsqu'il est à l'équilibre. Lors de l'ajout de surfactant en un point de la surface d'un liquide, pendant cette phase transitoire, nous pouvons nous appercevoir que le liquide à la surface subit une accélération parant de la source vers l'extérieur. En effet, lors de l'ajout des molécules surfactantes la concentration en molécules est la plus grande à la source et diminue en s'éloignant de la source, donc la tension superficielle est minimum où la concentration est la plus grande et maximale là où la concentration est la plus faible. Ce gradient de tension de surface le long de l'interface entre les deux fluides crée une contrainte qui met en mouvement les liquides de part et d'autres de la surface. C'est ce que nous appellons l'effet Marangoni.
+  \section{Histoire}
+    L'effet Marangoni a été mis en évidence la première fois par James Thomson en $1855$ lorsqu'il a étudié le phénomène des larmes de vin \cite{Thomson1855}. Après avoir agité doucement le verre de vin, le front de liquide qui s'est déposé sur la paroi du verre retombe par endroits sous la forme de larmes (voir photo \ref{fig:TearsOfWine}\textcolor{blue}{(a)}). Ce phénomène résulte de la compétition entre la gravité qui tire le liquide vers le centre de la Terre et l'effet Marangoni qui s'y oppose. La couche de liquide sur la paroi est plus fine en haut qu'au fond du verre ce qui favorise l'évaporation de l'alcool. Il existe alors une différence de concentration en alcool entre le haut et le bas du verre. Et comme l'alcool a une tension de surface plus faible que l'eau, une différence de tension de surface $\Delta\gamma$ s'établit le long de l'interface entre le vin et l'air. L'effet Marangoni ainsi généré met en mouvement le liquide à l'interface en direction du haut du verre comme illustré sur le schéma \ref{fig:TearsOfWine}\textcolor{blue}{(b)}. Ce mouvement réapprovisionne le front en liquide ce qui permet à l'effet de perdurer pendant un certain temps. Ainsi ces effets liés à la tension de surface s'opposent à la gravité entraînant l'apparition de ces jolies larmes de vin que nous pouvons aisément voir par transparence sur la photo \ref{fig:TearsOfWine}\textcolor{blue}{(a)}. Plus tard, c'est le physicien Carlo Marangoni, qui en $1865$ a étudié de façon plus générale pendant sa thèse à Pavia (Italie), l'effet qui aujourd'hui porte son nom. Dans sa thèse intitulée \og Sull'espansione delle goccie d'un liquido galleggianti sulla superficie di altro liquido \fg \cite{Marangoni1865}. Jusque là nous avons uniquement évoqué l'effet Marangoni généré grâce à des molécules tensioactives. Mais, l'effet marangoni peut être déclenché également par un gradient de température le long de l'interface.
+    \begin{figure}[!ht]
+      \centering
+      \input{./figures/chap1/TearsOfWine.pdf_tex}
+      \caption{(a)-Les larmes de vins dans le reflet du verre. Le Vin utilisé pour cette manipulation est du Vin Santo à $15\%$ d'alcool.(b)- Schématisation de l'écoulement de Marangoni dans le phénomène des larmes de vin.}
+      \label{fig:TearsOfWine}
+    \end{figure}
+
+
+
+\section{Principe}
+
+Pour illustrer l'effet Marangoni, il n'y a rien de mieux qu'une manipulation que chacun peut réaliser dans sa propre cuisine. Pour cela il suffit de moudre un peu de poivre et de le saupoudrer une surface d'eau contenue dans un bol (voir figure \ref{fig:Distanciation}\textcolor{blue}{(a)}). Lorsque une goutte de liquide vaisselle touche la surface de l'eau, le poivre s'écarte rapidement (voir figure \ref{fig:Distanciation}\textcolor{blue}{(b)}). Le liquide vaisselle contient de nombreux tensioactifs solubles et non solubles. Au point de dépôt, les tensioactifs diminuent la tension de surface, ce qui crée une différence de tension de surface entre le point de dépot (le centre de la surface du bol d'eau) et le reste de la surface comme illustré sur le schéma \ref{fig:Distanciation}\textcolor{blue}{(c,d)}. Ce gradient de tension superficielle met en mouvement les deux fluides (ici l'eau et l'air) de part et d'autre de l'interface: c'est ce qu'on appelle \textbf{l'écoulement de Marangoni}. L'écoulement s'arrête une fois que la concentration en tensioactif à la surface s'est homogénéisée (et donc la tension surperficielle aussi).
+\begin{figure}[!ht]
+  \centering
+  \resizebox{.9\textwidth}{!}{\input{./figures/chap1/Distanciation.pdf_tex}}
+  \caption{Lorsque le coton tige imbibibé de PAIC citron touche l'interface entre l'eau et l'air le poivre moulu est projeté jusqu'aux bords.}
+  \label{fig:Distanciation}
+\end{figure}
+
+\begin{figure}[!ht]
+  \resizebox{1\textwidth}{!}{\input{./figures/chap1/SketchPrincipeMarangoniFlow.pdf_tex}}
+  \caption{(c)-Dépôt de surfactant sur une surface propre. (d)-Mise en mouvement des fluides autour de l'interface de la zone de faible tension superficielle vers la tension de surface maximale.}
+  \label{fig:SketchPrincipe}
+\end{figure}
+Dans l'expérience avec le liquide vaisselle, le poivre qui sert à visualiser l'écoulement est repoussé jusqu'aux bords du contenant. Maintenant, si on essaye de reproduire cette expérience avec un tensioactif soluble comme du SDS ou du TTAB, l'écoulement produit est différent. Le transport des molécules solubles entre en compétition avec leur diffusion dans le volume d'eau ce qui donne lieu à un écoulement de taille finie. La solubilité des tensioactifs ajoute un degré de complexité dans le problème des écoulement de Marangoni soluto-capillaires, c'est pourquoi cet écoulement a été très étudié pour des tensioactifs insolubles comme l'acide oléique mais assez peu avec des tensioactifs hydrosolubles.
+\section{Dépôt d'une goutte de tensioactif sur une interface entre deux fluides}
+
+\subsection{Étalement d'une goutte de tensioactif sur une couche mince de liquide}
+
+\subsubsection{Tensioacitfs insolubles}
+L'effet Marangoni apparaît dans de nombreuses études réalisées par J.B. Grotberg, Jensen et Borgas qui se sont intéressés à cet effet pour ses applications médicales. En particulier, l'effet Marangoni est important  dans le fonctionnement mécanique des poumons \cite{Grotberg1994}. Dans ces études, ils se sont intéréssés à l'étalement de molécules tensioactives \textbf{insolubles} sur une couche mince de liquide. Premièrement, ils ont cherché à caractériser la structure de l'écoulement produit. C'est à dire l'évolution de son extension spatiale $r$ en fonction du temps $t$ mais aussi la déformation de la couche mince de liquide par l'écoulement comme le montre la figure \ref{fig:Grotberg}\textcolor{blue}{(a)}. Et dans un second temps ils se sont intéressés à l'évolution du profil de concentration des espèces tensioactives (voir figure \ref{fig:Grotberg} \textcolor{blue}{(b)}). Les résultats expérimentaux ont été comparés à des analyses mathématiques qui simulent l'étalement d'une couche de tensioactifs sur un film liquide mince et plat. Les tensioactifs sont initialement localisés sur une position $r=0$ à $t=0$. Leurs calculs sont construit la théorie de lubrification, les effets intertiels et gravitaires sont négligés. Les résultats de ces simulations montrent un front qui s'étale depuis la position initiale accompagné d'un amincissement du film liquide près de la zone d'injection. L'amincissement est dû à l'équilibre entre le gradient de tension superficiel et la contrainte visqueuse. Il y a donc un couplage entre la surface et le volume du liquide qui entraîne la déformation de la surface. L'avancée du front semble suivre une loi de puissance $(t)\propto t^{1/4}$ pour une goutte axisymétrique et $r(t)\propto t^{1/3}$ pour une configuration linéaire. Ces résultats numériques ont été vérifiés par les expériences ménées par Gaver et Grotberg \cite{Gaver1992} avec des tensioactifs insolubles (acide oléique) sur une couche de glycérol. Ils observent également un amincissement de la couche près de l'injection avec une augmentation de la hauteur près du front de l'étalement.
+\begin{figure}[!ht]
+  \centering
+  \input{./figures/chap1/Grotberg.pdf_tex}
+  \caption{Simulations numériques de l'étalement axisymétrique d'une goutte issues de \cite{Jensen1992}. (a) déformation du front de l'étalement $h$ qui avance de la droite vers la gauche. $\xi=r/t^{1/4}$ est la coordonnée spatiale de l'étalement. (b) - Évolution de la concentration surfacique $\Gamma$.}
+  \label{fig:Grotberg}
+\end{figure}
+\subsubsection{Tensioactifs solubles}
+Des comportements similaires ont été observés pour des tensioactifs \textbf{solubles}. Lee et Starov se sont intéressés à l'influence de la solubilités des surfactants \cite{Lee2009}. Pour leurs études, ils utilisent comme tensioactifs du SDS ($ CMC = 8.3~\rm mmol\cdot L^{-1}$) et du DTAB ($CMC = 15.1~\rm mmol\cdot L^{-1}$) à des concentrations de l'ordre de $10\%$ de la $CMC$. Leurs observations montrent que l'étalement de SDS et de DTAB présentent des vitesses semblables aux premiers instants. En revanche, après un dixième de seconde le DTAB ralentit et dévie des lois que Grotberg \textit{et al} ont décrit alors que le SDS semble les suivre sur le temps de l'expérience ($t\approx 1~\rm s$). Nous en déduisons que pour des tensioactifs solubles l'affinitié du tensioactif avec l'interface et sa solubilité changent la dynamique d'étalement de la goutte. Plus le tensioactif est soluble, plus les étalements sont lents et à l'inverse, moins le surfactant est soluble , plus les puissances deviennent grandes. 
+
+À cet effet de la solubilité. s'ajoute les effets de la concentration. Edmonstone \textit{et al} \cite{Edmonstone2006} ont modélisé l'étalement de la goutte de tensioactif à des concentrations au-delà de la CMC. Dans ce contexte, ils ont montré que les micelles restant dans la goutte agissent comme un réservoir de surfactant (voir schéma \ref{fig:DropThinFilm}). Cela a pour conséquence d'augmenter de la loi de puissance avec laquelle l'étalement se propage sur la couche de liquide (passant de $t^{1/4}$ à $t^{1/2}$).
+\clearpage
+\begin{figure}[!ht]
+  \centering
+  \input{./figures/chap1/Edmonstone.pdf_tex}
+  \caption{Illustration de la géométrie de l'écoulement. Schéma issu de l'article de Edmonstone 2006 \cite{Edmonstone2006}. La goutte s'étale par effet Marangoni et présente un front d'avancée séparé de la goutte par un amincissement du film liquide.}
+  \label{fig:DropThinFilm}
+\end{figure}
+\subsubsection{Instabilité de digitation}
+L'étalement des solutions aqueuses de tensioactifs  sur une couche mince de liquide s'accompagnent parfois d'un effet remarquable qui a été identifié dans plusieurs travaux. Dans certaines conditions, il est posssible de voir la destabilisation du front d'étalement de la goutte. Il se destabilise en formant des excroissances localisées qui avancent plus vite que le reste de la goutte (voir figure \ref{fig:Hamraoui}\textcolor{blue}{(a)}).
+
+Les premiers à avoir reporté ces observations sont Marmur et Lelah \cite{Marmur1981} en $1981$. Troian \textit{et al} décrivent cette instabilité hydrodynamique par le terme de \og fingering \fg \cite{Troian1989}. Ces doigts apparaissent près du front d'étalement de la goutte et leurs origine semble associée à un effet Marangoni localisé entre le volume de la goutte encore très concentrée en surfactant et le front de l'étalement moins concentré. Leur étude a montré que la structure de l'instabilité dépend de plusieurs paramètres: l'épaisseur de la couche liquide sous-jacente et la concentration initiale en tensioactifs. Effectivement, une augmentation de l'épaisseur du liquide sous-jacent, fait grossir les doigts et rend leurs pointes plus rondes, inversement, sur des film liquides plus minces, les doigts semblent devenir plus minces et pointus. La concentration initiale en tensioactif change également la largeur des doigts mais aussi leur vitesse de propagation. Des expériences plus récentes réalisées par Hamraoui \cite{Hamraoui2004} confirment ces observations réalisées par Troian.
+
+Warner \textit{et al.} \cite{Warner2004a, Warner2004b} ont montré que l'apparition de ces doigts semble lié à des élévations locales du film amincit (situé entre le front et la goutte). Ces élévations conduisent à des augmentations de la vitesse surfacique et du transport de tensioactifs. Comme le liquide est transporté plus rapidement dans ces régions \og élévées \fg, la concentration en tensioactif est plus faible que dans les régions voisines. Cette diminution locale de concentration génère un écoulement de Marangoni depuis les zones voisines plus concentrées en direction de ces régions élevées. Par conséquent l'instabilité est amplifiée, les doigts grossisent et s'étalent encore plus vite que les régions voisines.
+
+À ces observations expérimentales s'ajoute une analyse théorique et des simulations d'Edmonstone \textit{et al.} \cite{Edmonstone2006}. Leurs travaux décrivent un état de base de l'écoulement qui ressemble à ce que Grotbert \textit{et al} avaient obtenus, c'est à dire une goutte qui s'étale avec un amincissement du liquide entre la goutte et le front de l'étalement. Mais, Edmonstone \textit{et al} observent que lorsque la concentration de la goutte initiale est au-dela de la CMC, ils observent la destabilisation du front et des motifs similaires à ceux que Hamraoui visualise avec ses expériences (voir figure \ref{fig:Hamraoui}\textcolor{blue}{(b)}).
+
+\begin{figure}[!ht]
+  \centering
+  \input{./figures/chap1/HamraouiEdmonstone.pdf_tex}
+  \caption{(a) - Résultat expérimental reporté par Hamraoui \cite{Hamraoui2004}. Sur cette photo nous pouvons observer l'étalement de la goutte sur une couche fine de liquide. En particulier, nous pouvons observer le front qui s'est étalé rapidement (couleur jaune) et sur lequel les doigts se forment. (b) - Résultats numériques de Edmonstone \textit{et al} \cite{Edmonstone2006}. Nous pouvons observer les doigts se séparer de la goutte avec le front qui s'est étalé rapidement à droite.}
+  \label{fig:Hamraoui}
+\end{figure}
+
+\subsubsection{Instabilité de l'écoulement fleurit}
+
+La déposition de gouttes contenant des tensioactifs peuvent forcer l'étalement d'une goutte même si celle-ci se trouve dans une configuration favorable, comme par exemple une goutte d'huile sur de l'eau. C'est ce que A. Chauhan \textit{et al} ont observé \cite{Chauhan2000}. Lors de l'ajout de tensioactifs, une goutte peut être forcée de s'étaler lorsque la concentration en surfactant dépasse un certain seuil  \cite{Karapetsas2011}.  Dans le cas d'une goutte en évaporation, Roman \textit{et al} ont même observé que la goutte pouvait osciller \cite{Stocker2007}. 
+
+En choisissant un mélange adéquat d'alcool et d'eau nous pouvons observer un phénomène fascinant qui a été étudié par L. Keiser \textit{et al} \cite{Keiser2017} (voir figure \ref{fig:EcoulementFleurit}). Lorsque la goutte d'eau et d'alcool touche la surface de l'huile, elle s'étale sur la surface liquide jusqu'à atteindre un rayon stationnaire de quelques centimètres en quelques secondes (illustré sur le schéma \ref{fig:EcoulementFleurit}\textcolor{blue}{(a)}). Une fois que la goutte atteint son rayon maximum, elle commence à se rétracter. Pendant sa rétractation, ils observent que la goutte se fragmente en une \og myriade \fg de gouttelettes. Lorsque la goutte s'est complètement fragmentée l'écoulement s'arrête. La taille de l'écoulement comme la taille des gouttelettes semblent être controlés par la concentration initiale en alcool dans la goutte (voir figure \ref{fig:EcoulementFleurit}\textcolor{blue}{(b)}).
+\begin{figure}[!ht]
+  \centering
+  \input{./figures/chap1/EcoulementFleurit.pdf_tex}
+  \caption{Illustration de l'écoulement fleurit (a) - Schéma emprunté à l'article de Keise \textit{et al} \cite{Keiser2017} qui illustre l'étalement de la goutte sur une couche d'huile. (b) - Il s'agit d'une capture d'écran de la vidéo du projet Lutétium. Nous pouvons voir la structure de l'écoulement quelques secondes après le démarrage pour différentes concentrations en alcool. À gauche avec peu d'alcool et à droite avec plus d'alcool. \url{https://youtu.be/h3iUy4Wg8lg}. }
+  \label{fig:EcoulementFleurit}
+\end{figure}
+
+Ce phénomène s'explique relativement simplement. Pendant l'étalement de la goutte, l'alcool s'évapore significativement plus vite que l'eau (l'eau s'évapore plus lentement en raison de ses fortes liaisons hydrogène). Il s'évapore plus vite près du bord de la goutte où celle-ci est fine qu'au centre, cela crée une différence de concentration en alcool. Comme nous l'avons déjà vu, qui dit différence de concentration en alcool dit différence de tension de surface car l'alcool a une tension de surface plus faible que l'eau. En raison de cela, un écoulement de Marangoni s'établit entre le centre de la goutte et le bord. Cet écoulement amène de l'eau  au bord qui s'accumule dans un bourlet. Ce bourlet en grossisant devient instable et se fragmente en plusieurs gouttelettes. L'instabilité qui semble responsable de cette fragmentation est attribuée à l'instabilité de Rayleigh-Plateau des cylindres liquides \cite{DeGennes2005}.
+
+\begin{ombreremarque}
+  \begin{remarque}
+    \noindent \textbf{Ce que nous retenons:}\\
+    Nous avons vu dans cette section que l'étalement d'une simple goutte de tensioactifs solubles ou insolubles sur une couche mince liquide est capable de mettre en mouvement les fluides proches de l'interface liquide-air. La dynamique du front d'avancée de l'étalement a été beaucoup étudiée montrant que le rayon d'étalement $r(t)$ pouvait présenter des comportement dépendant de la concentration et de l'épaisseur du film liquide sur lequel il s'étale. Et cela jusqu'à présenter des instabilités qui ont beaucoup intéressé les chercheurs, en particulier l'instabilité de digitation générant des \og doigts \fg. 
+    
+    D'autres instabilités ont été mises en évidence, lorsque de l'évaporation s'ajoute à l'étalement du tensioactif. On obtient alos ce que nous appelons l'écoulement fleurit où la goutte se fractionne en une multitude de gouttelette après s'être étalée.
+    
+    Cependant, pour l'instant nous nous sommes intéressé au dépôt d'une seule goutte de tensioactif mais lorsque le dépôt de tensioactif a lieu en continu la dynamique du front présente d'autres particularités. C'est ce que nous présentons dans la section suivante. 
+  \end{remarque}
+\end{ombreremarque}
+
+\section{Effet Marangoni avec une source constante de masse de tensioactif ou de chaleur}
+Jusqu'à présent nous avons vu que le dépôt d'une goutte de tensiaoctif sur un liquide est capable d'accélérer l'étalement de la goutte et même de créer des instabilités présentant des motifs variés. Aussi lorsque l'injection d'une source de tensioactif est continue la phénoménologie qui en résulte présente ses propres caractéristiques. Nous allons voir dans cette section que l'écoulement de Marangoni avec une source constante peut générer des écoulements de taille finie qui peuvent se destabiliser. Premièrement, nous verrons que la source de l'effet Marangoni peut être une source de chaleur avec les travaux de Bratuhkhin et Maurin. Puis nous nous attacherons à étudier l'écoulement de Marangoni généré par des tensioactifs insolubles et solubles. 
+
+
+\subsection{Effet Marangoni thermo-capillaire}
+  En 1967 Bratukhin et Maurin étudient la structure d'un écoulement thermo-capillaire à partir d'un point de source de chaleur placé à la surface semi-infinie d'un liquide. De leurs travaux mathématiques \cite{Bratukhin1967, Bratukhin1982} une solution apparaît resemblant à un écoulement divergent depuis la source de chaleur et axisymétrique.
+  
+  
+  Les effets de la température peuvent remplacer ceux des molécules tensioactives. En remplaçant la concentration des molécules $c$ par la température $T$, ainsi que le coefficient de diffusion des molécules surfactante par un coefficient de diffusion thermique, les équations deviennent similaires. D'ailleurs Levich en 1962 décrit la variation de la tension de surface en fonction de la température comme: 
+
+  \begin{equation}
+    \Delta \gamma = \gamma_{\infty}-\gamma\left(T-T_{\infty}\right)\label{eq:Levich1962}.
+  \end{equation}  
+
+  où $\gamma_{\infty}$ et $T_{\infty}$ sont les valeurs de la tension superficielle et de la température prises loin de la source de chaleur. Dans ce cas nous pouvons écrire la contrainte qui s'applique sur la surface du liquide en fonction de la variation de la température le long de l'interface: 
+
+  \begin{equation}
+    \tau_{T} = -\gamma\left(\nabla T\right).
+  \end{equation}
+  Cette contrainte est la contrainte de Marangoni thermo-capillaire qui va mettre en mouvement les fluides de part et d'autre de l'interface. Bratukhin et Maurin modélisent mathématiquement cet écoulement en prenant en compte les équations de Navier-Stokes:
+
+  \begin{equation}
+    \dfrac{\partial \vv{v}}{\partial t}+\left(\vv{v}\cdot\vv{\nabla}\right)\vv{v}=-\dfrac{1}{\rho}\vv{\nabla}P+\nu \Delta\vv{v}.
+  \end{equation}
+
+  où $\vv{v}$ est la norme de la vitesse en coordonnées sphériques $(r,\theta, \phi)$, $P$ est le champ de pression hydrostatique et $\nu$ la viscosité cinématique. Couplée à l'équation de la chaleur: 
+
+  \begin{equation}
+    \frac{\partial T}{\partial t}+\vv{v}\cdot\vv{\nabla}T = \chi \Delta T.
+  \end{equation}
+
+  où $\chi$ est le coefficient de diffusion de la chaleur. L'hypothèse d'incompressibilité du liquide $\nabla\vv{v} = 0$. C'est la continuité de la contrainte à l'interface qui fait apparaître la contrainte de l'effet Marangoni thermo-capillaire dans le système d'équations. 
+
+  \begin{equation}
+    \dfrac{\eta}{r}\dfrac{\partial v_r}{\partial \theta} = \dfrac{\partial \gamma}{\partial T}\dfrac{\partial T}{\partial r},~\text{ainsi que } \dfrac{\eta}{r}\dfrac{\partial v_\phi}{\partial \theta} = \dfrac{\partial \gamma}{\partial T}\dfrac{1}{r}\dfrac{\partial T}{\partial \phi}, \text{ et, } v_{\theta} = \dfrac{\partial T}{\partial \theta} = 0.
+  \end{equation}
+
+  Enfin l'analyse mathématique de ce système d'équations conduit à un nombre adimenssioné qui permet de caractériser l'écoulement: 
+
+  \begin{equation}
+    A = -\frac{\partial \gamma}{\partial T}\frac{Q}{2\pi\nu\eta\kappa}\label{eq:bratukhin1967}.
+  \end{equation}
+
+  $A$ correspond à l'intensité de la source $Q$ adimensionnée par la variation de la tension de surface par rapport à la température. Ce terme joue un rôle important c'est le terme qui traduit l'intensité de l'écoulement produit par rapport à la source de chaleur. $\kappa$ est le coefficient de conductivité thermique, $\eta$ et $\nu$ les viscosité dynamiques et cinématiques. Suivant l'intensité de la source adimensionnée $A$ la structure de l'écoulement change. Pour des valeures positives de $A$ l'écoulement est radial et s'étale sur la surface du liquide. Au contraire, lorsque $A<0$, Bratukhin  et Maurin observent que les lignes de courant partant de la source rebouclent vers le point de source de chaleur (voir figure \ref{fig:Bratukhin})
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics{./figures/chap1/Bratukhin1967.pdf}
+    \caption{Représentations des lignes de courant de l'écoulement thermo-capillaire de Marangoni. Pour des valeurs de $A$ négatives ($A=-2.33$) \cite{Bratukhin1967}. Cette représentation semble correspondre à une cellule de recirculation à la surface du liquide.}
+    \label{fig:Bratukhin}
+  \end{figure}
+  
+  Cette étude montre que l'écoulement divergent généré par l'effet Marangoni thermo-capillaire, peut devenir instable pour des valeurs critiques de $A$. Des modes propres $m$ de l'instabilité sont identifiés et leur nombre dépend exclusivement de $A$. Les modes instables apparaissent pour $\|A\|<1$ et $m \rightarrow \infty$ pour $A\rightarrow 7$ ce qui correspond pour eux à une source de chaleur de l'ordre de $10^{-4}~\rm Watts$ ce qui est très faible. Donc leur écoulement devient très rapidement instable. 
+
+
+
+  \subsection{Effet Marangoni avec des tensioactifs insolubles}
+
+    Parallèlement Suciu, Smigelshi et Ruckenstein \cite{Suciu1967}ont publié les premièrs résultats expérimentaux sur l'écoulement de Marangoni généré avec des tensioactifs insolubles. Les premières expériences qu'ils proposent consistent à injecter une solution de butanol à la surface d'une boîte de petri remplie d'eau. Les observations sont faites grâce à une méthode optique de type Schlieren. Lorsque le butanol s'évapore un gradient de tension de surface s'établit et accèlère l'étalement du butanol sur la surface de l'eau. Ils étudient cet écoulement en mesurant son diamètre $D$ en fonction du débit d'injection $Q$ (voir figure \ref{fig:suciu1967}\textcolor{blue}{(a)}). Il en résulte une dépendance qui semble presque linéaire du diamètre avec le débit.  Lorsque le débit est faible, l'écoulement forme un cercle axisymétrique mais alors que le débit augmente il se déforme et se destabilise. Lorsque l'écoulement devient instable, le contour n'est plus axisymétrique et fluctue dans toutes les directions comme illustré sur la photo \ref{fig:suciu1967}\textcolor{blue}{(b)}. Enfin, après quelques instants, ils observent que le contour de l'écoulement diminue. La décroissance du diamètre de l'écoulement est attribuée à la présence d'impuretés insolubles provenant de l'air ambiant, de l'eau et de la solution de butanol. Ces impuretés s'accumulent à la surface et forment un film stagnant à l'extérieur de l'écoulement. Lorsque la surface est saturée, elle commence à s'opposer à l'écoulement qui a de moins en moins de place à la surface de l'eau. Ils reportent également l'existence d'un écoulement sous la surface qui prend la forme d'un rouleau toroïdal.
+  \begin{figure}[!ht]
+    \centering
+    \input{./figures/chap1/Suciu1967.pdf_tex}
+    \caption{(a) - Mesure de la croissance du diamètre de l'écoulement en fonction du débit d'injection de la solution d'alcool. (b) - Observations de l'écoulement ($Q = 11.8\cdot 10^{-5}~\rm mL\cdot s^{-1}$). Crédit \cite{Suciu1967}}
+    \label{fig:suciu1967}
+  \end{figure}
+  
+  Pour caractériser l'écoulement de Marangoni ils cherchent à mesurer le profil de vitesse de l'écoulement en fonction de la distance à la source \cite{Suciu1969}. Ils observent que la vitesse augmente très rapidement en sortie du capillaire atteignant une vingtaine de millimètres par seconde. Ensuite la vitesse décroît rapidement comme illustré sur la figure \ref{fig:suciu1969}\textcolor{blue}{(a)}. Ruckenstein \textit{et al} \cite{Ruckenstein1970} ont proposé une modélisation mathématique de cet écoulement en se basant sur les équations de Navier Stokes (eq. \eqref{eq:NSRuck}) couplées au transport des molécules tensioactives (eq. \eqref{eq:RuckTransport})à la surface de l'eau (en coordonnées cylindriques). 
+  \begin{figure}[!ht]
+    \centering
+    \input{./figures/chap1/Suciu1969.pdf_tex}
+    \caption{Évolution de la vitesse de l'écoulement surfacique. (a) - Mesures de vitesse de l'écoulement. Crédits \cite{Suciu1969}. (b) - Comparaison avec le modèle (eq. \eqref{eq:solRuck}) \cite{Ruckenstein1970}.}
+    \label{fig:suciu1969}
+  \end{figure}
+  \begin{equation}
+      \left\{
+        \begin{array}{rcl}
+        u\dfrac{\partial u}{\partial r}+v\dfrac{\partial u}{\partial z} &=& \nu\left(\dfrac{\partial ^2 u}{\partial z^2}+\dfrac{\partial ^2 u}{\partial r^2}+ \dfrac{1}{r}\dfrac{\partial u}{\partial r} - \dfrac{u}{r^2}\right)\label{eq:NSRuck}\\
+        \dfrac{1}{r}\dfrac{\partial}{\partial r}(ru)+\dfrac{\partial v}{\partial z} &=&0\\
+        \end{array}
+        \right.
+  \end{equation}
+  \begin{equation}
+    u\frac{\partial c}{\partial r} + v \frac{\partial c}{\partial z} = D \left[\frac{\partial ^2 c}{\partial z^2}+\frac{1}{r}\dfrac{\partial }{\partial r}\left( \frac{\partial c}{\partial r}\right) \right] \label{eq:RuckTransport}
+  \end{equation}
+  
+  $u$  et $v$ sont les composantes radiale et verticale de la vitesse, $\nu$ est la viscosité cinématique, $r$ et $z$ sont positions radiales et verticales de l'espace, $c$ est la concentration en tensioactifs. Ils imposent des conditions aux limites telles que la concentration en tensioactif est constante $c_0$ sur une fine épaisseur de liquide en $r=r_0$. Dans le plan de la surface ($z=0$) l'écoulement est considéré uniquement radial, donc la vitesse azimuthale est nulle. Loin de la source, à l'infini toutes les composantes de la vitesses s'annulent. Aussi ils imposent la continuité de la contrainte de cisaillement à la surface. À l'aide de ces hypothèses ils parviennent à trouver une solution pour la vitesse de l'écoulement de Marangoni de la forme:
+  
+  \begin{equation}
+    u=0.656\left[\dfrac{c_0 }{\rho \delta}\left| \left(\dfrac{\rm d \gamma}{\rm d c}\right)_{c=c_0}\right|\right]^{1/2}\left(\dfrac{D}{\nu}\right)^{1/4}.\label{eq:solRuck}
+  \end{equation}
+  
+  La comparaison de ce résultat aux expériences qu'ils ont réalisés semble être en bon accord (voir figure \ref{fig:suciu1969}\textcolor{blue}{(b)}). Il est intéressant de remarquer ici que la vitesse de l'écoulement dépend de la variation de la tension de surface par rapport à la concentration en tensioactif : $\mathrm{d}\gamma/\mathrm{d}c$. Ce terme est l'analogue de $\mathrm{d}\gamma/\mathrm{d}T$ que mettent en jeu les équations pour l'écoulement thermo-capillaire. Ce terme caractérise la force de l'écoulement généré par le gradient de tension de surface et donc par les tensioactifs.
+  
+  
+  
+  En 2005, Mizev \textit{et al} publient une étude expérimentale sur l'influence des particules insolubles sur la structure et la stabilité d'un écoulement divergent à la surface d'un liquide \cite{Mizev2005}. Ils utilisent à la fois une source ponctuelle de chaleur sur de l'eau et une source tensioactifs (SAS, n-decane) sur du dioxane et comparent les résultats obtenus. 
+  \begin{figure}[!ht]
+    \centering
+    \input{./figures/chap1/Myzev2005.pdf_tex}
+    \caption{Structure de l'écoulement pour une injection de SAS (n-decane) sur du dioxane (a) - surface propre. (b) - surface avec des impuretés insolubles à la surface. \cite{Mizev2005}}
+    \label{fig:Mizev2005}
+  \end{figure}
+  Dans le cas où la surface de l'eau est propre, ils obtiennent un écoulement axisymétrique sans émissions de tourbillons. Nous pouvons voir sur la figure \ref{fig:Mizev2005}\textcolor{blue}{(a)} que l'écoulement sortant de la source est radial est axisymétrique. Les traceurs semblent tous suivre des lignes de courant partant de la source et arrivent aux extrémités de l'image.  En revanche lorsque la surface est contaminée par des insolubles l'écoulement n'est plus axisymétrique (voir figure \ref{fig:Mizev2005}\textcolor{blue}{(b)}). Nous pouvons également voir des cellules de recirculation apparaitre. Ces cellules de recirculation ressemblent fortement à ce que Bratukhin et Maurin avaient obtenus comme résultat suite à leur analyse mathématique. Mizev attribue cette instabilité à la présence de particules insolubles à la surface de l'eau.
+  
+  
+  Il test ce mécanisme dans d'autres travaux, en déposant un tensioactif insoluble (acide oléique) sur une couche d'eau pure \cite{Mizev2013,Mizev2014} (voir figure \ref{fig:Mizev2014}). En observant l'évolution de l'écoulement au cours du temps (de (a) à (f)), nous pouvons voir que la taille de l'écoulement axisymétrique qui au départ recovure tout le bassin diminue en taille. Plus les tensioactifs s'acculent au bord de l'écoulement divergent plus la taille de l'écoulement diminue. Ces observations rejoignent les premières observations de Suciu \textit{et al}. Mais l'écoulement en se rétractant laisse apparaitre des tourbillons le long du bord de l'écoulement. Ces tourbillons grandissent au fur et à mesure de la retractation de l'écoulement. Leur nombre semble changer également laissant voir des configuration à 2,4, 6 tourbillons. Lorsque le film d'insoluble est proche de la source, nous pouvons voir des cellules de recirculations qui ressemblent à ce que Bratukhin et Maurin décrivent dans leurs travaux. Enfin lorsque la couche d'insolubles à recouvert toute la surface, $\Delta \gamma = 0$ et l'écoulement s'arrête.
+  \begin{figure}
+    \centering
+    \resizebox{.7\textwidth}{!}{\input{./figures/chap1/Myzev2014.pdf_tex}}
+    \caption{(a) - L'écoulement axisymétrique occupe tout l'espace. (b) - Les impuretés s'accumulant au bord de l'écoulement axisymétrique, il s'étend de moins en moins. Et les tourbillons deviennent plus grands et moins nombreux. (c) - Les tourbillons occupent presque tout l'espace (c) - Il n'y a plus d'écoulement axisymétrique, les quatre tourbillons bouclent sur la source d'injection comme ceux de Pshenichnikov et Yatsenko. (e) Il reste deux tourbillons. (f) $\Delta\gamma = 0$ l'écoulement meurt.}
+    \label{fig:Mizev2014}
+  \end{figure}
+  
+\subsection{Effet Marangoni soluto-capillaire}
+  L'utilisation de tensioactif solubles dans l'eau permet également de produire un écoulement de Marangoni soluto-capillaire. Phsenichnikov et Yatcenko \cite{Pshenichnikov1974} présentent une étude expérimentale sur la structure et la stabilité d'un écoulement soluto-capillaire généré en injectant une solution d'alcool ($10\%$) et d'eau ($90\%$). Bien que les travaux de Pshenichnikov et Yatcenko est difficielement accessible en ligne, nous proposons une traduction de leur article réalisé avec l'aide de \textit{Deepl} (voir annexe \ref{annexe:PY}). 
+  
+  Ils injectent la solution d'alccol à travers le tube capillaire que nous avons schématisé sur la figure \ref{fig:PYfig}. Le débit d'injection $Q$ est compris entre $3.0\cdot 10^{-4}~\rm g\cdot s^{-1}$ et $1.0\cdot 10^{-1}~\rm g\cdot s^{-1}$. Lorsque l'injection démarre, le liquide s'étale à la surface de l'eau par effet Marangoni. Leur étude relève que pour certains débits d'injection ils voient apparaître des cellules de recirculation qui partent de la source et reboucles sur le point de la source (voir figure \ref{fig:PYfig}\textcolor{blue}{(b)}). Le nombre de cellules $N$ varie avec le débit d'injection $Q$, passant de 2 jusqu'à 8. $N$ semble aussi changer avec l'épaisseur de la couche d'eau dans la boîte de pétri mais ils n'étaient pas en mesure de la faire varier significativement.  
+\begin{figure}[!ht]
+  \centering
+  \input{./figures/chap2/PY.pdf_tex}
+  \caption{Expérience de Pshenichnikov 1974 \cite{Pshenichnikov1974} (a) Schéma du dispositif expérimental inspiré de \cite{Pshenichnikov1974}. (b) Instabilité de l'écoulement à huit cellules de recirculation, }
+  \label{fig:PYfig}
+\end{figure}
+Les résultats expérimentaux de Pschenischnikov et Yatcenko ressemblent fortement aux solutions analytiques obtenues par Bratukhin et Maurin. Mais le mécanisme de génération de ces tourbillons n'a pas encore été identifié.
+
+
+Shtern \textit{et al} dans leur étude des écoulement divergent incluent l'instabilité observée par Pschenischnikov et Yatcenko dans une gamme plus générale d'instabilité qu'ils appellent l'instabilité divergente. Leurs études cherchent à identifier le mécanisme responsable de la génération de ces tourbillons \cite{Shtern1993,Shtern1994}. Ils attribuent cette instabilité à l'appairtion d'un gradient de pression entre l'écoulement divergent et le liquide environnant. Si la source est suffisamment intense alors le gradient de pression sera suffisant pour briser l'axisymétrie de l'écoulement de départ. Par conséquent l'écoulement axisymétrique se divise en plusieurs jets dirigés radialement, séparés par un écoulement contraire dirigé vers la source, donnant lieu aux cellules de recirculation observées par Pschenischnikov et Yatcenko ou Mizev. Pour que cette instabilité ait lieu, Shtern \textit{et al} disent que la source doit être suffisamment intense mais aussi la divergence de l'écoulement initial ce qui est le cas pour l'écoulement axisymétrique en sortie d'une source ponctuelle.
+
+
+Une étude plus récentes par José Federico \textit{et al} à l'université de Twente \cite{Federico2015} consiste à injecter de façon continue des micro gouttes d'alcool sur de l'eau. Ils mesurent via une méthode d'interfèrométrie la croissance du rayon de l'étalement. $r(t)$ suit une loi en racine du temps et en fonction du débit d'injection $Q$ (eq. \eqref{eq:Federico2015}). D'autres études comme celle de Seungho Kim \cite{Kim2019} qui étudient le démouillage d'une surface liquide par l'effet Marangoni montrent également des lois d'échelle similaires à ce qui avait été observé pour le dépôt d'une simple goutte $r(t)\sim t^{1/2}$.
+
+\begin{equation}
+  r \sim \left(\dfrac{Q\Delta\gamma}{\eta}\right)^{1/4}t^{1/2}\label{eq:Federico2015}
+\end{equation}
+
+\begin{figure}[!ht]
+  \begin{center}
+    \input{./figures/chap1/Federico2014.pdf_tex}
+    \caption{Mesures de la croissance de l'étalement en fonction du temps pour différents débit d'injection. Nous observons que $r\sim \sqrt{t}$. Source: \cite{Federico2015}}
+    \label{fig:Federico2014}
+  \end{center}
+\end{figure}
+Des études de l'écoulement de Marangoni solut-capillaire sans évaporation ont également été réalisées par Matthieu Roché  \textit{et al} \cite{Roche2014}.  Ils utilisent des tensioactifs hydrosolubles de la famille des alkyl triméthylammonium halides ($\rm C_nTABr$, $n=10$ to $14$, $\rm C_nTACl$, $n = 12$ et $16$) ainsi que de la famille des sodium alkyl sulfate ($\rm C_nNaSO4$, $n=8$ to $12$). Les tensioactifs sont dissous dans de l'eau pure et injectés sur une couche d'eau pure d'épaisseur $h$. Dans le but de visualiser l'écoulement ils injectent la solution de tensioactif sous la forme d'une émulsion composée d'huile d'olive commerciale et de tensioactif. les gouttelettes d'huile dispersées dans l'émulsion servent de traceurs passifs pour visualiser l'écoulement surfacique. Avec cette méthode ils ont caractérisé la structure de l'écoulement stationnaire en fonction de la structure du tensioactif ainsi que du débit d'injection molaire $Q_{\rm a}$.
+
+
+\begin{wrapfigure}{r}{.5\textwidth}
+  \input{./figures/chap1/Roche2014.pdf_tex}
+  \caption{Caractérisation de l'écoulement en fonction de la structure du tensioactif.  Crédit: \cite{Roche2014}}
+  \label{fig:Roche2014}
+\end{wrapfigure}
+D'après leur étude le rayon $r$ de l'écoulement varie avec le temps. Sur la figure ci-côté (figure \ref{fig:Roche2014}), pour chaque tensioactif testé,  nous pouvons voir $r(t)$ augmenter après le début de l'injection. Il atteint un état stationnaire au bout de $30$ secondes environ qui perdure pendant plusieurs dizaines de secondes et finalement décroît jusqu'à ce que l'écoulement s'arrête. La décroissance de $r$ semble être due à l'accumulation des gouttelettes d'huile à l'extérieur de l'écoulement.  Nous considérons que l'écoulement a atteint son état stationnaire après $t=30~\rm secondes$ jusqu'à ce qu'il commence à se retracter. 
+
+$r$ est sensible à la structure du surfacant, c'est à dire à la longeure de la chaîne carbonnée et à la nature de la tête hydrophile. Ainsi, pour un débit $Q_{\rm a}$ constant, le rayon  stationnaire de la zone de Marangoni varie de deux ordres de grandeur lorsque le nombre de chaînes carbonnées $n$ est doublé (voir figure \ref{fig:Roche2014}). Aussi, nous pouvons voir sur le graphique que le $\rm C_12TAB$ crée un écoulement stationnaire de plus petite taille que le $\rm C_12NaSO4$.
+
+La vitesse de l'écoulement, dépend également de plusieurs paramètres (voir figure \ref{fig:Roche2014_2}\textcolor{blue}{(a)}). Leurs mesures montrent que la vitesse croît rapidement à partir de la source et atteint un maximum ($u\approx 0.5~\rm m\cdot s^{-1}$) pour $r\approx 5~\rm mm$ puis décroît doucement jusqu'à atteindre le front de l'écoulement. À cette frontière, où $r=R_{\rm M}$ le rayon de Marangoni, la vitesse de l'écoulement chute drastiquement, passant de $0.1~\rm m\cdot s^{-1}$ à quelques millimètres par seconde. Ces profils de vitesses ressemblent à ce que Suciu \textit{et al} \cite{Suciu1967,Suciu1969} avaient mesurés auparavant. En supposante que le flux de tensioactif injecté à la source désorbe de l'interface lorsque l'écoulement s'arrête  et que la vitesse de l'écoulement dépend de la contrainte exercée par l'effet Marangoni, Roché \textit{et al} proposent une relation pour la vitesse de l'écoulement surfacique dépendant de la variation de tension de surface (eq \eqref{eq:Roche2014U}). Ainsi que la relation entre le rayon de l'écoulement stationnaire $r*$ et les paramètres physico-chimiques du système (eq \eqref{eq:Roche2014R}).
+\begin{equation}
+  u^{*} = A\left(\dfrac{\left(\gamma_{\rm w}-\gamma_{\rm s}\right)^2}{\eta\rho r^{*}}\right)^{1/3}\label{eq:Roche2014U}.
+\end{equation}
+\begin{equation}
+  r^{*}=B\left(\dfrac{\eta\rho}{\left(\gamma_{\rm w}-\gamma_{\rm s}\right)^2D^3}\right)^{1/8}\left(\dfrac{Q_{\rm a}}{c^{*}}\right)^{3/4}\label{eq:Roche2014R}.
+\end{equation}
+$\gamma_{\rm w}$ est la tension superficielle de l'eau pure et $\gamma_{\rm s}$ est la tension de surface de la source. $\eta$ est la viscosité dynamique, $\rho$ la masse volumique de l'eau, $D$ le coefficient de diffusion des tensioactifs dans l'eau, $c^{*}$ la concentration micellaire critique du tensioactif et $Q_{\rm a}$ le débit molaire d'injection. $A$ et $B$ sont des préfacteurs adimenssionés de l'ordre de l'unité. Sur la figure \ref{fig:Roche2014_2}\textcolor{blue}{(b)}, les auteurs comparent les mesures expérimentales de la vitesse maximum $u_{max}$ à la prédiction réalisée par l'équation \eqref{eq:Roche2014U}. Il faut remarquer que $u_{\rm max}$ varie beaucoup pour les petits rayons, par contre lorsque $r^{*}$ augmente, la vitesse $u_{\rm max}$ atteint un plateau minimum. Sur la figure \ref{fig:Roche2014_2}\textcolor{blue}{(c)} est tracé le rayon $r^{*} = r_{\rm max}-r_{\rm s}$, rayon maximal de l'écoulement moins l'extension de la source d'injection par rapport au débit molaire d'injection. Nous voyons apparaître la loi de puissance $r^{*}\propto Q_{\rm a} ^{3/4}$ qui vérifie la relation \eqref{eq:Roche2014R} et de la même manière sur la figure \ref{fig:Roche2014_2}\textcolor{blue}{(d)}, nous pouvons voir apparaître la variation de $r^{*}$ en fonction de la CMC du tensioactif.\\[.3cm]
+
+Ces résultats peuvent être comparé à une étude expérimentale menée par Bandi \textit{et al}\cite{Bandi2017}. Ils étudient un écoulement très semblable généré par du SDS injecté à très faible concentration à la surface d'une couche d'eau. Il s'intéressent particulièrement
+à la distinction entre deux régimes d'écoulement, le premier est un régime dominé par l'adsorption des tensioactifs (faible concentration) et le deuxième dominé par la dissolution des tensioactifs (grande concentration). Leurs résultats semblent montrer que la vitesse varie suivant deux lois d'échelles différentes $v_{adsorption}\propto r^{-3/5}$ ou $v_{dissous}\propto r^{-1}$. Shreyas Mandre retrouve ces résultats numériquement \cite{Mandre2017}. Il explique que chacune correspond à un régime différent.  $v\propto r^{-4/5}$ correspondrait à un régime pour la la dynamique des tensioactifs dominé par la phase adsorbée à la surface, tandis que $v\propto r^{-1}$ correspondrait plutôt à un régime dominé par la phase dissoute dans le volume de liquide. Le premier régime plus rapide correspond à un régime où il n'y pas beaucoup d'échanges entre la surface et le volume à  cause de l'effet Marangoni et où les temps caractéristiques sont bien plus cours que ceux de la dynamique de sorption. Le deuxième régime correspondrait alors plutôt à un régime à l'équilibre entre la surface et le volume.\\[.3cm]
+
+
+Outre l'aspect étude de la structure de l'écoulement stationnaire de Marangoni soluto-capillaire, ce travail propose une nouvelle façon simple et rapide de mesurer des caractériser des propriétés du tensioactif utilisé. Effectivement, en mesurant la taille de l'écoulement lorsqu'il a atteint son état stationnaire (avec une règle par exemple) et en utilisant l'équation \eqref{eq:Roche2014R}, nous pouvons directement avoir une mesure de la contentration micellaire critique en connaissant les autres paramètres de l'équation.
+\begin{figure}[!ht]
+  \centering
+  \resizebox{.8\textwidth}{!}{\input{./figures/chap1/Roche2014_2.pdf_tex}}
+  \caption{(a)-Profil de vitesse $u/u_{\rm max}$en fonction de la position radiale adimensionnée $(r-r_{\rm s})/(r_{\rm t}-r_{\rm s})$ pour un même débit. (b)-Comparaison entre l'équation \eqref{eq:Roche2014U} et leurs données expérimentales. (c)-Comparaison entre l'équation \eqref{eq:Roche2014R} et les données expérimentales. (d)- Variation du rayon de la tache en fonction de la CMC du tensioactif.}
+  \label{fig:Roche2014_2}
+\end{figure}
+L'article de le Sébastien Le Roux \textit{et al} \cite{Leroux2016} insiste plus sur cet aspect de leur étude. Le Roux \textit{et al} abordent plusieurs points qui sont décrit dans \cite{Roche2014} notamment le phénomène de réduction de la taille de l'écoulement par l'accumulation des gouttelettes d'huiles. Pour tester les causes de ce phénomènes ils réalisent des manipulations sur une surface d'eau qui est sur le point de déborder du récipient. Dans un premier temps les gouttelettes d'huiles s'accumulent à la surface et au fur et à mesure que le temps passe, la taille de l'écoulement réduit jusqu'à ce que la surface déborde par accumulation de liquide. À ce moment là, la surface contaminée est éliminée et l'écoulement de Marangoni reprend sa taille stationnaire maximale.
+
+Ils mesurent également la pression surfacique $\Pi = \gamma_0 -\gamma$ ($\gamma_0$ est la tension superficielle de l'eau pure et $\gamma$ est la tension de surface à un instant $t$)lors de l'accumulation des gouttelettes d'huile hors de l'écoulement de Marangoni. Pour cela ils utilisent la méthode de la plaque de Whilhelmy que l'on a décrit dans le chapitre 1. Le résultat obtenu est que $\Pi$ augmente au cours du temps que ce soit en présence des gouttelettes d'huile ou de la solution de tensioactif seule. Par conséquent, l'augmentation de la pression surfacique résulte des impuretés insolubles qui sont toujours présentes dans les solutions de tensioactifs. Une façon de voir si les insolubles ont un effet sur l'écoulement de Marangoni généré est d'ajouter de façon controllée des insolubles. Les expériences que Le Roux \textit{et al} ont menés montrent que pour différentes concentrations en acide myristique la taille de l'écoulement stationnaire ne change pas. Les insolubles ont donc pas ou très peu d'influence sur la structure de l'écoulement de Marangoni. Nous pouvons aussi remarquer que les images de l'écoulement généré par les tensioactifs hydrosolubles présentent aussi des motifs tourbillonaires. Effectivement autour de l'écoulement de Marangoni soluto-capillaire, des tourbillons sont émis à partir de la frontière de l'écoulement (voire figure \ref{fig:Roche2014Tourb}). Les motifs tourbillonaires diffèrent de ceux observés précédemment dans la littérature. Dans ce cas ls tourbillons sont émis par paire et semblent émis simultanément par bouffées autour de l'écoulement soluto-capillaire axisymétrique. 
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.8]{./figures/chap1/RocheTourb2014.pdf}
+  \caption{Vue de ccoté de l'écoulement de Marangoni, débit molaire $Q_{\rm a } = 0.52\cdot 10^{-6}~\rm mol\cdot s^{-1}$. Source \cite{Roche2014}.}
+  \label{fig:Roche2014Tourb}
+\end{figure}
+
+\section{Modélisation de l'écoulement de Marangoni soluto-capillaire}
+
+Dans cet article, Le Roux \textit{et al} proposent également un modèle mathématique permettant de prédire la vitesse et le rayon d'étalement de l'écoulement de Marangoni soluto-capillaire. Ils proposent un modèle pour deux configurations; une configuration linéaire, c'est à dire comme si on confinait l'écoulement dans un canal rectiligne, et une configuration axisymétrique. Dans le cas de la configuration axisymétrique, la vitesse de l'écoulement est suivant la direction radiale et verticale: $\vv{v} = u(r,z)\vv{e_{r}}+ v(r,z)\vv{e_z}$. La pression est notée $p(r,z)$, la concentration dans le volume de liquide, $c(r,z)$, l'excès surfacique $\Gamma(r)$, et la tension superficielle $\gamma(r)$. $\rho$ est la masse volumique de l'eau, $\eta$ la viscosité dynamique, $D$ est le coefficient de diffusion dans l'eau et enfin la norme de l'accélération de la pesanteur est notée $g$. Les équations de basent sont les équations de Navier-Stokes en coordonnées cylindriques ($r,\theta,z$), projetées suivant $\vv{e_{r}}$ et $\vv{e_{r}}$, elles s'écrivent comme suit:
+
+\begin{equation}
+  \rho\left(\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial r}+v\frac{\partial u}{\partial z}\right)=-\frac{\partial p}{\partial r}+\eta\left(\frac{\partial^2 u}{\partial r^2}+\frac{1}{r}\frac{\partial u}{\partial r}-\frac{u}{r^2}+\frac{\partial ^2 u}{\partial z^2}\right)\label{eq:Leroux1},
+\end{equation}
+
+\begin{equation}
+  \rho \left(\frac{\partial v}{\partial t}+u\frac{\partial v}{\partial r} + v\frac{\partial v}{\partial z}\right)=-\frac{\partial p}{\partial z}-\rho g + \eta \left(\frac{\partial^2 v}{\partial r^2}+\frac{1}{r}\frac{\partial v}{\partial r}-\frac{v}{r^2}+\frac{\partial^2 v}{\partial z^2}\right)\label{eq:Leroux2}.
+\end{equation}
+
+Avec la conservation de la masse: 
+
+\begin{equation}
+  \frac{\partial u}{\partial r}+\frac{u}{r}+\frac{\partial v}{\partial z}=0\label{eq:Leroux3}.
+\end{equation}
+
+Pour les conditions aux limites, nous considérons que la vitesse $\|v\|$ devient nulle lorsque $z\rightarrow \infty$ et $r\rightarrow\infty$. À l'interface la continuité de la contrainte tangentielle impose la relation entre la vitesse et le gradient de tension surperficielle le long de l'interface. Cette relation est à l'origine de l'écoulement de Marangoni:
+
+\begin{equation}
+  \eta\left(\frac{\partial u}{\partial z}+\frac{\partial v}{\partial r}\right)=\frac{\partial \gamma}{\partial r}\label{eq:Leroux4}.
+\end{equation}
+
+En supposant que l'échange de tensioactifs entre l'interface et le volume est limité par la diffusion, l'excès surfacique  et la tension superficielle s'écrivent comme suit: $\Gamma(r)=\Gamma_{eq}(c(r,0))$, $\gamma(r)=\gamma_{eq}(c(r,0))$. Les courbes maîtresse, qui décrit la variation de $\Gamma$ et $\gamma$ s'écrivent $\Gamma(r)=\partial_{c}\Gamma c(r,0)$ et $\gamma(r)=\gamma_0-|\partial_c\gamma|c(r,0)$ avec $\partial_c\Gamma$ and $\partial_c\gamma$ constants. L'équation de transport des tensioactifs s'écrit: 
+
+\begin{equation}
+  \frac{\partial c}{\partial t}+u\frac{\partial c}{\partial r}+v\frac{\partial c}{\partial z} = D\left(\frac{\partial^2 c}{\partial r^2}+\frac{1}{r}\frac{\partial c}{\partial r}+\frac{c}{r^2}+\frac{\partial^2 c}{\partial z^2}\right)\label{eq:Leroux5},
+\end{equation}
+
+et la conservation de la masse de tensioactif à l'interface ($z=0$) s'écrit: 
+
+\begin{equation}
+  \frac{\partial \Gamma}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r}\left(ru\Gamma\right) = -D\frac{\partial c}{\partial z}.
+\end{equation}
+
+La résolution de ce système d'équations est réalisé par Le Roux \textit{et al} dans la configuration linéaire et axisymétrique. Nous presentons ici les solutions qu'ils ont trouvé pour la configuration axisymétrique qui nous intéresse particulièrement dans le cadre de cette thèse.
+\begin{ombretheo}
+  \begin{theo}
+    \noindent\textbf{Rayon maximal stationnaire de l'écoulement de Marangoni soluto-capillaire:}\\
+  \begin{equation}
+    R_{\rm max}^{a}=K_{\rm a}^{3/4}\left(\frac{Q}{c^{*}}\right)^{3/4}\left(\frac{\eta\rho}{\Delta\gamma^2 D^3}\right)^{1/8}.
+  \end{equation}
+\end{theo}
+\end{ombretheo}
+
+\begin{ombretheo}
+  \begin{theo}
+    \noindent \textbf{Vitesse maximale de l'écoulement de Marangoni soluto-capillaire:}\\
+  \begin{equation}
+  V_{\rm max}^{a}=K_{\rm a}^{-1/4}\left(\frac{c^{*}\Delta\gamma^3}{Q}\right)^{1/4}\left(\frac{D}{(\eta\rho)^3}\right)^{1/8}.
+\end{equation}
+\end{theo}
+\end{ombretheo}
+$K_a$ est un nombre adimenssioné, $c^{*}$ est la concentration micellaire critique, $\Delta\gamma$ est la différence de tension de surface entre la source et l'eau pure loin de la source, $Q$ est le débit molaire d'injection de surfactant, $D$ est le coefficient de diffusion dans l'eau des tensioactifs, $\eta$ la viscosité dynamique, et $\rho$ la masse volumique de l'eau. Nous retrouvons la dépendance du rayon du tourbillon avec le flux de tensioactif avec une loi de puissance en $r\propto Q^{3/4}$ comme le montrait le raisonnement de \cite{Roche2014}. PLus le débit d'injection augmente plus la taille de l'écoulement est grande, tandis que la vitesse de l'écoulement diminue avec le débit $U\propto Q^{-1/4}$ et inversement avec la CMC. Enfin ils ont vérifié ce modèle pour les différents paramètres de ces équations avec à chaque fois un très bon accord avec les résultats expérimentaux.
+
+\begin{figure}[!ht]
+  \centering
+  %\input{./figures/chap1/Leroux2016.pdf_tex}
+  \includegraphics[width=1\textwidth]{./figures/chap1/Leroux2016.pdf}
+  \caption{(a,b,c,d)-Mesure du rayon stationnaire de l'écoulement en fonction du débit molaire $Q$, de la variation de tension superficielle $\Delta\gamma$, de la CMC, et de la viscosité du liquide lorsque du glycérol est ajouté. (e,f,g,h)- Évolution de la vitesse maximale de l'écoulement en fonction des mêmes paramètres. Les lignes solides sont des lois de puissance du modèle proposé \cite{Leroux2016}}
+  \label{fig:Leroux}
+\end{figure}
+
+ 
+
+\begin{ombreremarque}
+  \begin{remarque}
+    \noindent\textbf{Ce que nous retenons:}\\
+    L'écoulement à l'interface entre deux fluides généré par effet Marangoni a été longtemps étudié pour différents types de tensioactifs, solubles et non-solubles. En particulier il a été montré que la taille $r$ de l'écoulement ainsi que la vitesse $v$ de l'écoulement surfacique dépend de l'intensité de la source (sous forme de chaleur ou de quantité de tensioactifs injectés par unité de temps), de la nature des molécules tensioactives ainsi que de l'état de la surface du liquide. À cela s'ajoute l'apparitions d'instabilité de l'écoulement. L'instabilité de l'écoulement semble pour certains provenir de l'accumulation d'impuretés à la surface du liquide entraînant l'apparition de tourbillons au bord de l'écoulement de Marangoni.  Tandis que pour d'autres elles semblent essentiellement liées à l'intensité de la source, entraînant l'apparition de cellules de recirculation partant de la source et bouclant sur elle-même. Pourtant dans le cas des manipulations réalisées par Roché et Le roux \textit{et al} la contamination controllée de la surface a montré que la présence de contaminant ne modifiait pas ou très peu la structure de l'écoulement généré par les tensioactifs hydrosolubles. Leurs expérience montrent la génération de tourbillons par paires le long de la frontière de l'écoulement de Marangoni soluto-capillaire dont l'origine est à identifier.
+  \end{remarque}
+\end{ombreremarque}
+
+\section{Problematique}
+
+Dans l'ensemble de ces expériences nous avons vu que l'écoulement à l'interface entre deux fluides généré par l'effet Marangoni peut produire des motifs très variés De l'apparition de doigts lors du dépôt d'une goutte tensioactive sur une couche mince à la génération de cellules de recirculation ou de tourbillons lorsque l'injection de tensioactif est continue. Nous avons vu que certains attribuent l'apparition de tourbillon à la contamination de la surface du liquide sur lequel a lieu le dépôt de tensioactifs. Mais il a été montré que dans le cas d'utilisation de tensoactifs hydrosolubles les contaminants ont peu d'impact sur la structure de l'écoulement de Marangoni et que les tourbillons était toujours présents même lorsque la surface est peu contaminée. Il semble que cette instabilité fasse partie d'une gamme générale d'ecoulements nommé: écoulement divergent. L'instabilité de ces écoulement semble être dû à une sélection naturelle de modes propres qui dépendent de l'intensité de la source que ce soit une source de chaleur ou de masse de tensioacitfs. Seulement la structure de l'écoulement de Marangoni soluto-capillaire présentée par Roché, Le Roux \textit{et al} est différente de ces écoulements divergent. L'écoulement présente d'abord une région axysimétrique où l'écoulement est purement radial et stationnaire. Les tourbillons dans ce cas sont observés à l'extérieur de la zone de Marangoni et leur origine reste à déterminer. Ainsi notre étude s'inscrit dans la lignée de cette vaste littérature. Dans cette première partie de la thèse nous nous proposons d'étudier la génération de vorticité au bord de l'écoulement de Marangoni soluto-capillaire via une étude expérimentale. Premièrement nous chercherons à identifier les paramètres de contrôles de la génération des tourbillons en observant leur structure et leur dynamique. Deuxièmement nous montrons l'existence d'un tube de vorticité de forme torique au voisinage de la sortie de l'écoulement de Marangoni, sous la surface. Nous caractériserons la croissance de cet enroulement au cours du temps ce qui nous permettra d'avoir une information sur la nature de l'interface eau-air à l'extérieur de l'écoulement de Marangoni. Nous verrons que cet enroulement devient instable au voisinage du fond de la cuve. La destabilisation du vortex fait apparaître une longeur d'onde bien définie qui nous permet de caractériser cette instabilité. Troisièmement, nous montrerons que la reconnection à l'interface eau-air de la vorticité entraîne l'emission des motifs tourbillonaires à la surface de l'eau. Enfin nous chercherons à comparer l'instabilité que nous observons à l'instabilité des écoulements divergents.

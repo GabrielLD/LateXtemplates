@@ -1,0 +1,51 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{preamb-util}[2020/01/13 0.3 Utilities and handy macros for PhD thesis (J.Hare)]
+%%%%%%%%% preamble for  utilities and handy macros %%%
+%%-----  utilities packages -----
+\RequirePackage{etoolbox}          % many advanced finctions using e-tex
+\RequirePackage{calc}              % compute infix of  lendth
+\RequirePackage{datetime}          % functions fir hour and time 
+\RequirePackage{eso-pic}           % to place elements at the backgopud
+\RequirePackage{afterpage}         % to place items/command at the top of the next page
+\RequirePackage{xspace}            % conditional space 
+%%=========  handy macros ============
+%% ---- \inputpath ---
+%%% defines additionnal directories where to search packaqges, inputed and inclided files
+%%% argument must be a list of paths, terminated by a / , inside braces, and without separators
+%% %like  \inputpath{{./}{../extra/}{./ch1/}{./appA/}}
+\providecommand\inputpath[1]{\providecommand*{\input@path}{}\g@addto@macro\input@path{#1}}
+%%% ---- \fmeaning ----
+%%% formated meaning of command
+%%% use \fmeaning\cmd where \cmd is an existing command, like \fmeaning\section
+\newcommand\fmeaning[1]{	{\raggedright\noindent\ttfamily\textbf{\string#1 =}\meaning#1\par\medskip}}
+%%%-------- \killreader ----
+%%% Close external pdf viewver (Windows only)
+%%% use \killreader{acroread} or  \killreader{pdfxchange} or  \killreader{sumatra} 
+%%% commands (to be extended of adpatex to linux/maxOS)
+%%% Note \killreader{acroread} kills all 
+\gdef\pdf@viewers@list{}
+\listgadd\pdf@viewers@list{acroread}
+\listgadd\pdf@viewers@list{pdfxchange}
+\listgadd\pdf@viewers@list{sumatra}
+\newcommand\kill@acroread{\immediate\write18{(tasklist|find "AcroRd32.exe">nul)&&(taskkill /f /im AcroRd32.exe>nul)}}
+\newcommand\kill@pdfxchange{\immediate\write18{PDFXCview.exe /close \jobname.pdf}}
+\newcommand\kill@sumatra{\immediate\write18{taskkill /f /FI "WINDOWTITLE eq \jobame.pdf*"  /im SumatraPDF.exe>nul}}
+%% user interface
+\newcommand\killreader[1]{%
+\ifcase\pdfshellescape%
+	  \message{No shell escape detected, can't kill #1. Consider use of --shell-escape or --enable-write18}%
+\or%
+  \message{Unrestricted shell escape detected. Trying to kill #1 before reading \jobname.aux}%
+  \ifinlist{#1}{\pdf@viewers@list}{\AtEndPreamble{ \csuse{kill@#1}}}{\message{Sorry \string\kill@#1 not defined.}}
+\or%
+  \message{Restricted shell escape detected, can't kill #1. Consider use of -shell-escape}
+\fi%
+}
+
+%% --- length converion --- \convertto{cm}{\the\mylength} cm
+%\def\convertto#1#2{\strip@pt\dimexpr \the#2*65536/\number\dimexpr 1#1\relax\,#1}
+
+\endinput
+%end of preamb-util package
