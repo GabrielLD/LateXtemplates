@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.15)  4 JUL 2022 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.15)  4 JUL 2022 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1220,17 +1220,17 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<UP.pdf, id=74, 448.13121pt x 170.7168pt>
+<UP.pdf, id=78, 448.13121pt x 170.7168pt>
 File: UP.pdf Graphic file (type pdf)
 <use UP.pdf>
 Package pdftex.def Info: UP.pdf  used on input line 9.
 (pdftex.def)             Requested size: 149.37442pt x 56.9055pt.
-<MSC.png, id=75, 14.22638pt x 10.57494pt>
+<MSC.png, id=79, 14.22638pt x 10.57494pt>
 File: MSC.png Graphic file (type png)
 <use MSC.png>
 Package pdftex.def Info: MSC.png  used on input line 9.
 (pdftex.def)             Requested size: 76.55945pt x 56.9055pt.
-<ANR.png, id=77, 1204.5pt x 492.84125pt>
+<ANR.png, id=81, 1204.5pt x 492.84125pt>
 File: ANR.png Graphic file (type png)
 <use ANR.png>
 Package pdftex.def Info: ANR.png  used on input line 9.
@@ -1380,7 +1380,7 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/bold/n' will be
 
 ] [8]
 Chapitre I.
-<./figures/chap1/Tourbillons_Marangoni.png, id=173, 423.83344pt x 238.64156pt>
+<./figures/chap1/Tourbillons_Marangoni.png, id=178, 423.83344pt x 238.64156pt>
 File: ./figures/chap1/Tourbillons_Marangoni.png Graphic file (type png)
 <use ./figures/chap1/Tourbillons_Marangoni.png>
 Package pdftex.def Info: ./figures/chap1/Tourbillons_Marangoni.png  used on input line 13.
@@ -1458,23 +1458,23 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/regular/it' will be
 
 ] (./template_these.aux (./abstract.aux) (./remerciements.aux) (./Intro.aux) (./chap1.aux) (./chap2.aux) (./chap3.aux))
 Package rerunfilecheck Info: File `template_these.out' has not changed.
-(rerunfilecheck)             Checksum: 9684CB1F2DAF5AD79790A018BFCEB5DC;2621.
+(rerunfilecheck)             Checksum: 51CBF19BC2A7EE324E7ED03EA673ECC2;2814.
 Package rerunfilecheck Info: File `template_these.brf' has not changed.
 (rerunfilecheck)             Checksum: 7C8122FF7202B10A32CF077EBC64C01C;54.
  ) 
 Here is how much of TeX's memory you used:
- 45033 strings out of 478040
- 1037819 string characters out of 5843119
+ 45035 strings out of 478040
+ 1037843 string characters out of 5843119
  1410080 words of memory out of 5000000
- 62539 multiletter control sequences out of 15000+600000
+ 62540 multiletter control sequences out of 15000+600000
  637448 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,11n,137p,1225b,1146s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,11n,137p,1225b,1148s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_byuyni.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_ljow5q.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_tcdnmr.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_ld6df2.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on template_these.pdf (20 pages, 1302525 bytes).
+Output written on template_these.pdf (20 pages, 1303107 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

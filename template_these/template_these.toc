@@ -2,6 +2,7 @@
 \contentsline {part}{I\hspace {1em}Interface et tension interfaciale}{7}{part.1}%
 \contentsline {chapter}{\numberline {I}Tension de surface}{9}{chapter.1}%
 \contentsline {section}{\numberline {I.1}PLacer une image}{9}{section.1.1}%
+\contentsline {section}{\numberline {I.2}Utilisation des cadres}{10}{section.1.2}%
 \contentsline {chapter}{\numberline {II}Effet Marangoni aux interfaces}{11}{chapter.2}%
 \contentsline {section}{\numberline {II.1}Principe de l'effet Marangoni}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {II.1.1}description de l'écoulement de Marangoni}{11}{subsection.2.1.1}%
